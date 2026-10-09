@@ -1,0 +1,7 @@
+Software Engineering II — WiSe 2026/27
+Source: user message on 2026-10-09; track not specified.
+Original statement:
+• 60/40 активность и экзамен в оценку
+• но даже при не сданном экзамене считается
+
+Interpretation: activity contributes 60% and the exam 40% to the final grade. The final grade is calculated even if the exam is not passed. This does not establish automatic passing of the module.
