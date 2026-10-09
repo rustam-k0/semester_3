@@ -111,12 +111,26 @@ For every source import:
 9. Check that referenced files exist, imported counts are plausible, and no unrelated records disappeared. For moves alone, regenerated data must be semantically identical except for updated provenance.
 10. The interface should use the generated database. Do not reintroduce source-document copies into `public/` to create download links unless the user explicitly requests that feature.
 
+## Git Repositories, Commits, and Pushes
+
+- Keep two independent repositories: the workspace root uses `https://github.com/rustam-k0/semester_3.git`; `bht-schedule/` uses `https://github.com/rustam-k0/bht-schedule.git`.
+- Course materials, source documents, workspace documentation, and root `AGENTS.md` belong in `semester_3`. Application code, configuration, interface assets, and generated app databases belong in `bht-schedule`.
+- Run Git operations from the repository that owns the changed files. For tasks affecting both repositories, verify, commit, and push each repository separately.
+- Do not duplicate application files in the root repository or replace the application repository with a submodule without an explicit migration request. Application files already tracked in the root repository are legacy duplication; changing this policy does not authorize removing them from Git.
+- The user grants standing authorization to automatically commit and push completed, meaningful changes in the appropriate repository after the relevant verification passes. This includes application features and fixes, material imports, database updates, and documentation or policy changes. Do not ask for confirmation again.
+- Push at the end of each completed task. During longer tasks, also commit and push at completed, verified milestones so progress is saved regularly; do not push incomplete work or create a commit for every small edit. This is a task-driven policy, not a background timer or scheduled automation.
+- An explicit instruction such as "do not push", "local only", or "commit only" overrides automatic pushing for that task. If verification or pushing fails, preserve the local work and report the blocker; do not claim that the remote is up to date.
+- A request to push all workspace changes applies to both repositories. A request limited to course materials or the application applies only to the corresponding repository.
+- Before committing, inspect the diff and include only changes within the requested scope. Respect `.gitignore`; do not include credentials, dependency folders, build output, or nested Git metadata.
+- Push to the configured remote and current branch. Do not force-push, rewrite history, or change remotes unless explicitly requested. After pushing, verify that the remote branch matches the local commit and report any remaining unpushed changes.
+- Committing or pushing does not authorize deployment, server access, container rebuilds, backups, or production changes.
+
 ## Working Rules
 
 - Read only what is needed; prefer the fastest reasonable path and low-risk assumptions.
 - Do not explore or refactor unrelated areas. Do not delegate unless the user asks.
 - Verify proportionately: check moved bytes, relevant references, import reproducibility, and the closest applicable typecheck or test. Stop once sufficient evidence passes.
-- Do not commit, push, deploy, connect to servers, create backups, rebuild containers, or modify production unless explicitly requested.
+- Follow the repository, commit, and push rules above. Do not deploy, connect to servers, create backups, rebuild containers, or modify production unless explicitly requested.
 - Keep updates short. Report what changed, what was checked, and any real remaining risk.
 
 ## Token and Time Budget
