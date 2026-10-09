@@ -29,8 +29,8 @@ Assignments:
 
 ## Preparation
 
-- [Short validation answers (English)](validation-answers-en.md)
-- [Class demonstration guide (Russian)](demo-guide-ru.md)
+- [Short validation answers (English)](../submission/validation-answers-en.md)
+- [Class demonstration guide (Russian)](../submission/demo-guide-ru.md)
 
 - [Questions and answers](exam-questions.md)
 - [Readiness checklist](validation-checklist.md)

@@ -6,7 +6,7 @@ Show these notes and the working setup on your laptop during the exercise class.
 
 ## A1 — Laptop setup
 
-Demonstration: open Terminal and show the configuration-test commands from [A1](a1-laptop-setup/README.md). Explain the system, user, HOME, PATH, directory listings, output redirection and pipes.
+Demonstration: open Terminal and show the configuration-test commands from [A1](../technical/a1-laptop-setup/README.md). Explain the system, user, HOME, PATH, directory listings, output redirection and pipes.
 
 ## A2 — Understanding the terminal: all 15 validation questions
 
@@ -51,4 +51,4 @@ Demonstration: run `code .` from `~/workspaces/hello-world`, open `HelloWorld.ja
 
 ## Sources and scope
 
-Questions: [A2 Validation](a2-understanding-the-terminal/README.md) and [A4 Validation](a4-git-setup/README.md). Practical requirements: A1, A3 and A5 README files. Acceptance rules: [source notes](source-notes.md). Personal paths and setup follow the local [checklist dated 2026-10-07](validation-checklist.md); recheck them before the class. Notes prepared 2026-10-09; this document does not certify acceptance.
+Questions: [A2 Validation](../technical/a2-understanding-the-terminal/README.md) and [A4 Validation](../technical/a4-git-setup/README.md). Practical requirements: A1, A3 and A5 README files. Acceptance rules: [source notes](../technical/source-notes.md). Personal paths and setup follow the local [checklist dated 2026-10-07](../technical/validation-checklist.md); recheck them before the class. Notes prepared 2026-10-09; this document does not certify acceptance.

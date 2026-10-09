@@ -8,7 +8,7 @@ This folder retains the Java course instructions and their supporting images. A2
 Start with [README.md](README.md).
 
 Course context: Software Engineering II, WiSe 2026/27; stored alongside the
-existing track-1 Moodle assignment screenshot [a15-setup.png](../a15-setup.png).
+existing track-1 Moodle assignment screenshot [a15-setup.png](a15-setup.png).
 
 ## Moodle assignment scope
 
