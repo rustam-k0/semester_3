@@ -14,7 +14,15 @@ SWE II · Zug 1 · WiSe 2026/27
 2. **VS Code** — для A5 и файла английских ответов. Учебный проект: `/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world`.
 3. **Finder и браузер** — дополнительные примеры HOME и Javadoc, если преподаватель попросит.
 
-Пути и настройки взяты из проверки 7 октября; перед занятием повтори команды. Это подготовка к зачёту, а не подтверждение полученных баллов.
+Один раз выполни подготовку ниже. Первой строкой запускается Bash; следующие строки вводи уже внутри него. Это подключает Java 25, GNU sed и команду именно Microsoft VS Code. Все дальнейшие блоки выполняй в этой shell.
+
+```bash
+/opt/homebrew/bin/bash -l
+source "$HOME/.config/a15/env.sh"
+echo "$BASH_VERSION"
+```
+
+Команды и файлы перепроверены 9 октября 2026. Это подготовка к зачёту, а не подтверждение полученных баллов.
 
 ## A1 — Terminal: показать команды и понимать вывод
 
@@ -31,14 +39,16 @@ realpath .
 echo "$PATH"
 echo "$PATH" | tr ':' '\n'
 echo 'Hello World'
-cd "$HOME/.config/a15"
-echo 'Hello World' > hello.txt
-cat hello.txt
-cat hello.txt | sed 's/./&\n/g'
-cat hello.txt | sed 's/./&\n/g' | wc
+(
+  cd "$HOME/.config/a15" || exit
+  echo 'Hello World' > hello.txt
+  cat hello.txt
+  cat hello.txt | sed 's/./&\n/g'
+  cat hello.txt | sed 's/./&\n/g' | wc
+)
 ```
 
-Последний блок использует учебный `hello.txt` в подготовленной папке `.config/a15`. `>` записывает файл заново. Для варианта `sed` из задания нужен настроенный GNU sed; стандартный macOS sed может иначе обработать `\n`.
+Скобки запускают последнюю часть в отдельной shell, поэтому текущая папка основного терминала не меняется. Последний блок использует учебный `hello.txt` в подготовленной папке `.config/a15`. `>` записывает файл заново. Для варианта `sed` из задания нужен настроенный GNU sed; стандартный macOS sed может иначе обработать `\n`.
 
 | Команда / термин | Что объяснить |
 | --- | --- |
@@ -48,7 +58,7 @@ cat hello.txt | sed 's/./&\n/g' | wc
 | `realpath .` | Полный путь с разрешением символических ссылок; `.` — текущая папка |
 | `PATH`, `tr` | Где искать программы; замена двоеточий переносами строк |
 | `echo`, `>`, `cat` | Вывести текст; записать его в файл; прочитать файл |
-| `pipe` / `|` | Передать stdout одной команды в stdin следующей |
+| `pipe` / `\|` | Передать stdout одной команды в stdin следующей |
 | `sed`, `wc` | Преобразовать текст; посчитать строки, слова и байты |
 
 ## A2 — ответы: открыть английский файл
@@ -83,26 +93,25 @@ PS1='\[\e[32m\]\u@\h \w\[\e[0m\] \$ '
 ## A3 — Terminal: Java и работающая программа
 
 ```bash
-cd "/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world"
+cd "$HOME/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world" || exit
 java --version
 javac --version
 javadoc --version
 jar --version
 cat HelloWorld.java
-javac HelloWorld.java
-java HelloWorld
+javac HelloWorld.java && java -cp . HelloWorld
 ```
 
 Покажи версии инструментов JDK 25, исходный код и успешный вывод. В текущей версии проекта ожидается `Hello, World (with Javadoc)!`; первоначальная версия задания выводит `Hello, World!`.
 
-Понимать: **JDK** — комплект инструментов Java; **javac** компилирует `.java` в `.class`; **java/JVM** выполняет bytecode; **javadoc** создаёт HTML-документацию; **jar** упаковывает Java-архивы. `java HelloWorld` запускается без расширения `.class`. Дополнительно: `echo "$JAVA_HOME"` показывает JDK, `command -v java javac javadoc jar` — выбранные программы.
+Понимать: **JDK** — комплект инструментов Java; **javac** компилирует `.java` в `.class`; **java/JVM** выполняет bytecode; **javadoc** создаёт HTML-документацию; **jar** упаковывает Java-архивы. `java -cp . HelloWorld` запускается без расширения `.class`; `-cp .` явно указывает искать класс в текущей папке. `&&` запускает программу только после успешной компиляции. Дополнительно: `echo "$JAVA_HOME"` показывает JDK, `command -v java javac javadoc jar` — выбранные программы.
 
 ## A4 — Terminal + английские ответы: Git
 
 Все команды Git выполняй в учебном проекте:
 
 ```bash
-cd "/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world"
+cd "$HOME/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world" || exit
 cat ~/.gitconfig
 git status
 git log --oneline --decorate
@@ -113,6 +122,7 @@ git log --oneline --decorate
 Дополнительно можно показать:
 
 ```bash
+cd "$HOME/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world" || exit
 ls -ld .git
 cat .gitignore
 git check-ignore HelloWorld.class doc/index.html
@@ -128,9 +138,12 @@ open doc/index.html
 В Terminal:
 
 ```bash
-cd "/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world"
+cd "$HOME/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world" || exit
 code .
+code ../submission/validation-answers-en.md
 ```
+
+Вторая команда открывает ответы; учебный проект остаётся открытым в VS Code. Для русского файла можно также выполнить `code ../submission/demo-guide-ru.md` из папки проекта.
 
 В VS Code:
 
@@ -146,4 +159,4 @@ code .
 
 Уточни, что приняты все пять частей A1–A5 (по 3 балла), и оформлено подтверждение в списке. Файл с ответами сам по себе не заменяет показ работающего окружения.
 
-Источники: [основные инструкции](../technical/README.md), Validation в README A1–A5, [условия Moodle](../technical/source-notes.md), [проверка настройки 7 октября](../technical/validation-checklist.md). Шпаргалка составлена 9 октября 2026; программы и настройки этой задачей не менялись.
+Источники: [основные инструкции](../technical/README.md), Validation в README A1–A5, [условия Moodle](../technical/source-notes.md), [проверка настройки 7 октября](../technical/validation-checklist.md). Команды перепроверены 9 октября 2026: Java 25, компиляция/запуск, Git, GNU sed, VS Code CLI и расширения. Кнопки Run и отображение цвета в окнах этой проверкой не подтверждались; проверь их лично до занятия. Настройки программ не менялись.
