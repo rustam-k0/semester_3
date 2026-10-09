@@ -2,6 +2,10 @@
 
 Semester-wide reference materials and administrative sources. Course teaching materials belong in their subject folders.
 
+## Personal tracking
+
+- [Completed homework](homework-tracker.md): personal log of completed assignments and submission dates.
+
 ## Module handbook
 
 - [Original module handbook](module-handbook.pdf).
