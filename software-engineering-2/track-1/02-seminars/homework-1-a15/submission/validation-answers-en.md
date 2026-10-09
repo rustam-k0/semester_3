@@ -8,7 +8,16 @@ Show these notes and the working setup on your laptop during the exercise class.
 
 Demonstration: open Terminal and run the configuration-test commands from [A1](../technical/a1-laptop-setup/README.md). Briefly explain each command.
 
+Run this first in Terminal (or the VS Code integrated terminal):
+
 ```bash
+/opt/homebrew/bin/bash -l             # Start the course Bash shell
+```
+
+After Bash starts, enter the following commands in that shell. No project-folder change is needed for A1; `cd` below intentionally opens HOME.
+
+```bash
+source "$HOME/.config/a15/env.sh"     # Load Java, GNU tools and VS Code paths
 uname -a                            # System and kernel information
 whoami                              # Current username
 echo "$HOME"                        # Home directory
