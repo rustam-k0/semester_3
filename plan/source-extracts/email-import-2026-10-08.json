@@ -1,0 +1,692 @@
+{
+  "schemaVersion": 1,
+  "term": "Wintersemester 2026/27",
+  "sourceFile": "../plan/source-extracts/email-course-facts-2026-10-08.json",
+  "reviewDate": "2026-10-08",
+  "reviewedInboxMessages": 94,
+  "updates": [
+    {
+      "subject": "Web Engineering II",
+      "zug": 1,
+      "uids": [
+        81,
+        92,
+        93
+      ],
+      "deadlines": [
+        {
+          "date": "2026-10-15",
+          "label": "Blatt 00 — due at 23:59; timezone not stated in email; Moodle activity 1508636",
+          "mandatory": true
+        }
+      ],
+      "keyFacts": [
+        "An additional Wednesday exercise was announced for 12:15–13:45 in B240. Exact validity dates and official group number were not stated.",
+        "Exercise groups will be redistributed to balance enrollment; receiving this announcement does not confirm personal allocation.",
+        "Blatt 0 project was fixed. Existing forks and clones may need updating."
+      ],
+      "workloadRules": [
+        "Attendance in other exercise groups is generally allowed, but registered members have priority.",
+        "Defenses and the mock exam normally take place in the registered exercise group; exceptions require agreement."
+      ]
+    },
+    {
+      "subject": "Grundlagen der Theoretischen Informatik",
+      "zug": 2,
+      "uids": [
+        67,
+        84
+      ],
+      "deadlines": [
+        {
+          "date": "2026-10-19",
+          "label": "Test: Mengen — closes at 23:59; timezone not stated; Moodle activity 1510499",
+          "mandatory": true
+        }
+      ],
+      "keyFacts": [
+        "Test: Mengen opened on 2026-10-05 at 14:03.",
+        "Some students may be reassigned to the other track because of capacity; individual allocation is not confirmed by this email."
+      ]
+    },
+    {
+      "subject": "Mediendesign Grundlagen",
+      "zug": 2,
+      "uids": [
+        66,
+        76
+      ],
+      "deadlines": [
+        {
+          "date": "2026-10-11",
+          "label": "Verbindliche Belegung des Moduls Mediendesign — due at 19:00; timezone not stated; activity 1521541",
+          "mandatory": true
+        }
+      ],
+      "keyFacts": [
+        "Personal submission confirmation: the binding enrollment assignment was submitted on 2026-10-05. This is not confirmation of acceptance or a passing grade."
+      ]
+    },
+    {
+      "subject": "Mediendesign Grundlagen",
+      "zug": 1,
+      "uids": [
+        77
+      ],
+      "keyFacts": [
+        "Zahn's overcrowded course does not offer individual projects this semester.",
+        "Higher-semester students may be moved to a late Tuesday exercise. The email says 19:00, while the timetable says 19:30; do not treat either as a confirmed revised meeting."
+      ]
+    },
+    {
+      "subject": "Mediendesign Grundlagen",
+      "zug": null,
+      "uids": [
+        78
+      ],
+      "keyFacts": [
+        "Possible alternatives discussed personally: a new Tuesday-morning lecture with exercise, or Monday lecture with Schiffers and Tuesday exercise with Zahn. None was confirmed in this correspondence."
+      ]
+    },
+    {
+      "subject": "Betriebssysteme",
+      "zug": null,
+      "uids": [
+        90,
+        91
+      ],
+      "scope": "bs-wis26 Moodle forum; teacher Rüdiger Weis teaches both tracks, so the track is not established by the email.",
+      "keyFacts": [
+        "Exercise sheet 1: Shellprogrammierung contains four tasks worth 6, 6, 16 and 16 points (44 total). No submission deadline is stated.",
+        "Read the supplied vi reference material."
+      ],
+      "workloadRules": [
+        "Complete vimtutor and work on sheets 1 and 2 with the vi editor.",
+        "Use only the standard sh commands presented in class.",
+        "Task 1: for a call with more than two parameters, print only the last two.",
+        "Task 2: validate an even number of parameters; print a Unix-style error to stderr and exit with failure otherwise.",
+        "Task 3: list files in the current directory with names at least 3 and less than 6 characters long.",
+        "Task 4: print all positional parameters with numbering in reverse order."
+      ]
+    },
+    {
+      "subject": "Software Engineering II",
+      "zug": 2,
+      "uids": [
+        74
+      ],
+      "deadlines": [
+        {
+          "date": "2026-10-07",
+          "label": "Team formation preferences — due at 16:00 to Ziemer; historical deadline; timezone not stated",
+          "mandatory": false
+        }
+      ],
+      "keyFacts": [
+        "The first lecture was announced for 2026-10-09 at 16:00. Exercise times will be agreed in class and may differ from the timetable."
+      ],
+      "workloadRules": [
+        "Exercise teams may contain at most five people, all enrolled in the same exercise block.",
+        "Group preference emails must include SE2, full names, student numbers and optionally a team name. No participant list is stored in the database.",
+        "After the preference deadline, students are assigned randomly."
+      ]
+    },
+    {
+      "subject": "Medientechnologien",
+      "zug": 1,
+      "uids": [
+        87
+      ],
+      "keyFacts": [
+        "Mixdorff announced the first lecture for 2026-10-09 and regular exercises starting 2026-10-16. Hönemann separately announced an introductory exercise meeting on 2026-10-09; instructor/group applicability needs clarification."
+      ]
+    },
+    {
+      "subject": "Medientechnologien",
+      "zug": 2,
+      "uids": [
+        87
+      ],
+      "keyFacts": [
+        "Mixdorff announced the first lecture for 2026-10-09 and regular exercises starting 2026-10-16. Hönemann separately announced an introductory exercise meeting on 2026-10-09; instructor/group applicability needs clarification."
+      ]
+    },
+    {
+      "subject": "Medientechnologien",
+      "zug": 1,
+      "uids": [
+        79
+      ],
+      "keyFacts": [
+        "Hönemann announced a joint introductory meeting for both of her exercise groups on 2026-10-09 at 14:15 in B325; the 08:00 exercise does not take place that day. Preserve this one-day announcement separately from recurring times; clarify its relation to Mixdorff's announcement."
+      ]
+    },
+    {
+      "subject": "Projekt",
+      "zug": null,
+      "uids": [
+        70
+      ],
+      "scope": "projekt Moodle course, WiSe 2026/27; track is not stated.",
+      "deadlines": [
+        {
+          "date": "2026-10-08",
+          "label": "Pitch — 09:30–11:30, Ingeborg-Meising-Saal; date inferred from the 2026-10-04 email saying next Thursday; activity 1400091",
+          "mandatory": true
+        }
+      ],
+      "keyFacts": [
+        "GitLab team subgroups and repositories have been created at https://gitlab.bht-berlin.de/project_bachelor/ws26.",
+        "Each team member should be a subgroup member with Owner role; check spam for the invitation if necessary.",
+        "Questions go to the general Discord channel; supervisor allocation was still to be announced."
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "moodle-1508636",
+      "subjectName": "Web Engineering II",
+      "track": "1",
+      "title": "Blatt 00",
+      "type": "практика",
+      "date": "2026-10-15",
+      "time": "23:59",
+      "priority": "средний",
+      "submitted": false,
+      "uids": [
+        93,
+        92
+      ],
+      "notes": "Timezone not stated. Project fix announced 2026-10-07.",
+      "url": "https://lms.bht-berlin.de/mod/assign/view.php?id=1508636"
+    },
+    {
+      "id": "moodle-1510499",
+      "subjectName": "Grundlagen der Theoretischen Informatik",
+      "track": "2",
+      "title": "Test: Mengen",
+      "type": "тест",
+      "date": "2026-10-19",
+      "time": "23:59",
+      "priority": "средний",
+      "submitted": false,
+      "uids": [
+        67
+      ],
+      "notes": "Opened 2026-10-05 at 14:03. Timezone not stated.",
+      "url": "https://lms.bht-berlin.de/mod/quiz/view.php?id=1510499"
+    },
+    {
+      "id": "moodle-1521541",
+      "subjectName": "Mediendesign Grundlagen",
+      "track": "2",
+      "title": "Verbindliche Belegung des Moduls Mediendesign",
+      "type": "задачи",
+      "date": "2026-10-11",
+      "time": "19:00",
+      "priority": "средний",
+      "submitted": true,
+      "uids": [
+        66,
+        76
+      ],
+      "notes": "Submitted 2026-10-05; acceptance and grade not confirmed. Timezone not stated.",
+      "url": "https://lms.bht-berlin.de/mod/assign/view.php?id=1521541"
+    },
+    {
+      "id": "moodle-forum-350965",
+      "subjectName": "Betriebssysteme",
+      "track": "",
+      "title": "Übungsblatt 1: Shellprogrammierung",
+      "type": "практика",
+      "date": "",
+      "time": "",
+      "priority": "средний",
+      "submitted": false,
+      "uids": [
+        91
+      ],
+      "notes": "4 tasks, 44 points total. Standard sh only. Track and due date unknown.",
+      "url": "https://lms.bht-berlin.de/mod/forum/discuss.php?d=350965#p449073"
+    },
+    {
+      "id": "bht-bs-vimtutor-sheets-1-2",
+      "subjectName": "Betriebssysteme",
+      "track": "",
+      "title": "vimtutor and sheets 1–2 using vi",
+      "type": "практика",
+      "date": "",
+      "time": "",
+      "priority": "средний",
+      "submitted": false,
+      "uids": [
+        91,
+        90
+      ],
+      "notes": "Track and due date unknown; linked to Übungsblatt 1.",
+      "url": null
+    },
+    {
+      "id": "moodle-1400091",
+      "subjectName": "Projekt",
+      "track": "",
+      "title": "Project pitch",
+      "type": "проект",
+      "date": "2026-10-08",
+      "time": "09:30",
+      "priority": "средний",
+      "submitted": false,
+      "uids": [
+        70
+      ],
+      "notes": "Pitch window 09:30–11:30, Ingeborg-Meising-Saal. Date inferred from email; this time is the event start, not a separate upload deadline. Track unknown.",
+      "url": "https://lms.bht-berlin.de/mod/assign/view.php?id=1400091"
+    },
+    {
+      "id": "bht-se2-team-preferences-2026-10-07",
+      "subjectName": "Software Engineering II",
+      "track": "2",
+      "title": "SE2 team formation preferences",
+      "type": "задачи",
+      "date": "2026-10-07",
+      "time": "16:00",
+      "priority": "средний",
+      "submitted": false,
+      "uids": [
+        74
+      ],
+      "notes": "Optional preferences deadline has passed. Maximum five people in the same exercise block. Personal completion unknown.",
+      "url": null
+    }
+  ],
+  "exams": [
+    {
+      "subject": "Medientechnologien",
+      "zugs": [
+        1,
+        2
+      ],
+      "date": "2027-01-15",
+      "start": "12:00:00",
+      "end": "14:00:00",
+      "room": null,
+      "uid": 58,
+      "attachment": "196157.ics",
+      "calendarFile": "../plan/source-exports/exam-notifications/196157.ics"
+    },
+    {
+      "subject": "Software Engineering II",
+      "zugs": [
+        1
+      ],
+      "date": "2027-02-03",
+      "start": "12:15:00",
+      "end": "13:45:00",
+      "room": "H4",
+      "uid": 59,
+      "attachment": "193492.ics",
+      "calendarFile": "../plan/source-exports/exam-notifications/193492.ics"
+    },
+    {
+      "subject": "Software Engineering II",
+      "zugs": [
+        1
+      ],
+      "date": "2027-03-31",
+      "start": "13:30:00",
+      "end": "15:00:00",
+      "room": "TBD",
+      "uid": 60,
+      "attachment": "193495.ics",
+      "calendarFile": "../plan/source-exports/exam-notifications/193495.ics"
+    },
+    {
+      "subject": "Web Engineering II",
+      "zugs": [
+        1
+      ],
+      "date": "2027-02-03",
+      "start": "14:15:00",
+      "end": "15:15:00",
+      "room": null,
+      "uid": 61,
+      "attachment": "191815.ics",
+      "calendarFile": "../plan/source-exports/exam-notifications/191815.ics"
+    },
+    {
+      "subject": "Web Engineering II",
+      "zugs": [
+        1
+      ],
+      "date": "2027-03-31",
+      "start": "16:00:00",
+      "end": "17:00:00",
+      "room": null,
+      "uid": 62,
+      "attachment": "191817.ics",
+      "calendarFile": "../plan/source-exports/exam-notifications/191817.ics"
+    },
+    {
+      "subject": "Web Engineering II",
+      "zugs": [
+        2
+      ],
+      "date": "2027-01-25",
+      "start": "16:00:00",
+      "end": "17:00:00",
+      "room": null,
+      "uid": 64,
+      "attachment": "194837.ics",
+      "calendarFile": "../plan/source-exports/exam-notifications/194837.ics"
+    },
+    {
+      "subject": "Grundlagen der Theoretischen Informatik",
+      "zugs": [
+        2
+      ],
+      "date": "2027-01-29",
+      "start": "10:00:51",
+      "end": "11:30:51",
+      "room": "Vorlesungsraum",
+      "uid": 83,
+      "attachment": "196587.ics",
+      "calendarFile": "../plan/source-exports/exam-notifications/196587.ics"
+    },
+    {
+      "subject": "Betriebssysteme",
+      "zugs": [
+        1
+      ],
+      "date": "2027-01-19",
+      "start": "16:00:00",
+      "end": "17:30:00",
+      "room": "D138",
+      "uid": 85,
+      "attachment": "196612.ics",
+      "calendarFile": "../plan/source-exports/exam-notifications/196612.ics"
+    }
+  ],
+  "personalPlanning": {
+    "recognition": {
+      "placementSemester": 3,
+      "documentDate": "2026-09-07",
+      "modules": [
+        {
+          "sourceCode": "8637_106565",
+          "name": "Mathematik I",
+          "credits": 5,
+          "gradeAsDocumented": 1.0,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 1: visually verified grade in the SU/exercise row of Mathematik I; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "8640_106565",
+          "name": "Technische Grundlagen der Informatik",
+          "credits": 5,
+          "gradeAsDocumented": 1.7,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 1: visually verified grade in the SU/exercise row of Technische Grundlagen der Informatik; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "11430_106565",
+          "name": "Programmierung I",
+          "credits": 10,
+          "gradeAsDocumented": 2.0,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 1: visually verified grade in the SU/exercise row of Programmierung I; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "8643_106565",
+          "name": "Mathematik II",
+          "credits": 5,
+          "gradeAsDocumented": 1.3,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 1: visually verified grade in the SU/exercise row of Mathematik II; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "10985_106565",
+          "name": "Algorithmen und Datenstrukturen",
+          "credits": 5,
+          "gradeAsDocumented": 1.3,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 1: visually verified grade in the SU/exercise row of Algorithmen und Datenstrukturen; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "8645_106565",
+          "name": "Datenbanksysteme",
+          "credits": 5,
+          "gradeAsDocumented": 2.7,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 1: visually verified grade in the SU/exercise row of Datenbanksysteme; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "8649_106565",
+          "name": "Software Engineering I",
+          "credits": 5,
+          "gradeAsDocumented": 1.3,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 2: visually verified grade in the SU/exercise row of Software Engineering I; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "11433_106565",
+          "name": "Web Engineering I",
+          "credits": 5,
+          "gradeAsDocumented": 3.0,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 2: visually verified grade in the SU/exercise row of Web Engineering I; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "11435_106565",
+          "name": "Human–Computer Interaction",
+          "credits": 5,
+          "gradeAsDocumented": 4.0,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 2: visually verified grade in the SU/exercise row of Human–Computer Interaction; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "10531_106565",
+          "name": "Grundlagen wissenschaftlichen Arbeitens",
+          "credits": 5,
+          "gradeAsDocumented": 1.3,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 3: visually verified grade in the SU/exercise row of Grundlagen wissenschaftlichen Arbeitens; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "8663_106566",
+          "name": "Betriebswirtschaftslehre",
+          "credits": 5,
+          "gradeAsDocumented": 1.7,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 3: visually verified grade in the SU/exercise row of Betriebswirtschaftslehre; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "11448_106566",
+          "name": "Maschinelles Lernen",
+          "credits": 5,
+          "gradeAsDocumented": 1.7,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 4: visually verified grade in the SU/exercise row of Maschinelles Lernen; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "11450_106566",
+          "name": "Aktuelle Themen",
+          "credits": 5,
+          "gradeAsDocumented": 1.0,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 4: visually verified grade in the SU/exercise row of Aktuelle Themen; signed placement in semester 3"
+            }
+          ]
+        },
+        {
+          "sourceCode": "WP25",
+          "name": "Externes Modul 1",
+          "credits": 5,
+          "gradeAsDocumented": 1.0,
+          "status": "recognized_document_snapshot",
+          "documentDate": "2026-09-07",
+          "sources": [
+            {
+              "file": "../plan/source-exports/recognition/03-module-mapping.pdf",
+              "scope": "Page 5: visually verified grade in the SU/exercise row of Externes Modul 1; signed placement in semester 3"
+            }
+          ]
+        }
+      ],
+      "documentedModuleCredits": 75,
+      "currentPolliStatus": "not_verified",
+      "keyFacts": [
+        "Study administration confirmed recognition on 2026-09-11 and an adjustment on 2026-09-14. The exact latest adjustment is not described.",
+        "Studium Generale recognition was confirmed on 2026-09-10, but the exact individual module and credit mapping is not available here.",
+        "Do not replace current module status or grades using this older document snapshot."
+      ],
+      "uids": [
+        34,
+        40,
+        41
+      ]
+    },
+    "events": [
+      {
+        "id": "asta-it-interview-2026-10-13",
+        "label": "AStA IT interview",
+        "date": "2026-10-13",
+        "start": "13:00",
+        "end": "14:00",
+        "timezone": "Europe/Berlin",
+        "room": "M E03",
+        "status": "booking_confirmed",
+        "uids": [
+          86,
+          88
+        ],
+        "sources": [
+          {
+            "file": "../plan/source-exports/personal-calendar/asta-it-interview-2026-10-13.ics",
+            "scope": "VEVENT DTSTART/DTEND explicitly use TZID=Europe/Berlin; interview booking 2026-10-13 13:00–14:00"
+          }
+        ]
+      }
+    ],
+    "mobility": {
+      "keyFacts": [
+        "Information event announced for 2026-10-12; time and room not stated.",
+        "Internal application deadline given as 15 December for winter 2027/28 and 15 July for summer 2028; exact deadline years need confirmation.",
+        "An exchange requires BHT enrollment for the entire semester with at least one module still open.",
+        "The international office recommends 20–30 ECTS for a study stay even when credits cannot be transferred.",
+        "Thesis abroad requires early coordination with a BHT supervisor; Erasmus partner study and Erasmus internship are different routes."
+      ],
+      "deadlines": [
+        {
+          "date": null,
+          "monthDay": "12-15",
+          "targetTerm": "Wintersemester 2027/28",
+          "label": "Study-abroad application; year not explicitly stated"
+        },
+        {
+          "date": null,
+          "monthDay": "07-15",
+          "targetTerm": "Sommersemester 2028",
+          "label": "Study-abroad application; year not explicitly stated"
+        }
+      ],
+      "uids": [
+        63,
+        75
+      ]
+    }
+  },
+  "warnings": [
+    {
+      "code": "EMAIL_TRACK_UNKNOWN",
+      "message": "Betriebssysteme assignment forum and project pitch do not state the track; kept unassigned."
+    },
+    {
+      "code": "EMAIL_SCHEDULE_UNCERTAIN",
+      "message": "Medientechnologien announcements, Mediendesign alternatives and SE2 exercise changes require clarification."
+    },
+    {
+      "code": "EMAIL_TIMEZONE_UNKNOWN",
+      "message": "Moodle deadline emails and exam ICS files do not explicitly declare a timezone."
+    },
+    {
+      "code": "RECOGNITION_SNAPSHOT",
+      "message": "Recognition module mapping is dated 2026-09-07; later adjustments and current Polli values are not fully specified."
+    }
+  ]
+}

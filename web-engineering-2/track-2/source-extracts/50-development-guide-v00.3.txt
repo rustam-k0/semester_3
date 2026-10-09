@@ -1,0 +1,263 @@
+                                  Allgemeine Hinweise
+
+
+
+Web-Engineering II
+Prof. Dr. Sebastian von Klinski
+Visual Studio Code
+•   Freier Quelltext-Editor von Microsoft
+•   Plattformübergreifend für die Betriebssysteme Windows, macOS und Linux
+•   Basiert auf dem Framework Electron
+•   Hat nichts mit Visual Studio zu tun!!!
+•   Wird hauptsächlich von einem Team in der Schweiz entwickelt, das von
+    Erich Gamma geleitet wird!!!
+•   Kann durch zahllose Plug-ins erweitert werden (Extensions)
+•   Unter anderem für
+    • Note.js
+    • React/ React Native
+    • Angular
+    • Vue.js
+    • Etc.
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   2
+Node.js
+•   Muss separat zu Visual Studio Code installiert werden
+•   Nach Installation von Node.js kann Package-Manager npm verwendet
+    werden
+•   npm- Befehle
+    • Datei package.json anlegen
+      ❖ npm init
+    • React-Projekt anlegen
+      ❖ npm init react-app ./my-react-app
+    ▪ Installation von allen Pakten, die im package.json angegeben sind.
+      ❖ npm install
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   3
+Debugger für Node.js in VSC aufsetzen
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   4
+Debugger in VSC
+•   Auch JavaScript-Programme können unter Visual Studio Code per
+    Debugger analysiert werden
+•   Öffnen des Debugger-Menüs über den Activity-Bar
+•   Nutzung setzt ein paar Konfigurationsschritte voraus
+
+
+
+
+           Beuth Hochschule für Technik Berlin – University of Applied Sciences   5
+Schritt 1: Debug-Launch-Konfiguration anlegen
+•   .vscode/launch.json erstellen
+•   Im Debug-Menü kann Date auch automatisch erstellt werden
+•   Dort legt man folgende Konfiguration an
+•   Konfiguration sollte den folgenden Code beinhalten
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   6
+Schritt 2: Test-Start-Skript anlegen
+•   Ein neues Skript in er package.json anlegen, um den Server im Debug-Mode
+    zu starten:
+•   "startDev": "nodemon --inspect meinServer.js",
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   7
+Schritt 3: Server und Debugger starten
+•   Es müssen sowohl der REST-Server als auch der Debugger gestartet
+    werden!
+•   Der Debugger überwacht den Server auf Event, läuft aber separat
+    • Server starten: npm run startDev
+    • Debugger starten: Button im Debugger-Menü drücken
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   8
+Schritt 4: Break-Points setzen und Anfragen abschicken
+•   Sie können jetzt im Programm-Code Break-Points setzen, indem Sie links
+    von der Zeilennummer klicken → Es erscheint dann ein roter Punkt
+•   Mit den Debug-Tools oder den Funktionstasten können Sie dann
+    schrittweise durch den Programmablauf gehen
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   9
+Weitere Hinweise
+•   Manchmal setzt VSC den
+    Debugger falsch auf
+•   Wichtig ist, dass der
+    Debugger den aktuellen
+    Code und nicht die
+    JavaScript-Dateien im
+    “dist“-Verzeichnis
+    verwendet.
+
+
+
+
+           Beuth Hochschule für Technik Berlin – University of Applied Sciences   10
+                                     Logging
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   11
+Logging
+•   Zur Analyse vom Programmablauf kann neben Debugging auch
+    Logging verwendet werden
+•   Häufig wird console.log für Logging verwendet
+•   Console.log hat mehrere Nachteile
+    • Kein Ein- und Ausschalten von Logs
+    • Keine Anpassung der Log-Ausgaben möglich
+    • In Produktiv-Systemen beeinträchtigen Konsole-Ausgaben die
+      Performance
+•   Besser ist Verwendung von Logging-Bibliothek/ -Framework
+
+
+
+
+           Beuth Hochschule für Technik Berlin – University of Applied Sciences   12
+Winston
+•   Im JavaScript-Bereich sehr verbreitete Logging-Bibliothek
+•   Installation: „npm install winston“
+•   Konfiguration über TypeScript-Datei
+    • Definition von Log-Channels (Konsole, E-Mail, etc.)
+    • Definition von Ausgabeformat
+    • Anpassung von Log-Level an Umgebung (dev, prod, etc.)
+•   Logger muss aus Konfigurationsdatei importiert werden
+
+
+
+
+           Beuth Hochschule für Technik Berlin – University of Applied Sciences   13
+Winston: Konfiguration
+
+
+
+
+       Beuth Hochschule für Technik Berlin – University of Applied Sciences   14
+                 Statische Code Analyse
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   15
+Statische Code Analyse
+•        Sehr hilfreich, um Fehler und schlechten Code automatisch zu finden
+•        Erhöht Qualität des Programm-Codes deutlich!
+•        Gängiges Tool im JavaScript-Umfeld: ESLint
+•        Verwendung
+         • Installation von notwendigen Modulen (eslint, eslint/js, etc.)
+
+    npm install --save-dev eslint @eslint/js @typescript-eslint/parser @typescript-
+    eslint/eslint-plugin
+
+     •    Konfigurationsdatei eslint.config.js hinzufügen
+     •    Bei Bedarf Skripte hinzufügen (lint: eslint .)
+     •    Test, ob alles ok ist: npx eslint .
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   16
+                                   Bootstrap
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   17
+Bootstrap
+•   Beinhaltet CSS- und JavaScript-Dateien
+•   Tutorials beziehen sich häufig auf unterschiedliche Versionen (nicht immer
+    kompatibel)
+•   Download: https://getbootstrap.com/docs/4.1/getting-started/download/
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   18
+ Bootstrap: Einbinden
+ Empfehlung
+ • Legen Sie alle verwendeten CSS- und JavaScript-Dateien immer auf dem
+   eigenen Server ab
+ • Einbinden von CSS- und anderen Dateien von anderen Servern
+   datenschutzrechtliche problematisch
+ • Beim Abruf der Dateien können Anbieter Zugriffe loggen → Verstößt z.T.
+   gegen DSGVO
+
+…
+<head>
+…
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences                    19
+Bootstrap: Einbinden
+Besser
+• Alle CSS-, JavaScript- und Bilddateien lokal ablegen und einbinden
+
+
+
+
+…
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+  <script src="./lib/js/jquery-3.4.1.min.js"></script>
+  <script src="./lib/js/popper.min.js"></script>
+  <script src="./lib/js/bootstrap.min.js"></script>
+</head>
+
+
+
+
+             Beuth Hochschule für Technik Berlin – University of Applied Sciences   20
+Bootstrap: Beispiele
+•   Im Internet viele gute Beispiele für Verwendung von Komponenten
+•   Komponentenübersichten
+    • https://getbootstrap.com/2.3.2/components.html
+    • https://www.w3schools.com/bootstrap4/
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   21
+Bootstrap: Beispiele
+•   Beispiele für ganze Seiten
+    • https://getbootstrap.com/docs/4.0/examples/
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   22
+Bootstrap: Einbinden
+•   Einbindung über npm nur sinnvoll bei npm-basierten Anwendungen (z.B.
+    React, Express-Anwendungen, Webpack, etc.)
+•   Einbindung in Seiten über require('bootstrap')
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   23
+

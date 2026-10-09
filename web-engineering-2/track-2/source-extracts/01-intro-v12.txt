@@ -1,0 +1,499 @@
+Web-Engineering II
+Prof. Dr. Sebastian von Klinski
+Voraussetzungen
+•   HTML
+•   CSS
+•   JavaScript
+
+Inhalte von Web-Engineering I
+•   Umsetzung von Front-end (Web-Client)
+•   HTML, CSS, JavaScript/ TypeScript
+•   Nutzen von Back-end REST-Service
+
+Ziel von diesem Modul
+•   Umsetzung von dynamischen Web-Seiten mit aktuellen Web-Frameworks
+•   Sowohl Back-end als auch Front-end
+
+
+
+
+                                                                        2
+Inhalte Web-Engineering II (leicht verkürzt)
+Siehe Modulhandbuch:
+• Client-Server-Architekturen für Web-Anwendungen
+• Programmiersprachen und –werkzeuge für Web-Anwendungen
+• Server-Schnittstellen (z.B. REST-APIs, Web-Services)
+• Anbindung von Schnittstellen aus Front-end (client-seitig)
+• Modularisierung und Wiederverwendung
+• IT-Sicherheit: Authentifizierung, Autorisierung, Vertraulichkeit, Integrität
+
+
+
+
+                                                                                 3
+Vorlesungen
+•   (Web-)Architekturen
+•   Backend
+    • Web-Services
+    • Umsetzung von REST-Services mit node.js
+    • REST-Security: Authentifizierung (JWT), HTTPS, etc.
+•   Frontend
+    • Umsetzung von Web-Client mit React (früher und heute)
+    • Einsatz von Redux, etc.
+•   Weitere Themen
+    • Programmieren in JavaScript/ TypeScript für Fortgeschrittene
+
+
+
+
+                                                                     4
+Modulleistungen: Übersicht
+•   2 Übungen
+    • mit je 3 Meilensteinen
+    • 1-2 Lernerfolgskontrollen
+    • Notenanteil: 50%
+•   Klausur zum Thema Backend (Mid-Semester-Klausur)
+    • in der Mitte des Semesters
+    • Notenanteil: 20%
+•   Klausur zum gesamten Semester
+    • am Ende des Semesters
+    • Notenanteil: 30%
+
+
+
+
+                                                       5
+Übungen
+
+
+
+
+          6
+Übungsaufgaben
+2 Übungsaufgaben bilden die Umsetzung einer dynamischen Web-Seite ab
+• Umfasst Web-Front-End und REST-Backend mit Datenbank
+• Übung 1: Umsetzung von REST-Server mit Node.js
+• Übung 2: Umsetzung von Front-end mit React und Redux
+
+                                 Web-Server
+
+                                       Delivery
+
+         Browser
+      HTML-Renderer
+
+    Interpreter clientseitig
+
+              React-             REST-Server
+          Anwendung
+                                      Endpoints
+
+
+
+
+                                                                       7
+Modulleistung: Übung
+•   2 Übungen
+    • Meilenstein 1: unbenotet, aber Abzugspunkte
+    • Meilenstein 2: unbenotet, aber Abzugspunkte
+    • Meilenstein 3: benotet, Notenanteil 60%
+    • Lernerfolgskontrolle 1: Notenanteil 20%
+    • Lernerfolgskontrolle 2: optional, Notenanteil 20%
+
+
+
+
+                                                          8
+Aufbau der Übungsaufgaben
+•   Beide Übungen bestehen aus:
+    • Meilenstein 1
+    • Meilenstein 2 und
+    • Meilenstein 3 (finale Abgabe)
+•   Meilensteine unterteilen die Aufgabe in Teilphasen, in denen vorgegebene
+    Zwischenstände erreicht werden müssen
+    • Meilensteine sollen Projektfortschritt gewährleisten
+    • Für Meilensteine 1 und 2 gibt es keine Punkte, aber…
+    • falls der geforderte Entwicklungsstand nicht erreicht wurde, werden
+      Abzugspunkte berechnet
+•   Meilenstein 3 (finale Abgabe)
+    • Alle Anforderungen der Aufgabenstellung müssen erfüllt sein
+    • Gesamtpunkte = Punkte - Abzugspunkte
+
+
+
+
+                                                                               9
+Übungsaufgaben: Etappen
+•   Übung 1: REST-Server mit Node.js
+    ▪  Meilenstein 1: Umsetzung von einfachem User-Service
+    ▪  Meilenstein 2: Umsetzung von Authentifizierung und weiteren Endpoint
+    ▪  Meilenstein 3: alle verbleibenden Anforderungen
+•    Übung 2: Frontend mit React
+    ▪  Meilenstein 1: Landing-Page, Einloggen und „Private Seite“
+    ▪  Meilenstein 2: Authentifizierung und Verwalten von erster Entität
+    ▪  Meilenstein 3: alle verbleibenden Anforderungen
+
+
+
+
+                                                                              10
+Prüfschritte Meilenstein 1 und 2
+•   Automatisierte Funktionsprüfung
+•   Für jede Abweichung von Aufgabenstellung gibt es Abzugspunkte
+•   Vorgaben müssen exakt eingehalten werden!
+•   Maximal 15 Abzugspunkte für funktionale Aspekte
+•   Bei weiteren Fehlern zusätzliche Abzugspunkte (z.B. Start-Skript fehlerhaft)
+•   Für erste manuelle Korrektur 3 Abzugspunkte, je weiterer Abweichung gibt
+    es in der Regel 2 Abzugspunkte (ggfls. mehr)
+•   Ergebnis per E-Mail
+•   Detaillierte Beschreibung der Prüfungsergebnisse
+•   Falls es Probleme bei der Offline-Abnahme gibt → persönliche Abnahme
+    (Vorführen der Anwendung mit Rückfragen)
+•   Bei sehr grundlegenden Problemen: Nicht bestanden
+
+
+
+
+                                                                               11
+Automatische Funktionsprüfung
+•   Test-Tool testet automatisch Vorgaben der Aufgabenstellung
+•   Je gescheiterten Test gibt es proportional Abzugspunkte
+•   Zusammenhängender Ablauf von Funktionsprüfungen (z.B. User-Anlegen,
+    User abrufen, User-Daten ändern, User löschen, etc.)
+•   Falls abgegebene Lösung grundlegende Fehler hat, können Testabläufe
+    nicht durchgeführt werden
+    • Beispiel: wenn Anlegen von User nicht funktioniert, können nahezu alle
+       Tests zum Verwalten von Usern nicht durchgeführt werden
+•   Nicht durchführbare Test werden als „gescheitert“ gewertet
+•   Falls viele Funktionen eigentlich korrekt, können Sie statt der Offline-
+    Abnahme auch persönliche Abnahme durchführen
+    • Korrektur von Fehlern und dann erneuter Test
+    • Für den Ursprungsfehler werden aber in jedem Fall 2 Abzugspunkte für
+       jede notwendige Korrektur berechnet.
+
+
+
+                                                                               12
+Prüfschritte Meilenstein 3 (finale Abgabe)
+•   Zusätzlich Prüfung von nicht-funktionalen Anforderungen
+    • Qualität des Programm-Codes
+    • Auslagerung von Variablen
+    • Vorgaben bezüglich IT-Sicherheit
+    • Projektstruktur
+    • Ergebnisse von statischer Code-Kontrolle
+    • Etc.
+    • Bei Abweichungen von Vorgaben → Abzugspunkte
+•   Notenanteile
+    • Korrekte Funktion: 80%
+    • Nicht-funktionale Aspekte: 20%
+
+
+
+
+                                                              13
+Persönliche Abnahmen
+•   Falls es grundlegende Probleme gab
+•   Vorführen der eigenen Anwendung
+•   Rückfragen zum Code
+
+•   Wichtig:
+    • Sie müssen Ihren gesamten Code verstehen
+    • Fall Sie Ihren Code nicht verstehen, weil Ihnen jemand anderes geholfen
+      hat, gilt das als Plagiat
+    • Falls Sie den Code nicht verstehen, weil Sie ihn kopiert/ per KI generiert
+      haben, gilt das als Plagiat
+
+
+
+
+                                                                               14
+Abnahmen: allgemein
+•   Pro Meilenstein nur eine Abnahme möglich
+•   Nachbesserungen sind nicht möglich
+•   Gründe für Abzugspunkte
+    • Verspätete Abgabe
+    • Vorgaben nicht korrekt/ nicht vollständig umgesetzt
+    • Qualitätsdefizite im Code
+•   Bitte bereiten Sie sich gut auf Abnahmegespräche/ Meilensteine vor!
+•   Vor der Abgabe/ dem Hochladen den Inhalt der Zip-Datei testen
+    • Häufigstes Problem: fehlende Abhängigkeiten in package.json
+
+
+
+
+                                                                          15
+Übungen: Benotung
+•   Alle Übungen müssen bestanden werden, um Modul zu bestehen
+•   Ergebnis wird Ihnen per E-Mail zugesandt
+
+•   Gesamtnote von Übung
+    • - Abzugspunkte Meilenstein 1
+    • - Abzugspunkte Meilenstein 2
+    • + Punkte Meilenstein 3
+    • +/- Lernerfolgskontrolle 1
+    • +/- Lernerfolgskontrolle 2
+
+
+
+
+                                                                 16
+Übung 2: Erläuterungen
+•   Übung 2 nutzt REST-Server von Übung 1
+•   2 Optionen möglich
+    • Sie nutzen Ihren REST-Server aus Übung 1
+    • Ich stelle Ihnen REST-Server zur Verfügung (sinnvoll, wenn Sie in Übung
+       1 große Problem hatten)
+•   Falls Sie Ihren REST-Server nutzen
+    • Nicht selten müssen in Übung 2 (Web-Frontend) Änderungen am
+       Backend oder der Web-Seitenkonzeption vorgenommen werden, obwohl
+       Übungen bereits abgegeben wurden
+    • Solche Änderungen sind ok, zählen jedoch nicht mehr zur Benotung der
+       bereits abgegebenen Übungen
+    • Ggfls. können jedoch Zusatzpunkte für die aktuelle Übungsaufgabe
+       angerechnet werden!
+•   Ihre Übung 2 muss auf REST-Server zugreifen, der Vorgaben von Übung 1
+    erfüllt! Tests werden mit meinem REST-Server ausgeführt
+
+
+                                                                            17
+Übungsaufgaben: Abgabe
+•   Alle Abgaben (Meilensteine, finale Abgabe) über Moodle
+•   Andere Form der Abgabe ist nicht zulässig!
+•   Die in Moodle hochgeladene Anwendung ist Grundlage für Bewertung und
+    Benotung!
+•   Fälligkeitstermine stehen in Moodle
+•   Zeitpunkt der Abgabe in Moodle ist Grundlage für eventuelle Abzugspunkte
+•   Übungsaufgabe kann mehrfach hochgeladen werden
+•   Aber: letzter Abgabezeitpunkt wird für Benotung herangezogen!
+•   Verspätete Abgaben
+    • Pro Tag 1 Abzugspunkt
+    • Maximal 10 Tage verspätete Abgabe, danach „nicht bestanden“
+
+
+
+
+                                                                               18
+Hochladen in Moodle
+•   Für jeden Meilenstein/ Übungsaufgabe separater Upload-Link in Moodle
+•   Abgabemodalitäten
+    • Spätestes Hochladen: 7 Tage nach Fälligkeit
+    • Es kann 1 Datei hochgeladen werden
+    • Source-Code als Zip-Datei hochladen (kein anderes Format)
+    • Maximale Dateigröße ist 50 Mbyte → Nur den Source-Code hochladen,
+      nicht die npm-Module (Verzeichnis „node_modules“ bitte löschen)
+•   Bei Übung 2
+    • Das Backend nicht erneut per Moodle abgeben
+    • Web-Anwendung soll REST-Server entsprechend den Vorgaben von
+      Übung 1 nutzen
+
+
+
+
+                                                                           19
+Lernerfolgskontrollen
+
+
+
+
+                        20
+Lernerfolgskontrollen
+•   Praktische, individuelle Prüfung der übungsbezogenen
+    Programmierkenntnissen
+•   Teil der Übungsaufgaben
+•   Notenanteil: 40%
+•   Erweitern der eigenen Lösung um weitere Funktionen in der Übung
+•   Programmieraufgabe muss in einer Übung erfolgreich abgeschlossen
+    werden
+•   Ausschließlich Programmierkenntnisse des aktuellen Meilensteins
+    notwendig
+•   Einladung per E-Mail
+•   Termin muss innerhalb der folgenden 2 Wochen stattfinden
+•   Ansonsten gilt Übung als „nicht bestanden“
+•   Beschreibung in den allgemeinen Hinweisen zu den Übungsaufgaben.
+
+
+
+
+                                                                       21
+Lernerfolgskontrolle
+•   Es muss mindestens eine Lernerfolgskontrolle bestanden werden
+•   Es können maximal 2 Lernerfolgskontrollen absolviert werden
+•   Wenn Lernerfolgskontrolle nicht bestanden: -5 Punkte
+•   Wenn Lernerfolgskontrolle bestanden: +20 Punkte
+•   Zweite Lernerfolgskontrolle ist freiwillig, wenn erste bestanden wurde
+•   Für die Note 1.0 müssen beide Lernerfolgskontrollen bestanden sein
+
+
+
+
+                                                                             22
+Übung: Notenschema
+                                                        Notenschema
+•   Für Benotung von Übungsaufgaben gelten jeweils
+                                                        Prozent   Note
+    1. Allgemeine Richtlinien für die Übungsaufgaben
+                                                        > 95%      1
+    2. Aufgabenstellungen zur Übung
+                                                        > 90%     1,3
+    3. Vorgaben für Meilenstein/ finale Abgabe          > 85%     1,7
+                                                        > 80%      2
+
+•   Bewertung                                           > 75%     2,3
+                                                        > 70%     2,7
+    • Jede Übungsaufgabe umfasst 100 Punkte
+                                                        > 65%      3
+    • Maximal 60 Punkte für Implementierung
+                                                        > 60%     3,3
+    • 20 Punkte für jede erfolgreiche                   > 55%     3,7
+      Lernerfolgskontrolle, -5 für nicht erfolgreiche   > 50%      4
+    • Maximal 100 Punkte pro Übungsaufgabe               <50%     n.b.
+
+
+
+
+                                                                         23
+Klausuren
+
+
+
+
+            24
+Mid-Semester-Klausur
+•   Online-Test in Moodle
+•   Termin siehe Moodle
+•   In jedem Fall bestanden, egal wie viele Punkte erreicht wurden
+•   Punkte zählen direkt zur Note
+•   Notenanteil: 20%
+
+
+
+
+                                                                     25
+Klausur                                               Notenschema
+                                                      Prozent   Note
+Klausur
+                                                       95%       1
+• Am Ende des Semesters                                90%      1,3
+• Teilnahme nur, wenn Übung 1 und                      85%      1,7
+  Meilenstein 1+2 von Übung 2 bestanden sind           80%       2
+
+• Dauer: voraussichtlich 60 Minuten                    75%      2,3
+                                                       70%      2,7
+• Notenschema wie üblich
+                                                       65%       3
+• Multiple-Choice-Fragen zu alle Vorlesungsinhalten
+                                                       60%      3,3
+  • Inhaltliche Fragen zu Folien                       55%      3,7
+  • Programmierbeispiele, zu denen Fragen gestellt     50%       4
+     werden                                            <50%     n.b.
+• Alle Vorlesungen und Übungen sind relevant
+• In Moodle wird es eine Probeklausur geben
+
+
+
+
+                                                                       26
+Weitere Hinweise
+
+
+
+
+                   27
+Verwendung von KIs
+•   KIs haben Software-Entwicklung in den letzten 3 Jahren grundlegend
+    verändert
+•   Häufig werden KIs von Studierenden für praktische Studienleistungen genutzt,
+    das ist in der Regel nicht zulässig
+•   Nachteile
+    • Benotung von Übungsleistungen praktisch kaum noch sinnvoll
+    • Studierende bauen nicht die notwendigen Kompetenzen auf
+•   Gleichzeitig
+    • Unternehmen setzen zunehmend KIs in Unternehmen ein
+    • Einfache Programmieraufgaben fallen fast vollständig weg
+    • Bedarf für Junior-Developer kaum noch vorhanden
+    • Nur sehr gute Entwickler/innen haben noch Berufsperspektiven
+    • WE2 ist ein gutes Modul, um gute Programmierkenntnisse aufzubauen
+
+
+In WE2 ist die Nutzung von KIs nicht zulässig!
+
+                                                                             28
+KI-Einsatz in WE2
+•   Übungsaufgaben sind Grundlage, um Lernerfolgskontrollen zu bestehen
+•   Ohne die Programmierkenntnisse ist Bestehen kaum möglich
+    • Kein Einsatz von KI möglich, keine Internet-Quellen
+    • Es müssen größere Programmieraufgaben eigenständig umgesetzt werden
+
+
+Empfehlung
+• Für dieses Modul KI vollständig ausschalten
+• Die Kompetenzen des Moduls sind wichtig für Ihre beruflichen Perspektiven
+• Nutzen Sie die Gelegenheit, sich das Wissen anzueignen
+• Machen Sie Ihre Übungen selbstständig ohne KI!
+
+
+
+
+                                                                          29
+Anrechnung aus vergangenen Semestern
+•   Anrechnung von Übungsleistungen nur, wenn Erbringung nicht länger als 2
+    Semester her ist und grundlegende Struktur von Übungsaufgaben gleich
+    geblieben
+•   Klausurleistungen können nicht angerechnet werden
+•   Wenn Leistungsanrechnung gewünscht: E-Mail an mich in den ersten 3
+    Wochen des Semesters
+•   Leistungen von anderen Dozenten können nicht angerechnet werden
+•   Wenn Übung 1 angerechnet: Trotzdem Teilnahme an Mid-Semestertest und
+    Durchführung von Lernerfolgskontrollen!
+
+
+
+
+                                                                          30
+Empfehlung
+•   Auch wenn die Übungen eigenständig bearbeitet
+    werden müssen…
+•   … Lösungsansätze findet man häufig gemeinsam
+    besser als allein
+•   Google ist sehr gut, aber in Gruppen ist es leichter,
+    viele Aspekte gleichzeitig zu betrachten
+•   Mehr oder weniger feste Lerngruppen fördern den
+    Erfolg im Studium
+•   Fördert die Motivation und den Lernerfolg
+•   Lösungen für die Übungen müssen aber eigenständig
+    programmiert werden
+•   Die Ideen, wie Sie etwas umsetzen können, können
+    Sie sich gemeinsam erarbeiten.
+•   Nutzen Sie auch mal ein Tutorial! Der Lerneffekt ist
+    größer als bei KI-Nutzung
+                                                            Quelle Bild: https://www.thieme.de/
+
+
+
+                                                                                         31
+Architekturen
+
+
+
+
+Lernziele
+Am Ende des Semesters können Sie…
+
+
+                …geeignete Web-Architektur für eine vorgegebene
+                         Aufgabenstellung auswählen.
+
+
+                 …ein modernes Front-End und Back-End für die
+                         Aufgabenstellung umsetzen.
+
+
+                      …in der Anwendung auch Aspekte wie
+                Authentifizierung und Sicherung der Kommunikation
+                                     umsetzen.
+
+   … wenn Sie diese Kompetenzen haben, haben Sie bessere Chancen auf
+   dem Arbeitsmarkt!
+
+                                                                    32
+

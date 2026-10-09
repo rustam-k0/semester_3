@@ -1,0 +1,753 @@
+Web-Engineering 2
+
+
+Modalitäten
+Prof. Dr. Jens von Pilgrim
+
+
+
+
+Inhaltsverzeichnis
+1. Benotung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠2
+   1.1. Teilleistungen und Gesamtbewertung . . . . . . . . . . . . . . . . . ⁠2
+   1.2. Klausur . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠3
+   1.3. Übungsnote . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠3
+   1.4. Prüfungsversuch . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠3
+2. Übung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠4
+   2.1. Aufgabenblätter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠4
+   2.2. Git-Projekte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠5
+   2.3. Bearbeitung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠6
+        2.3.1. Entwicklungsumgebung . . . . . . . . . . . . . . . . . . . . . ⁠6
+        2.3.2. Git . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠6
+        2.3.3. Test Driven Development . . . . . . . . . . . . . . . . . . . . . ⁠7
+   2.4. Abnahmen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠7
+   2.5. Täuschungsversuche . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠8
+        2.5.1. Gruppenarbeit . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠9
+        2.5.2. ChatGPT, Copilot etc. . . . . . . . . . . . . . . . . . . . . . . . ⁠9
+        2.5.3. Rechtmäßige Übernahme von Code . . . . . . . . . . . . . . ⁠10
+   2.6. Einreichung der Lösung . . . . . . . . . . . . . . . . . . . . . . . . ⁠11
+   2.7. Bewertung der Einreichung . . . . . . . . . . . . . . . . . . . . . . ⁠13
+   2.8. Verspätete Abgabe . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠14
+Abkürzungsverzeichnis . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠15
+Literatur . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ⁠15
+
+
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                       1
+WE 2, Modalitäten
+
+
+
+
+1. Benotung
+
+1.1. Teilleistungen und Gesamtbewertung
+Das Modul ist nach der Studien- und Prüfungsordnung für den Bachelorstudi­      Integriertes
+engang Medieninformatik [3] ein integriertes Modul, vgl. dazu auch Rahmen­      Modul
+
+studien- und Prüfungsordnung (RSPO) [2: §21 (2)]. Die Modulnote setzt sich
+zusammen aus Klausurnote und Übungsnote.
+
+Zum Bestehen müssen beide Teilleistungen (Klausur, Übung) mit mindes­
+tens 4,0 bewertet worden sein [2: §21 (6), H.d.V.].
+
+Die Noten werden entsprechend der Gewichte addiert, die Gesamtnote ist          Modulnote
+dann die gerundete Note [2: §21 (5)]. D.h. ein berechneter Schnitt von 2,8
+wird auf 2,7 abgerundet, ein Schnitt von 2,9 auf 3,0 aufgerundet. Falls zur
+Prüfung angetreten wurde (vgl. Abschnitt 1.4), die Übung aber insgesamt nicht
+bestanden wurde, wird im zweiten Prüfungszeitraum als Gesamtnote eine 5,0
+eingetragen.
+In diesem Modul werden
+   • die Klausur mit 80% und
+   • die Übung mit 20%
+gewichtet.
+Damit gibt die Klausur im Grunde die Note vor. Durch die Übung kann man
+die Note um eine Notenstufe(±0, 3), in wenigen Extremfällen um zwei Noten­
+stufen, verbessern oder verschlechtern.
+
+Die Leistungen werden in Moodle erfasst. Sie erhalten bei jeder Übung eine
+Bewertung und ein PDF-Dokument mit genauem Feedback. Die Bewertungen
+werden in Moodle auch in einer Übersicht angezeigt und Berechnungen zu
+Teil- und Gesamtbewertung durchgeführt. Leider stimmen die Bewertungen
+in der Bewertungsübersicht nicht immer mit den eingetragenen Bewertungen
+überein und auch die Berechnungen sind eventuell abweichend.
+Es gelten immer die im PDF eingetragenen Bewertungen bzw. die einzelne
+Klausurbewertung. Die Teil- und Gesamtbewertung werden nach den hier
+angegebenen Verfahren berechnet. Eventuelle Berechnungen in Moodle
+sind nicht verbindlich.
+
+
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                     2
+WE 2, Modalitäten
+
+
+
+
+1.2. Klausur
+Im ersten und zweiten Prüfungszeitraum (PZ) wird jeweils eine Klausur ange­      Klausur mit
+boten. Die Klausur dauert 60 Minuten. Sie wird auf Prüfungslaptops mit           Moodle,
+                                                                                 60 Min.
+Moodle in Präsenz durchgeführt. Zur Klausur sind keine Unterlagen zugelas­
+sen.
+Da nur eine begrenzte Anzahl an Prüfungslaptops zur Verfügung steht, ist
+vor der Klausur gegebenenfalls eine unverbindliche Anmeldung via Moodle
+nötig. Falls mehr Teilnehmer als Plätze für eine Prüfung vorhanden sind, wird
+die Klausur in zwei direkt aufeinanderfolgenden Slots durchgeführt. Dies wird
+rechtzeitig bekannt gegeben.
+
+
+1.3. Übungsnote
+
+Es müssen mindestens 9 der insgesamt 11 bewerteten Aufgabenblätter abge­         9 Blätter
+geben und bestanden werden. Das heißt, mindestens 9 Blätter müssen mit           zum Bestehen
+
+4,0 oder besser bewertet worden sein. Nicht abgegebene Aufgabenblätter
+werden mit 5,0 bewertet.
+
+Die Gesamtnote der Übung wird aus dem Durchschnitt der besten 10
+Lösungen berechnet. Der Durchschnitt wird aus den Noten der Abgaben
+gebildet und zur nächsten Note auf- oder abgerundet. D.h. ein berechneter
+Schnitt von 2,8 wird auf 2,7 abgerundet, ein Schnitt von 2,9 auf 3,0 aufgerun­
+det.
+Zusätzlich kann zu einem Übungsblatt nach der Abgabe und der ersten
+Bewertung eine Abnahme erfolgen. Details dazu siehe Abschnitt 2.4.
+
+Änderungen an diesen Modalitäten sind möglich, falls sich bspw. etwas als
+unpraktikabel herausstellt. Mögliche Änderungen werden in den Veranstal­
+tungen und auf Moodle bekanntgegeben.
+
+
+1.4. Prüfungsversuch
+
+Der Prüfungsversuch gilt als unternommen, wenn mindestens an einem
+Teilleistungsnachweis teilgenommen wurde (vgl. RSPO [2: §22 (2)]).
+
+Die Übungsnote besteht aus den Bewertungen der Abgaben zu den Auf­
+gabenblättern. Damit gilt der Prüfungsversuch unternommen, sobald eine
+Abgabe der (bewerteten) Aufgabenblätter vorliegt.
+
+Der Prüfungsversuch gilt als unternommen, sobald eine Abgabe zu einem            Prüfungs­ver­
+der bewerteten Aufgabenblätter (also Blatt 01 bis Blatt 11) eingereicht wurde.   such ab Blatt
+                                                                                 01
+An dem Teilleistungsnachweis Übung wurde im Sinne der RSPO [2] teilge­
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                     3
+WE 2, Modalitäten
+
+
+
+
+nommen, sobald eine Lösung zu Aufgabenblatt 01 (oder einem folgenden
+Blatt) eingereicht wurde.
+
+Das bedeutet: Wenn Sie eine Lösung zu Aufgabenblatt 01 (oder ein folgendes)
+eingereicht haben, wird am Ende des Semesters auf jeden Fall eine Note für
+das Modul eingetragen. Falls Sie nicht an der Klausur (weder PZ 1 noch PZ 2)
+teilnehmen, wird Ihnen dann auf jeden Fall eine Note (5,0 für PZ 2) eingetragen.
+Falls Sie an der Klausur in PZ 1 teilnehmen und dort durchfallen, können Sie
+die Klausur in PZ 2 wiederholen – in diesem Fall werden dann 2 Versuche
+eingetragen.
+
+
+
+
+2. Übung
+
+2.1. Aufgabenblätter
+Es wird 11 bewertete Aufgabenblätter, also Blatt 01 bis Blatt 11, geben.
+Daneben wird es Aufgabenblätter ohne Bewertung geben. Aufgabenblätter,
+die nicht bewertet werden, sind entsprechend gekennzeichnet: Sie haben die
+Nummern 0, 0a, 0b etc.
+Die Aufgabenblätter werden über Moodle als PDF bereitgestellt. Dabei ist           wöchentliche
+folgender Rhythmus vorgesehen:                                                     Abgaben
+
+   • Woche 𝑘, Mittwoch: Das Aufgabenblatt 𝑛 wird an einem Mittwoch bereit­
+     gestellt. Üblicherweise wird in dieser Woche auch der Stoff zu dem
+     Aufgabenblatt im Seminaristischer Unterricht (SU) besprochen. Hierbei
+     sind kleinere Abweichungen möglich, auf jeden Fall werden die Folien
+     mit dem Stoff bereitstehen, der dann eventuell selbst erarbeitet werden
+     muss. Zusätzlich enthalten die Aufgabenblätter Literaturangaben, die
+     gelesen werden müssen.
+   • Woche 𝑘 + 1: In der darauffolgenden Woche wird das Aufgabenblatt 𝑛
+     in der Übung besprochen, d.h. es werden vom Dozenten Fragen zum
+     Übungsblatt beantwortet und bei Schwierigkeiten wird geholfen.
+   • Woche 𝑘 + 1, Donnerstag: Die Abgabe des Blattes hat bis Donnerstag
+     um 23:59 Uhr zu erfolgen.
+   • Woche 𝑘 + 2: Die Aufgabenblätter werden automatisch korrigiert und Sie
+     erhalten spätestens in der nächsten Woche Feedback zur Aufgabe.
+
+
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                      4
+WE 2, Modalitäten
+
+
+
+
+             Woche k                                          Woche k+1
+
+              Mo       Di     Mi      Do      Fr   Sa   So     Mo        Di        Mi      Do        Fr   Sa   So    Mo
+Blatt n-1
+             Woche k                                          Woche k+1                                             Woche k+2
+
+              Mo       Di     Mi      Do      Fr   Sa   So     Mo        Di        Mi      Do        Fr   Sa   So    Mo
+Blatt n
+             Blatt n wird    Stoﬀ für Blatt                                   Blatt n wird Blatt n muss             Korrektur
+            bereitgestellt   n wird in SU                                     in Übungen bis 23:59                  wird
+                                                                              besprochen abgegeben
+                             besprochen                                                                             spätestens
+                                                                                           werden
+                                                                                                                    bis Montag
+                                                                                                                    bereitgestellt
+
+
+             Woche k                                          Woche k+1                                             Woche k+2
+
+              Mo       Di     Mi      Do      Fr   Sa   So     Mo        Di        Mi      Do        Fr   Sa   So    Mo
+Blatt n+1
+                                                        Blatt n+1 wird Stoﬀ für Blatt
+                                                        bereit-gestellt n+1 wird in SU
+                                                                        besprochen
+
+                             Abbildung 1: Bearbeitungsplan für Übungsblätter
+
+
+Damit stehen i.d.R. pro Blatt 7 Tage Bearbeitungszeit zur Verfügung. Dies ist
+in Abbildung 1 dargestellt. Die Bearbeitung eines Blattes sollte, wie durch den
+blauen Pfeil angedeutet, in den Tagen vor und während der Übung stattfinden.
+
+Die Abgabe in Moodle hat bis zum jeweiligen Donnerstag um 23:59 Uhr zu
+erfolgen. Maßgeblich dafür ist die Uhrzeit, die Moodle anzeigt. Daher sollten
+Sie die Abgabe unbedingt deutlich früher einplanen.
+
+
+2.2. Git-Projekte
+Es werden für jedes Aufgabenblatt Git-Projekte über GitLab zur Verfügung                                                             Git-Projektvor­
+gestellt. Diese sind auf GitLab zu forken und die „Visibility“ des Forks ist auf                                                     lagen
+
+„Private“ zu stellen.
+
+Wenn die Sichtbarkeit nicht auf „Private“ gestellt wird, kann es zur Abwertung,
+im Wiederholungsfall sogar zum Nicht-Bestehen, kommen.
+
+Die Projekte enthalten
+   • benötigte Konfigurationsdateien, sofern diese nicht selbst als Teil der
+     Aufgabe zu erstellen sind,
+   • eine grobe Ordnerstruktur, die nicht verändert werden darf,
+   • je nach Blatt automatische Tests, die (auch das ist vorkonfiguriert) beim
+     Einspielen nach GitLab dort ausgeführt werden und
+   • je nach Bedarf weitere Dateien.
+Die mitgelieferten automatischen Tests geben wichtige Hinweise für die Ab­                                                           Formale Tests
+gabe, da neben einigen funktionalen Aspekten vor allem Formalien geprüft
+werden. Falls die formalen Tests fehlschlagen, ist eine Abgabe in der Regel
+sinnlos. Bei Problemen wenden Sie sich bitte an den Dozenten.
+
+
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                                                                          5
+WE 2, Modalitäten
+
+
+
+
+Die mitgelieferten Konfigurationsdateien dürfen in der Regel nicht verändert
+werden, außer dies ist in der Aufgabe explizit verlangt. Wenn Sie die Konfigu­
+rationsdateien ändern, kann es sein, dass die Korrektur nicht durchgeführt
+werden kann und daher die Abgabe mit 5,0 bewertet wird.
+
+Falls Sie unsicher sind, kommen Sie in die Übung und klären Sie den Sachver­
+halt mit dem Dozenten.
+
+Die Projekte sind nur im Rahmen dieses Moduls und für den privaten Gebrauch
+zu verwenden. Eine Veröffentlichung der Projekte, etwa auf GitHub.com oder
+GitLab.com, ist explizit untersagt.
+
+
+2.3. Bearbeitung
+2.3.1. Entwicklungsumgebung
+Die Bearbeitung der Aufgaben bzw. der Projekte muss zwingend mit Visual          VS Code
+Studio Code (VS Code) erfolgen. Zum Teil werden Extensions benötigt, hierzu
+werden auch Hinweise in den Aufgaben gegeben.
+Zum Teil enthalten die Blätter Aufgaben, bei denen Code debuggt werden soll
+oder andere Techniken eingeübt werden sollen. Dies ist nur möglich, wenn
+alle die gleiche Entwicklungsumgebung verwenden.
+
+2.3.2. Git
+Während der Bearbeitung ist der aktuelle Stand regelmäßig in das Git-Re­         Git und Git-
+pository einzuspielen (git add, git commit). Dabei sind sinnvolle Kommen­        Commits
+
+tare beim Commit anzugeben. Es ist darauf zu achten, dass manche Dateien
+nicht ins Repository eingespielt werden dürfen. Dies ist bei den Aufgaben
+dann auch explizit beschrieben. Generell wird eine Datei
+                                      .gitignore
+in den Projekten mitgeliefert.
+Die Aufgabenblätter sind in der Regel von oben nach unten zu bearbeiten.
+In den Blättern ist angegeben, wann ein Commit erfolgen muss. Es kann
+natürlich sein, dass Sie eventuell nach einem Commit noch Änderungen
+durchführen – das ist kein Problem. Es dürfen immer mehr Commits erfolgen!
+
+Unzureichende Git-Commits führen zur Abwertung der Lösung oder die
+Lösung kann als ungültig abgelehnt werden!
+Die Commit-Logs werden ausgewertet. Dies dient im Wesentlichen der Über­
+prüfung, dass der Code selbst erstellt worden ist. Diese Prüfung ist nicht
+möglich, wenn nur ein einziger Commit verzeichnet ist. In diesem Fall wird
+davon ausgegangen, dass die Aufgabe nicht selbst gelöst worden ist, und
+die Lösung wird unter Umständen nicht bewertet. Falls mehrere Commits
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                      6
+WE 2, Modalitäten
+
+
+
+
+vorhanden sind, diese aber unrealistisch erscheinen, wird entsprechend vor­
+gegangen.
+
+Bei Bedarf kann der Dozent Zugriff auf Ihren Fork anfordern. Wählen Sie dazu
+in GitLab den Eintrag und klicken Sie dort auf . Wählen Sie den Dozenten
+über die E-Mail-Adresse aus, die Rolle und Semesterende als Ablaufdatum.
+Dieser Zugriff ist nur auf Nachfrage einzurichten! Falls sich herausstellt, dass
+die Abgabe von den auf GitLab verzeichneten Commits abweicht, wird dies in
+der Regel als Täuschungsversuch gewertet.
+
+2.3.3. Test Driven Development
+Die Erstellung von Tests ist wesentlicher Teil aller Aufgaben – wie Tests für
+die jeweiligen Aspekte erstellt werden können, wird im Unterricht und den
+Übungen erklärt. Dabei sollte möglichst testgetrieben vorgegangen werden,
+d.h. im Idealfall werden die Tests vor dem eigentlichen Code geschrieben.
+Die Tests sind Teil der Lösung und die Code-Coverage (in der Regel Statement-      Test-Coverage
+Coverage) fließt mit in die Bewertung ein. Auch hierzu werden in den Blättern
+Hinweise gegeben.
+
+Damit Sie sicher sind, dass die Lösung vom Dozenten korrekt bewertet wer­
+den kann, d.h. dass unter anderem alle Dateien ins Code-Repository einge­
+spielt wurden, werden die Tests beim Einspielen auf GitLab dort automatisch
+ausgeführt. Achten Sie also darauf, dass die Tests auch auf GitLab erfolgreich
+durchgeführt werden können. Die mitgelieferten Tests prüfen im Allgemeinen
+auch, dass alle Deklarationen und Dateinamen korrekt verwendet werden.
+
+
+2.4. Abnahmen
+In bestimmten Fällen kann es sein, dass der Dozent eine mündliche Abnahme
+der Übung einfordert. Zu diesen Abnahmen werden die jeweiligen Teilnehmer
+vorher eingeladen. Wer zu einer mündlichen Abnahme eingeladen wurde und
+unentschuldigt fehlt, bekommt für die Abgabe eine 5,0 eingetragen.
+Bei der mündlichen Abnahme muss die abgegebene Lösung erklärt werden
+können. Außerdem müssen einfache Code-Teile reproduziert werden können
+– wer das nicht schafft bekommt ohne weitere Diskussion eine 5,0 für die
+Abgabe eingetragen.
+Die Note der Abgabe kann aufgrund der Abnahme angepasst werden. Die
+Abnahme kann sich auf eine der vorherigen Abgaben beziehen (also nicht
+notwendigerweise nur auf die letzte).
+Es gibt keine festgelegte Anzahl an Prüfungen bzw. mündlichen Abnahmen
+pro Teilnehmer.
+
+
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                       7
+WE 2, Modalitäten
+
+
+
+
+Die Einladung zu den mündlichen Abnahmen erfolgt per E-Mail, evtl. auch
+kurzfristig am Montag vor der Übung.
+Sie sind verpflichtet, Ihre E-Mails entsprechend regelmäßig zu überprü­
+fen! Ausreden wie „Ich habe die E-Mail nicht gesehen“ werden nicht
+akzeptiert!
+
+Der Dozent geht davon aus, dass die Teilnehmer ohnehin aktiv an der Übung
+teilnehmen. Daher ist nicht mit Terminüberschneidungen zu rechnen – ent­
+sprechende Entschuldigungen werden nicht akzeptiert.
+
+Wer zwei Abnahmen nicht wahrnimmt bzw. nicht besteht, bekommt
+automatisch für das Modul eine 5,0 eingetragen – unabhängig von der
+bestandenen Anzahl abgegebener Aufgabenblätter.
+Wer der Einladung nicht folgt und unentschuldigt fehlt, bekommt automa­
+tisch eine 5,0 für das jeweilige Übungsblatt eingetragen. Es wird dann
+automatisch eine Abnahme bei der folgenden Übung erwartet. Falls der
+Teilnehmer dann auch bei der nächsten Abnahme erneut nicht erscheint,
+wird die Modulnote automatisch mit 5,0 bewertet.
+
+
+2.5. Täuschungsversuche
+Leider muss das Thema Täuschungsversuche hier explizit angesprochen
+werden, da es in der jüngsten Vergangenheit eine größere Rolle gespielt hat.
+Wesentliches Problem ist dabei das Plagiat:
+
+
+Definition 1 (Plagiat): „Plagiat: a) das unrechtmäßige Nachahmen u. Veröf­     Plagiat
+fentlichen eines von einem anderen geschaffenen künstlerischen od. wissen­
+schaftlichen Werkes; Diebstahl geistigen Eigentums; b) durch unrechtmäßi­
+ges Nachahmen entstandenes künstlerisches od. wissenschaftliches Werk.“
+(Duden [1])
+
+
+Das Kopieren von Code gilt als Plagiat, wenn die Übernahme unrechtmäßig
+ist. Da die Lösungen zu den Übungsblättern selbstständig erstellt werden
+müssen, ist jede Übernahme von Code von Kommilitonen ein Plagiat!
+Dies ist dann auch ein Täuschungsversuch im Sinne der Prüfungsordnung.
+
+„
+Täuschungsversuche führen zum Ausschluss von einer Prüfung. Im Fall            Konsequenzen
+des Ausschlusses ist die Note ‚nicht ausreichend‘ zu erteilen.„ [2: §24 (1)]
+„In besonders schweren Fällen und bei allen wiederholten Täuschungs­
+versuchen nach Abs. (1) bis (3) gilt die Prüfung als ‚endgültig nicht
+bestanden‘ und der/die Studierende ist zu exmatrikulieren.“ [2: §24 (4)]
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                      8
+WE 2, Modalitäten
+
+
+
+
+Die eingereichten Lösungen werden automatisch auf Plagiate hin untersucht
+und bei Verdachtsmomenten manuell gesichtet. Auch die Commit-Logs wer­
+den zur Überprüfung herangezogen. Bei Ausschluss wird das Prüfungsamt
+entsprechend informiert.
+Die Plagiatsprüfung bzw. deren Ergebnisse werden nicht notwendigerweise
+direkt nach Abgabe durchgeführt bzw. bekannt gegeben. Es kann durchaus
+vorkommen, dass Täuschungsversuche erst gegen Ende des Semesters ge­
+ahndet werden!
+Zum Kopieren von Code gehören in der Regel zwei: Jemand muss den Code
+bereitstellen und jemand muss ihn kopieren. Damit gibt es dann mindestens
+zwei Lösungen mit gleichem Inhalt und beide machen sich des Täuschungs­
+versuchs schuldig. Damit nicht ohne Wissen Code kopiert werden kann,
+müssen alle GitLab-Projekte privat sein!
+
+Täuschungsversuche werden streng geahndet. Ein Plagiat entsteht nicht aus        keine Kulanz
+Versehen. In der Regel wird daher bei klaren Fällen sofort als Modulenote
+5,0 eingetragen und der Prüfungsausschuss informiert (bzw. die Prüfung
+mit Täuschungsversuch markiert).
+
+2.5.1. Gruppenarbeit
+Die Übungsnote ist eine Einzelleistung. Gruppenabgaben und Gruppenlö­            Keine Grup­
+sungen sind explizit nicht erlaubt und werden wie Täuschungsversuche             penabgaben
+
+behandelt.
+Natürlich ist es trotzdem sinnvoll, Arbeitsgruppen zu bilden und sich mit Kom­   Trotzdem Ar­
+militonen auszutauschen. Eine Arbeitsgruppe bedeutet jedoch nicht, dass          beitsgruppen
+                                                                                 bilden
+Lösungen gemeinsam erstellt werden oder gar Code kopiert wird! Gegensei­
+tige Hilfe besteht im Erklären von Sachverhalten und nicht darin, dass eine
+Lösung abgeschrieben wird.
+Im Zweifel kommen Sie zur Übung und fragen Sie den Betreuer! Dafür ist die
+Übung genau da!
+
+2.5.2. ChatGPT, Copilot etc.
+Die Verwendung von generative Artificial Intelligence (genAI), also
+ChatGPT, Copilot oder anderen Systemen, die mittels künstlicher Intelli­
+genz automatisch Code erstellen, ist mit Einschränkungen erlaubt!
+Konkret dürfen Sie mittels des GitHub Copilot Chats in VS Code entspre­
+chende Modelle (ChatGPT, Claude etc.) nutzen, um sich bei der Bearbeitung
+der Aufgaben unterstützen zu lassen. Dabei müssen Sie aber unbedingt die
+folgenden Regeln beachten:
+   • Es sind keine anderen genAI-Tools erlaubt, also etwa ChatGPT auf der        Nur Copilot ist
+     Webseite, Google Bard, Microsoft Bing, Gemini etc. Es darf nur mittels      erlaubt!
+
+     des Copilot Chats in VS Code gearbeitet werden.
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                      9
+WE 2, Modalitäten
+
+
+
+
+   • Automatische Code-Vervollständigungen durch genAI dürfen nicht
+     genutzt werden, da hier die Dokumentation, was selbst geschrieben
+     und was erstellt wurde, sehr schwer möglich ist. Dies ist entsprechend
+     konfiguriert. Außerdem sollen Sie genAI bewusst verwenden – dies ist nur
+     mit Prompts sinnvoll möglich.
+   • Die Chat History, also Ihre Anfragen (Prompts) und die Antworten, muss       Chat History
+     abgegeben werden. Dazu müssen Sie die Chat History exportieren,              ist Pflicht!
+
+     entsprechende Hinweise dazu finden Sie in den Aufgabenblättern. Wenn
+     Ihre Abgabe keine Chat History enthält, werden mindestens Punkte ab­
+     gezogen.
+   • Sie müssen den generierten Code zu 100 % verstehen, erklären                 Code muss re­
+     und reproduzieren können. Wenn Sie Code verwenden, den Sie nicht             produziert
+                                                                                  werden kön­
+     verstehen und auch nicht manuell reproduzieren können, ist dies ein
+                                                                                  nen
+     Täuschungsversuch. Sie können in der Übung – vor der Abgabe – auch
+     gerne Fragen zu generiertem Code stellen, um so das Verständnis zu
+     verbessern. Im Zweifel müssen Sie unverstandenen Code entfernen!
+Wenn Sie mit Copilot arbeiten, sollte es in der Regel möglich sein, mittels des
+in den Projekten enthaltenen Skripts
+
+         npm run ailog
+
+eine Datei                                                                        ailog.md
+
+                                      ailog.md
+mit der Chat-History zu erstellen. Im ersten Aufgabenblatt werden weitere
+Hinweise dazu gegeben.
+
+Unter https://education.github.com/pack können Sie sich als Student kosten­
+los für das GitHub Education Pack anmelden. Darin enthalten ist auch der
+Zugriff auf die GitHub Copilot Chats mit entsprechenden Modellen, sodass Sie
+diese nutzen können, ohne dafür bezahlen zu müssen.
+
+Datenschutzhinweise
+Die zur Abgabe erstellte Zip-Datei enthält, neben Ihrer Chat-History, auch eine
+automatisch erstellte Chat-History! Dieser Hinweis ist für Sie zur Information,
+damit Ihnen klar ist, was bei der Abgabe enthalten ist.
+
+2.5.3. Rechtmäßige Übernahme von Code
+Natürlich gibt es auch rechtmäßige Übernahmen von Code. Sie werden ver­
+mutlich aus der Literatur (Unterlagen des Dozenten, Bücher, Artikel, Tutorials,
+Projektdokumentation, Stack Overflow usw.) Code übernehmen wollen. Hier­
+bei müssen Sie ein paar Dinge beachten:
+   • Quellen sind immer an Ort und Stelle, also im Code in Form von
+     Kommentaren, anzugeben. Bei Internetquellen reicht es, im Code die
+     jeweilige URL einzufügen. Bei Büchern (PDFs usw.) sind das Buch und
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                     10
+WE 2, Modalitäten
+
+
+
+
+      die Seite anzugeben. Dies gilt auch für die vorgeschlagenen Bücher; hier
+      reicht dann der Autor. Eine mögliche Angabe wäre also „Flanagan, S. 113“.
+      Dies hilft Ihnen auch später, wenn Sie beispielsweise noch einmal etwas
+      genauer nachlesen wollen.
+   • Im Rahmen des Moduls können Codebeispiele des Dozenten (Folien, SU-
+     Projekte, Übungsblatt oder Projektvorlage) übernommen werden. Auch
+     in diesen Fällen müssen Sie die Quelle angeben, also etwa „Folie 23“
+     oder „dateiX.test.ts“. Und Sie müssen den Code verstehen und erklären
+     können.
+   • ChatGPT, Copilot etc. sind keine gültigen Quellen, da sie zum einen
+     ohnehin nicht verwendet werden dürfen und zum anderen auch keine
+     zuverlässig reproduzierbaren Ergebnisse produzieren.
+
+Wenn bei Code keine Quelle angegeben wird und der Code später (siehe
+Abschnitt 2.4) nicht erklärt werden kann, wird von einem Täuschungsversuch
+(weil unerlaubte Quelle, wie etwa ChatGPT) ausgegangen.
+
+Übrigens gilt alles oben Genannte sowohl für 1:1-Kopien als auch für struktu­
+relle Übernahmen. Gerade weil wir mit TypeScript und nicht mit JavaScript
+arbeiten, wird es vermutlich häufig vorkommen, dass Sie Code etwas modifi­
+zieren müssen. Auch dann muss die Inspirationsquelle angegeben werden.
+
+Aus der Erfahrung vorangegangener Übungen wird von der übermäßigen
+Verwendung von Internetrecherche im Rahmen der Übungsaufgaben
+dringend abgeraten. Durch den seminaristischen Unterricht (SU ) (bzw. der
+bereitgestellten Folien) sowie mittels der Literaturhinweise und weiteren
+Hilfestellungen in den Aufgabenblättern wird das benötigte Wissen in ausrei­
+chendem Maße bereitgestellt. Gerade weil Sie sich in die Thematik ja im
+Rahmen des Studiums einarbeiten und die Aufgaben gezielt zur Übung
+des Stoffes entworfen wurden, ist es nicht sinnvoll, auf vorgefertigte und
+dann ggf. unverstandene Lösungen anderer zurückzugreifen.
+Falls Sie irgendwo nicht weiterkommen, kommen Sie zur Übung und fra­
+gen Sie den Dozenten.
+
+pagebreak
+
+
+
+2.6. Einreichung der Lösung
+Die Lösung ist in der Regel pro Aufgabenblatt einzeln abzugeben. Die Abga­
+betermine der Aufgabenblätter sind auf Moodle vermerkt.
+Dazu ist mittels                                                                  Abgabe mit
+                                                                                  Script erstel­
+         npm run abgabe                                                           len
+
+
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                      11
+WE 2, Modalitäten
+
+
+
+
+eine Datei
+                                      abgabe_Blatt_.zip
+zu erstellen. Diese Datei enthält dann das lokale Git-Repository. Sie ist über
+Moodle einzureichen.
+
+Die Abgabe-Datei sollte unmittelbar nach dem finalen Commit erstellt wer­
+den, damit es keine Abweichung zwischen Git-Repository und tatsächlichem
+Stand gibt! Dies wird vom Skript auch entsprechend überprüft.
+
+   • Die Zip-Datei beinhaltet das komplette Git-Repository, also den Code
+     sowie Informationen über Ihre Commits.
+   • Generierte Dateien oder installierte NPM-Pakete dürfen im Git-Reposito­
+     ry nicht enthalten sein. Hier geht es vor allem um die Verzeichnisse
+       node_modules, dist oder coverage – in der Regel ist dies durch die
+     vorgegebene .gitignore sichergestellt. Sie müssen aber aufpassen, falls
+     Sie neue Dateien in den Projektordner hinzufügen.
+   • Es dürfen außer den in der Vorlesung oder im Aufgabenblatt genannten
+     keine weiteren Bibliotheken verwendet werden. Die Bibliotheken müs­
+     sen mit npm install geladen werden können.
+   • Der Code muss ohne Fehler mit npm run build übersetzt werden können.
+   • Die Tests müssen inklusive Code-Coverage, soweit im jeweiligen Auf­
+     gabenblatt nicht anders angegeben, mittels npm test getestet werden
+     können. In den Aufgabenblättern wird angegeben, wie hoch die Code-
+     Coverage sein muss. Es handelt sich dabei immer um die Statement-
+     Coverage. Dazu müssen die Tests natürlich auch in das Git-Repository
+     eingespielt werden.
+Falsch benannte Deklarationen oder Dateien können dazu führen, dass die
+automatische Bewertung nicht durchgeführt werden kann und somit eine
+Aufgabe mit 0 Punkten bewertet wird. Eine Nacharbeit ist hier nicht möglich!
+Das mag auf den ersten Blick hart erscheinen, ist aber später in echten Pro­
+jekten ähnlich. Wenn dort Dinge nicht bei anderen funktionieren, weil gegen
+Absprachen verstoßen wurde, kann dies gravierende Konsequenzen nach
+sich ziehen.
+Sie sollten Ihren Code auf jeden Fall auch nach GitLab pushen. Bei den meis­
+ten Projekten ist Continuous Integration (CI) auf GitLab konfiguriert, sodass
+sowohl ein Build durchgeführt als auch Ihre Tests auf GitLab ausgeführt
+werden. Sie können so einfach sicherstellen, dass Sie alle benötigten Dateien
+in das Code-Repository eingespielt haben und in Ihrem Projekt keine anderen
+lokalen Dateien benötigt werden.
+Die Erstellung der Abgabedatei und deren Einreichung ist unabhängig
+davon, ob Sie Ihren Code auf GitLab gepusht haben oder nicht.
+
+
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                              12
+WE 2, Modalitäten
+
+
+
+
+2.7. Bewertung der Einreichung
+Die Bewertung findet automatisch statt und ergibt sich aus der Anzahl
+bestandener Prüfungstests, also Tests, die der Prüfer unabhängig von den
+abgegebenen Tests ausführt, sowie der Code-Coverage der von Ihnen erstell­
+ten Tests. Generell behält sich der Prüfer jedoch vor, das Ergebnis der
+automatischen Korrektur anzupassen.
+Bei der Korrektur werden folgende Kriterien zur Bewertung herangezogen:
+1. Die Funktionalität muss wie gefordert umgesetzt sein. Fehlende Eigen­
+   schaften führen zu Punktabzug. Dabei werden sowohl positive wie negative
+   Tests durchgeführt.
+2. Die Lösung muss durch eigene automatische Tests überprüft werden. D.h.
+   es müssen eigene Tests vorliegen. Diese müssen eine Code-Coverage
+   (des Quelltextes unter src) von in der Regel über 80% (der Statements)
+   aufweisen. Genaueres ist auf den Aufgabenblättern vermerkt. Je nach Ab­
+   weichung von der verlangten Code-Coverage werden Punkte abgezogen
+   (ggf. sogar voller Punktabzug) aber eventuell auch Bonuspunkte vergeben.
+3. Teilweise ist bei den Aufgaben angegeben, wie die Lösung umgesetzt
+   werden muss (bspw. mit oder ohne Rekursion). Auch dies wird geprüft und
+   fließt in die Bewertung ein. Im Allgemeinen führt eine Nicht-Beachtung
+   dieser (seltenen) expliziten Vorgaben zum vollen Punktabzug.
+4. Die Lösungen sind, soweit nicht anders angegeben, mit TypeScript zu
+   erstellen. Auch dies wird automatisch geprüft, Nicht-Einhaltung führt zu
+   Punktabzug.
+5. Vorgegebene Konfigurationsdateien sind nur zu ändern, wenn dies im
+   Rahmen der Aufgabe notwendig ist. Eine Änderung der Konfiguration,
+   bspw. zur Vermeidung von Compiler-Fehlern, ist untersagt und führt zu
+   Punktabzug.
+Soweit nicht anders angegeben, werden pro Aufgabenblatt 100 Punkte ver­
+geben. Diese werden normalerweise wie folgt in Noten umgerechnet:
+
+            Note        5,0 4,0 3,7 3,3 3,0 2,7 2,3 2,0 1,7 1,3 1,0
+         Punkte ab       0    50      55   60   65   70   75   80   85 90   95
+
+Diese Umrechnung ist nicht verbindlich, jedes Aufgabenblatt kann eine eige­
+ne Umrechnungstabelle (die mit der Korrektur bekannt gegeben wird) haben.
+Sie erhalten in Moodle zu jeder eingereichten Lösung ein Bewertungsdoku­
+ment, das die Note enthält sowie die Ergebnisse der automatischen (sowie
+ggf. manuellen) Korrektur ausführlich aufführt.
+Die Aufgabenstellung, die vorgegebenen Projekte sowie die automatische
+Korrektur wurden nach bestem Wissen und Gewissen erstellt. Aber natürlich
+können sich überall Fehler einschleichen oder Dinge einfach unklar sein oder
+bleiben.
+
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                              13
+WE 2, Modalitäten
+
+
+
+
+Interpretieren Sie die Aufgabenstellung als Art Spezifikation der Anforde­
+rungen seitens des Kunden. Falls hier irgendetwas unklar ist, sind Sie
+verpflichtet, nachzufragen. Ganz konkret gilt dies für das Verhalten von
+Funktionen, insbesondere bei fehlerhafter Eingabe. Gleiches gilt natürlich für
+die Projektvorgaben.
+
+Es kann durchaus vorkommen, dass die automatische Korrektur Dinge falsch
+bewertet. Sprechen Sie den Betreuer dann einfach in der nächsten Übung
+darauf an. Oder Sie schreiben eine E-Mail, am besten mit möglichst konkreter
+Beschreibung des Problems. Die automatische Korrektur kann dann ange­
+passt und erneut (für alle) ausgeführt werden.
+
+Kommen Sie unbedingt zur Übung! Sie können dem Dozenten dort sowohl               Kommen Sie
+Fragen bei Problemen stellen als auch Ihre Lösung kurz vorzeigen. So können       zur Übung!
+
+bereits im Vorfeld Unklarheiten beseitigt werden. Falls sich bei der Korrektur
+herausstellt, dass Sie die Aufgabenstellung anders interpretiert haben, ist das
+Ihr Problem (egal, wie unklar die Aufgabe formuliert war)! Um Missverständ­
+nisse zu vermeiden, sind Sie verpflichtet, zur Übung zu kommen.
+
+Die Prüfung auf Plagiate wird teilweise zeitversetzt durchgeführt. Das bedeu­
+tet, dass auch bereits bewertete Aufgabenblätter erst später als Plagiat
+erkannt werden können und dann nachträglich mit Note 5,0 bewertet werden
+können!
+
+
+2.8. Verspätete Abgabe
+Eine verspätete Abgabe von Übungsblättern ist in der Regel nicht möglich.         Keine verspä­
+Falls Sie krank sind oder andere triftige Gründe Sie daran hindern, Ihre Lösung   tete Abgaben
+                                                                                  möglich
+termingerecht abzugeben, kontaktieren Sie den Dozenten. Wir werden dann
+individuelle Lösungen finden!
+Bitte missbrauchen Sie diese Möglichkeit aber nicht, indem Sie sich Gründe
+ausdenken. Solange nur wenige Teilnehmer an wenigen Terminen Sonderre­
+geln benötigen, kann dies unbürokratisch durchgeführt werden. Wenn sich
+die Fälle aber häufen, ist dies nicht mehr möglich. Wer also diese Möglichkeit
+zu Unrecht in Anspruch nimmt, schadet damit gegebenenfalls denen, die
+echte Gründe für verspätete Abgaben haben.
+
+
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                     14
+WE 2, Modalitäten
+
+
+
+
+Abkürzungsverzeichnis
+CI           Continuous Integration
+PZ           Prüfungszeitraum
+RSPO         Rahmenstudien- und Prüfungsordnung [2]
+SU           Seminaristischer Unterricht
+genAI        generative Artificial Intelligence, dt. generative künstliche Intelli­
+             genz
+
+
+
+
+Literatur
+[1]   Duden Fremdwörterbuch. Dudenverlag, 1990 — ISBN 3-411-20915-1
+[2] Rahmenstudien- und Prüfungsordnung (RSPO 2016) der Beuth-
+    Hochschule für Technik Berlin. Amtliche Mitteilung (37. Jahrgang,
+    Nr. 16), 2016. URL https://www.bht-berlin.de/fileadmin/oe/pressestelle/
+    amtliche_mitteilung/2016/amtliche_mitteilung_16-2016.pdf
+[3] Studien- und Prüfungsordnung für den Bachelorstudiengang Medienin­
+    formatik des Fachbereichs VI der Beuth-Hochschule für Technik Berlin.
+    Amtliche Mitteilung (37. Jahrgang, Nr. 37), 2016. URL https://www.bht-
+    berlin.de/fileadmin/studiengang/studienordnung/b-mi/studien-_und_pr
+    uefungsordnung_2017.pdf
+
+
+
+
+von Pilgrim, WiSe 26/27, 2026-09-16                                                   15
+

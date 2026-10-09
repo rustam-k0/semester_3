@@ -1,0 +1,1362 @@
+                          Rest-Implementierung: Express
+
+
+Web-Engineering II
+Prof. Dr. Sebastian von Klinski
+Express
+•   Verbreitetes Web-Application-Framework für Node.js zur Umsetzung von
+    Web-Anwendungen und Web-Services
+•   Die Umsetzung basiert auf einem einfachen Funktionsprinzip
+    • Client-Anfragen werden auf Basis von Weiterleitungsregeln einem oder
+       mehreren Request-Handlern zugewiesen.
+    • Der Request-Handler bekommt das Request-Objekt und kann über das
+       Response-Objekt die Antwort an den Client schicken.
+    • Über Middleware-Funktionen kann die Beantwortung von Anfragen
+       vorverarbeitet und modifiziert werden.
+•   Über integrierte Template-Engines können Ergebnisse in HTML oder andere
+    Formate transformiert werden.
+•   HTTP wird als Message-Protokoll verwendet
+
+
+
+
+                                                                             Quelle: https://de.wikipedia.org/wiki/Express.js
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences                                           2
+Express
+•   Die Implementierung der Anwendung erfolgt in erster Linie durch die
+    Umsetzung von Weiterleitungsroutinen
+•   Wesentliche Punkte sind dabei
+    • Für welche URLs soll die Weiterleitungsroutine gelten?
+    • Was muss vor der Bearbeitung der Anfrage überprüft oder ausgeführt
+       werden?
+    • Welche Antwort soll zurückgegeben werden?
+•   Ähnlich wie Node.js ist Express ein eher kleines Modul
+•   Es gibt jedoch viele Erweiterungen/ Handler, die die Umsetzung von
+    Anwendung deutlich erleichtert und beschleunigt
+    • Cookies, Sessions, User Logins, URL Parameters, POST Data, Security
+       Headers, etc.
+
+
+
+
+                                                                             Quelle: https://de.wikipedia.org/wiki/Express.js
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences                                           3
+Beispiel für Web-Server
+
+const express = require('express')
+                                                                                  Route Handler
+const app = express()
+
+app.get('/', function (request, response) {
+   response.send('Hello World')
+                                                                                  Port
+})
+
+const server = app.listen(3000, function () {               Callback, nach dem Start des
+   const host = server.address().address                               Servers
+   const port = server.address().port
+   console.info('Example app listening at `http://${host}:${port}`)
+})
+
+
+Standardadresse: http://localhost:3000/
+
+           Beuth Hochschule für Technik Berlin – University of Applied Sciences                   4
+Weiterleitungen
+•   Es können Weiterleitungen für die gängigen HTTP-Methoden erstellt werden
+    • GET: app.get(),
+    • POST: app.post(),
+    • DELETE: app.delete() und
+    • PUT: app.put()
+•   Mit all() wird der Route-Handler für alle Anfragen mit dieser URL angewandt
+•   Eine Weiterleitung ist stets eine Kombination von Pfad und Callback-
+    Methode (Route-Handler)
+
+    var app = require("express")();
+
+    app.get("/", function(httpRequest, httpResponse, next){
+        httpResponse.send("Hello World!!!!");
+    });
+
+    app.listen(8080);
+
+
+              Beuth Hochschule für Technik Berlin – University of Applied Sciences   5
+Weiterleitungen
+• Der Route-Handler bekommt eine Referenz auf den HTTP-
+  Request und die HTTP-Response
+
+         Route
+                                      Request-Handler
+
+var express = require('express');
+var app = express();
+
+// respond with "hello world" when a GET request is made to the
+homepage
+app.get('/', function(request, response) {
+ response.send('hello world');
+});                                                    Response
+…                              Request
+
+
+
+                                                         Quelle: https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+
+           Beuth Hochschule für Technik Berlin – University of Applied Sciences                                       6
+Weiterleitungen
+•    Es kann für jede HTTP-Methode individuelle Request-Handler
+     registriert werden
+
+    …
+    app.get('/', function(req, res) {
+      res.send('hello world');
+    });
+    app.post('/', function (req, res) {
+      res.send('POST request to the homepage');
+    });
+    app.put('/', (req, res) => {
+     res.send('Received a PUT HTTP method');
+    });
+    app.delete('/', (req, res) => {
+     res.send('Received a DELETE HTTP method');
+    });
+
+                                                           Quelle: https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+
+             Beuth Hochschule für Technik Berlin – University of Applied Sciences                                       7
+Weiterleitungen
+•   Mit den HTTP-Methoden können die unterschiedliche Serverarten
+    umgesetzt werden
+•   Web-Server
+     • GET und POST
+•   REST-Server
+     • GET für Abrufen von Daten
+     • POST für Anlegen von Daten
+     • PUT für Update von existierenden Daten
+     • DELETE zum Löschen von Daten
+     • PATCH zum partiellen Aktualisieren von Daten (wenig
+         gebräuchlich)
+
+
+
+
+                                                          Quelle: https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences                                       8
+Request-Objekt
+
+•    Über das Request-Objekt kann der Request-Handler Informationen
+     zur Anfragen bekommen
+•    Zum Abrufen, Editieren und Löschen werden bei Rest-Services die
+     IDs häufig über die URL mitgegeben
+•    Beispiel:
+       • Aktualisieren von User wird über PUT mit der User-ID als
+          Parameter umgesetzt
+       • In den Request-Handler können die IDs aus den Request-
+          Parametern übernommen werden
+
+    app.put('/users/:userId', (req, res) => {
+      return res.send(
+        `PUT HTTP method on user/${req.params.userId} resource`,
+      );
+    });
+
+
+
+              Beuth Hochschule für Technik Berlin – University of Applied Sciences   9
+Response-Objekt
+•   Über das Response-Objekt sendet der Request-Handler die Antwort an
+    den Client
+•   Response-Objekt hat mehrere Methode, die genutzt werden können
+     • render: umsetzen der Web-Seite mit der Template-Ending
+     • send: direktes Senden der Antwort ohne ein Rendering
+
+    var express = require('express');
+    var router = express.Router();
+
+    // GET home page mit Seiten-Template. */
+    router.get('/', function(req, res, next) {
+      res.render('index', { title: 'Express' });
+    });
+
+    // Ohne Seiten-Template
+    router.get('/abc', function(req, res, next) {
+      res.send('noch eine anfrage');
+    });
+    module.exports = router;
+
+               Beuth Hochschule für Technik Berlin – University of Applied Sciences   10
+JSON-REST-Services
+•     JSON-Objekte werden direkt per „send“ zurückgesendet
+•     Beispiel: hart kodiert werden zwei JSON-Objekte zurückgegeben
+
+    let users = {                                                   HTTP/1.1 200 OK
+      1: {                                                          X-Powered-By: Express
+        id: '1',                                                    Content-Type: application/json; charset=utf-8
+                                                                    Content-Length: 75
+        username: 'Robin Wieruch',
+                                                                    ETag: W/"4b-bTKluFungUuVDp3crGpmyZ+VKIE"
+      },                                                            Date: Fri, 28 Feb 2020 15:02:54 GMT
+      2: {                                                          Connection: close
+        id: '2',                                                    [
+        username: 'Dave Davids',                                      {
+      },                                                                "id": "1",
+    };                                                                  "username": "Robin Wieruch"
+                                                                      },
+                                                                      {
+    /* GET users listing. */                                            "id": "2",
+    router.get('/', function(req, res, next) {                          "username": "Dave Davids"
+      res.send(Object.values(users));                                 }
+    });                                                             ]
+
+                                                               Quelle: https://www.robinwieruch.de/node-express-server-rest-api
+
+                 Beuth Hochschule für Technik Berlin – University of Applied Sciences                                    11
+    Response-Objektmethoden
+•    Der Route-Handler kann die folgenden Methoden des Response-Objekts
+     nutzen
+
+    Methode                   Beschreibung
+    res.download()            Gibt eine Eingabeaufforderung zum Herunterladen einer Datei aus.
+    res.end()                 Beendet den Prozess “Antwort”.
+    res.json()                Sendet eine JSON-Antwort.
+    res.jsonp()               Sendet eine JSON-Antwort mit JSONP-Unterstützung.
+    res.redirect()            Leitet eine Anforderung um.
+    res.render()              Gibt eine Anzeigevorlage aus.
+    res.send()                Sendet eine Antwort mit unterschiedlichen Typen.
+    res.sendFile()            Sendet eine Datei als Oktett-Stream.
+
+                              Legt den Antwortstatuscode fest und sendet dessen
+    res.sendStatus()
+                              Zeichenfolgedarstellung als Antworthauptteil.
+                                                                Quelle: https://expressjs.com/de/guide/routing.html
+
+                  Beuth Hochschule für Technik Berlin – University of Applied Sciences                                12
+Request Handler
+•     Zuweilen sollen Verkettungen von Request-Handlern angewandt werden
+•     Beispiel
+      • Bevor auf einen geschützten Bereich zugegriffen werden kann, soll sich
+         der Benutzer authentifizieren
+      • Falls der Benutzer schon eingeloggt ist, leitet der Request-Handler die
+         Anfrage einfach an den nächsten Request-Handler weiter
+      • Falls das Login scheitert, wird er auf die öffentlichen Seiter weitergeleitet
+•     Zur Umsetzung solcher vorschalteten Prüfungen können Request-Handler in
+      „Pipelines“ verkettet werden
+
+    app.get('/adminArea', authentication(request, response, next),
+    showAdminArea(request, response))
+
+                                                                                       Verkettung von
+                                                                                      Request Handlern
+
+
+
+
+               Beuth Hochschule für Technik Berlin – University of Applied Sciences                      13
+Verkettungen von Weiterleitungen
+•   Route-Handler können als Arrays von Route-Handlern verkettet werden
+
+
+    app.get('/example/b',
+      function (req, res, next) {
+               console.log('the response will be sent by the next function ...');
+               next();
+        },
+        function (req, res) {
+               res.send('Hello from B!');
+    });
+    //Oder
+    var cb0 = function (req, res, next) {
+      console.log('CB0');
+      next();
+    }
+    …
+    app.get('/example/c', [cb0, cb1, cb2]);
+
+
+
+               Beuth Hochschule für Technik Berlin – University of Applied Sciences   14
+Verkettungen von Weiterleitungen
+•   Es können mehrere Route-Handler für den gleichen Pfad registriert werden
+•   Die Route-Handler werden dann in der Reihenfolge ausgeführt, in der sie
+    angelegt wurden.
+•   Sie bekommen neben Request und Response auch eine Referenz auf den
+    nächsten Request-Handler (next)
+•   Bei Verkettungen von Weiterleiten muss beachtet werden, dass der Route-
+    Handler entweder mit next() oder mit einer Antwort endet
+    var app = require("express")();
+    app.get("/", function(httpRequest, httpResponse, next){
+        httpResponse.write("Hello");
+        next();
+    });
+    app.get("/", function(httpRequest, httpResponse, next){
+        httpResponse.write(" World !!!");
+        httpResponse.end();
+    });
+    app.listen(8080);
+
+             Beuth Hochschule für Technik Berlin – University of Applied Sciences   15
+Express: express.Router
+•   Mit der Klasse express.Router lassen sich modulare Gruppen von
+    Routenhandler erstellen.
+•   Eine Router-Instanz ist ein vollständiges Middleware- und Routingsystem.
+•   Aus diesem Grund wird diese Instanz oft auch als “Mini-App” bezeichnet.
+•   In der Regel werden Router für funktional zusammengehörige Bereiche
+    angelegt
+•   Beispielsweise
+    • Alle Methoden für das Verwalten von Usern
+    • Alle Methoden die zu einer URL gehören (GET, POST, etc.)
+•   Die Router werden in der Regel in einer separaten Datei angelegt
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   16
+Express: express.Router
+•    Anlegen von Router in einer separaten Datei
+    var express = require('express');
+    var router = express.Router();
+
+    // middleware that is specific to this router
+    router.use(function timeLog(req, res, next) {
+      console.log('Time: ', Date.now());
+      next();
+    });
+
+    // define the home page route
+    router.get('/', function(req, res) {
+      res.send('Birds home page');
+    });
+
+    // define the about route
+    router.get('/about', function(req, res) {
+      res.send('About birds');
+    });
+
+    module.exports = router;
+
+
+                 Beuth Hochschule für Technik Berlin – University of Applied Sciences   17
+express.Router
+•     Router werden mit app.use() angelegt
+•     Laden des Routers aus der Datei birds.js
+•     Die Request-Handler des Routers können dann zu einer beliebigen URL
+      gelinkt werden
+
+
+
+    var birds = require('./birds');
+    ...
+    app.use('/birds', birds);
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   18
+                                 Middleware
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   19
+Middleware: Motivation
+app.get("/dashboard", function(httpRequest, httpResponse, next){
+    logRequest();
+    if(checkLogin())
+    {
+       httpResponse.send("This is the dashboard page");
+    }
+    else
+    {                                                                                   Wiederkehrende Log-
+       httpResponse.send("You are not logged in!!!");                                     Funktionen und
+    }                                                                                       Prüfungen
+});
+
+app.get("/profile", function(httpRequest, httpResponse, next){
+    logRequest();
+    if(checkLogin())
+    {
+       httpResponse.send("This is the dashboard page");
+    }
+    else
+    {
+       httpResponse.send("You are not logged in!!!");
+    }
+});
+
+
+
+
+                 Beuth Hochschule für Technik Berlin – University of Applied Sciences                         20
+Middleware: Motivation
+app.get("/*", function(httpRequest, httpResponse, next){                                   Einmalige
+   logRequest();                                                                     Registrierung der Log-
+   next();                                                                            Funktionen und der
+})                                                                                     Prüfungen für alle
+                                                                                              URLs
+app.get("/*", function(httpRequest, httpResponse, next){
+   if(checkLogin())
+   {
+      next();
+   }
+   else
+   {
+      httpResponse.send("You are not logged in!!!");
+   }
+                                                                                        Der eigentliche
+})
+                                                                                     Request-Handler weiß
+                                                                                         nicht von den
+app.get("/dashboard", function(httpRequest, httpResponse, next){
+                                                                                         Middleware-
+    httpResponse.send("This is the dashboard page");
+                                                                                          Funktionen
+});
+
+
+
+
+              Beuth Hochschule für Technik Berlin – University of Applied Sciences                        21
+Middleware
+•   Middleware-Routinen setzen übergreifende Funktionen um, die vor der
+    Ausführung des Route-Handlers zur Anwendung kommen
+•   Begriff Middleware aus meiner Sicht falsch verwendet
+•   Definition von Middleware
+              „Software für den Datenaustausch zwischen
+          Anwendungsprogrammen, die unter verschiedenen
+        Betriebssystemen oder in heterogenen Netzen arbeiten.“
+
+• Middleware in Express
+       „Middlewarefunktionen sind Funktionen, die Zugriff auf das
+    Anforderungsobjekt (req), das Antwortobjekt (res) und die nächste
+         Middlewarefunktion im Anforderung/Antwort-Zyklus der
+      Anwendung haben. Die nächste Middlewarefunktion wird im
+           Allgemeinen durch die Variable next bezeichnet..“
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   22
+Middleware
+
+Middleware-Funktionen…
+1. bekommen Anfragen vom Router
+2. geben diese in definierte Reihenfolge an die Request-Handler weiter und
+3. können auch selber Änderungen am Request vornehmen.
+• Gängige Aufgaben von Middleware-Funktionen
+   • Ausführen von Code
+   • Überprüfung von Cockies, Authentifizierung, etc.
+   • Vornehmen von Änderungen an der Anforderung und an Antwortobjekten
+   • Anreichern von Daten (z.B. Session-Informationen)
+   • Beenden des Anforderung/Antwort-Zyklus
+   • Aufrufen der nächsten Middleware-Funktion im Stack
+• Zentrale Komponente zum Steuern des Arbeitsflusses beim Bearbeiten von
+   Anfragen
+
+
+          Beuth Hochschule für Technik Berlin – University of Applied Sciences   23
+Middleware
+•   Syntaktisch sind Middleware-Funktionen fast identisch wie Weiterleitungen
+•   Üblicherweise werden sie jedoch auf alle Requests für bestimmte Pfade
+    angewandt
+•   Wichtige Vorteile
+    • Middleware-Funktionen können jederzeit auch nachträglich hinzugefügt
+       werden
+    • Sie können schnell ein- und wieder ausgeschaltet werden
+•   Middleware-Funktionen werden in der Reihenfolge der Deklaration
+    angewandt
+•   Wenn die Anfrage nicht über die Middleware-Funktion beendet wird, sollte in
+    jedem Fall next() aufgerufen werden, da sonst die Anforderung in den Status
+    „blockiert“ übergeht
+•   Für die Definition von Middleware-Routinen gibt es app.use()
+•   Theoretisch kann auch app.all() verwendet werden (leichter Unterschied)
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   24
+Middleware
+•   App.use() und app.all() sind ähnlich, jedoch nicht identisch
+
+         app.use( "/product" , mymiddleware);
+         // will match /product
+         // will match /product/cool
+         // will match /product/foo
+
+         app.all( "/product" , handler);
+         // will match /product
+         // won't match /product/cool <-- important
+         // won't match /product/foo <-- important
+
+         app.all( "/product/*" , handler);
+         // won't match /product       <-- Important
+         // will match /product/cool
+         // will match /product/foo
+                                                           Quelle: http://qnimate.com/express-js-middleware-tutorial/
+
+             Beuth Hochschule für Technik Berlin – University of Applied Sciences                                       25
+Middleware
+•    Gängige Middleware-Funktionen
+     • Authentifizierung: wenn der User nicht eingeloggt ist, wird er auf eine
+       öffentliche Seite geleitet, ansonsten auf die persönliche Seite
+     • Logging: alle Anfragen gehen durch die Logging-Middleware, um
+       beispielsweise Zugriffzeiten oder Abfragehäufigkeiten zu erfassen
+     • Fehlerbehandlung: ein zentraler Fehler-Handler kann auf erwartete Fehler
+       definierte Aktionen auslösen (z.B. Mail an Administrator senden)
+•    Beispiel:
+     • Bei ersten Aufruf wird Cockie gesetzt
+     • Bei allen weiteren Aufrufen wird Cockie ausgewertet
+     • Verwendung des Moduls cookie-parser
+
+    var app = express();
+    var cookieParser = require('cookie-parser');
+    // load the cookie-parsing middleware
+    app.use(cookieParser());
+
+              Beuth Hochschule für Technik Berlin – University of Applied Sciences   26
+                 Express-Projekt anlegen
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   27
+Projekt aufsetzen
+
+•     In Node.js gibt es für verschiedene Projektarten Projektgeneratoren
+•     Sie legen die Standardprojektstruktur an und erstellen gängige Dateien
+•     Für Express gibt es den express-generator
+•     Installation über
+
+    npm install -g express-generator
+
+
+
+•    install –g: installiert das Paket als globales Paket
+•    Es muss nicht mehr bei anderen Projekten installiert werden
+
+
+
+
+                                                             Quelle: https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+
+               Beuth Hochschule für Technik Berlin – University of Applied Sciences                                      28
+Projekt aufsetzen
+Anlegen eines Projektes im Projektverzeichnis (-view pug kann weggelassen
+werden)
+ express [Projektverzeichnis] --view pug
+
+
+                                                                     JavaScript-Datei zum Starten des Servers
+
+
+                                                                            Ort für Stylesheets, Bilder, etc.
+
+
+
+                                                                            Routen für die jeweiligen URLs
+
+
+                                                                         Web-Seiten für Template Engine pug
+
+                                                                           App.js ist gestartete Anwendung
+
+                                                                       Konfigurationsdatei mit Abhängigkeiten
+
+                                                          Quelle: https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences                                      29
+Projekt aufsetzen
+
+•     Damit Projekt gestartet werden kann, müssen zunächst Abhängigkeiten
+      aufgelöst werden (Node-Module geladen werden)
+
+    npm install
+
+
+•    Anschließend kann Express-Anwendung gestartet werden
+
+    npm start
+
+
+•     Der Server läuft auf Port 3000, wo eine Dummy-Seite angezeigt wird
+
+
+
+
+                                                                Quelle: https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+
+                  Beuth Hochschule für Technik Berlin – University of Applied Sciences                                      30
+Projekt aufsetzen: Hinweis
+
+•   Nach Änderungen im Code müsste theoretisch jedes mal der Server neu
+    gestartet werden
+•   Mit dem Modul nodemon kann das vermieden werden
+    • Entwicklungsmodul für Node.js, das automatisch Änderungen am Code
+       feststellt und dann Node.js neu startet
+    • Für Entwicklung sehr hilfreich!
+    • Installation: npm install -g nodemon
+    • Anschließend wird die Anwendung nicht mehr mit „npm start“, sondern
+       „nodemon“ gestartet
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   31
+package.json
+
+•       Zentrale Konfigurationsdatei für das Modul
+
+    {
+        "name": "express-test",
+                                                                                          Modulbeschreibung
+        "version": "0.0.0",
+        "private": true,
+        "scripts": {
+          "start": "node ./bin/www"
+        },
+        "dependencies": {
+          "cookie-parser": "~1.4.4",
+          "debug": "~2.6.9",                                               Abhängigkeiten, werden automatisch
+          "express": "~4.16.1",                                        installiert, wenn „npm install“ aufgerufen wird
+          "http-errors": "~1.6.3",
+          "morgan": "~1.9.1",
+          "pug": "2.0.0-beta11"
+        }
+    }
+
+
+                   Beuth Hochschule für Technik Berlin – University of Applied Sciences                                  32
+pug
+
+•     Pug ist eine Template-Engine
+•     Sie erzeugt aus kurzen Template-Angaben HTML-Seiten
+•     Sie wird durch entsprechenden Router parametrisiert und Stylesheet
+      formatiert
+
+    app.set('view engine', 'pug');                 // Pug-Engine wird aktiviert
+
+
+                                                                                        index.js
+             index.pug                                                var express = require('express');
+    extends layout                                                    var router = express.Router();
+
+    block content                                                     /* GET home page. */
+     h1= title                                                        router.get('/', function(req, res, next) {
+     p Welcome to #{title}                                              res.render('index', { title: 'Express' });
+                                                                      });
+
+                                                                      module.exports = router;
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences                                 33
+Projekt aufsetzen
+
+•   Vor dem Starten müssen zunächst alle Abhängigkeiten aufgelöst werden
+    (Module aus dem Repository von npm kopieren)
+
+     npm install
+
+
+•   Installierte Module werden in das Verzeichnis
+    „node_modules“ kopiert
+•   Mehr Module, als im package.json aufgeführt sind,
+    weil auch die Abhängigkeiten der Module
+    aufgelöst und kopiert werden
+
+
+
+
+                                                           Quelle: https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+
+             Beuth Hochschule für Technik Berlin – University of Applied Sciences                                      34
+Projekt aufsetzen
+
+•   Module sind häufig mit Quelltext, Lizenzangaben und anderem versehen
+•   Es lohnt, sich mal reinzuschauen!
+
+
+
+
+                                                          Quelle: https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences                                      35
+Projekt aufsetzen
+
+•       Für den Start des Projektes kann npm start aufgerufen werden
+
+    npm start
+
+•       Npm kann Skripte ausführen, die im package.json definiert sind
+•       In diesem Fall wird „node ./bin/www“ ausgeführt
+    {
+        "name": "express-test",
+        "version": "0.0.0",
+        "private": true,
+        "scripts": {
+          "start": "node ./bin/www"
+        },
+        "dependencies": {
+          …
+        }
+    }
+                                                                Quelle: https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+
+                  Beuth Hochschule für Technik Berlin – University of Applied Sciences                                      36
+Projekt aufsetzen
+
+•     Startskript für Standard-Express-Anwendung
+
+
+    // Start-Script in bin/www
+    …
+    var port = normalizePort(process.env.PORT || '3000');
+    app.set('port', port);
+    var server = http.createServer(app);
+    server.listen(port);
+    …
+
+
+
+
+•     Standardadresse: http://localhost:3000/
+•     Kann aber im Skript geändert werden
+
+
+                                                             Quelle: https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+
+               Beuth Hochschule für Technik Berlin – University of Applied Sciences                                      37
+                  Testen der Anwendung
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   38
+Testen von Routen
+•   Für das Testen von Routen wird ein Request-Client benötigt
+     • GET-Requests können per Browser getestet werden
+     • Für alle anderen wird ein Client benötigt, der die
+        entsprechenden Requests erzeugt
+•   Möglicher Test-Client: Visual Studio Code Extension „Rest-Client“
+     • Über das Extension-Fenster von Visual Studio Code
+        installieren
+     • Nach der Installation im Root-Verzeichnis eine Datei file.http
+        anlegen
+     • URLs eintragen
+     • Anschließend per Mouse-Klick ausführen
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   39
+Visual Studio Code: REST-Client
+•   REST-Client-Extension legt automatisch
+    über dem Request den Button „Send
+    Request“ an
+•   Ausführen des Requests entweder über
+    den Button oder über das Kontext-Menu
+    „Send Request“
+•   Es können auch Sequenzen von
+    Requests über den Button ausgeführt
+    werden
+•   Unterschiedliche Requests durch ###
+    trennen
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   40
+Visual Studio Code: REST-Client
+•   Ergebnis des Requests wird im separaten Fenster angezeigt
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   41
+Testen von REST-Services
+
+•       Wenn über REST-Services das Anlegen und Ändern von Daten
+        möglich ist, müssen auch Daten mitgeschickt werden
+•       Diese können wie bei einem normalen HTTP-Request an die URL
+        angehangen werden
+•       Beispiel: Anlegen eines Users mit User-ID und User-Name
+
+    POST http://localhost:3000/users
+    Content-Type: application/json
+
+    {
+        "userID": "admin",
+        "userName": "Thomas Schreiber"
+    }
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   42
+               Verwendung von Routern
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   43
+Router zur Modularisierung
+•     Verwendung von Routern erlaubt Modularisierung der Request-Handler
+•     Registrieren der Router und ihrer Request-Handler wird durch app.use
+      vorgenommen
+
+    var indexRouter = require('./routes/index');
+    …
+    app.use('/', indexRouter);
+
+•    Das Registrieren der Router-Skripte wird in der Regel in der zentralen app.js
+     vorgenommen
+•    Bei großen Projekten ist direkte Verlinken der Skriptdateien problematisch
+      • Viele Entwickler müssen ggfls. immer wieder an der gleichen Datei
+          arbeiten → Versionskonflikte
+      • In der app.js ist die Projektstruktur fest „verdrahtet“
+•    Vorgänge beim Starten der zentralen Anwendung sollten möglichst modular
+     ausgelagert werden
+
+               Beuth Hochschule für Technik Berlin – University of Applied Sciences   44
+Registrieren der Routen in app.js
+•    Beispiel: die Skriptdateien index.js und users.js werden direkt in app.js
+     verlinkt
+•    Bei großen Projekten mit vielen Routen keine gute Lösung
+
+    …
+    var indexRouter = require('./routes/index');
+    var usersRouter = require('./routes/users');
+    …
+    app.use('/', indexRouter);
+    app.use('/users', usersRouter);
+    …
+
+
+
+
+              Beuth Hochschule für Technik Berlin – University of Applied Sciences   45
+Laden der Router
+•   Die Details zum Umsetzung der verschiedenen Routes sollte in einer
+    separaten Datei (z.B. all-routes.js) ausgelagert werden
+     • all-routes.js definiert die möglichen Routen
+     • App.js lädt all-routes.js und registriert die notwendigen Routen
+
+
+
+                                                   app.js
+    …
+    var allRoutes = require('./routes/all-routes');
+    …
+    app.use('/', allRoutes.indexRoute);
+    app.use('/users', allRoutes.usersRoute);
+    …
+
+•   Änderungen in app.js müssen nur vorgenommen werden, wenn neue
+    Routen hinzukommen oder entfernt werden sollen
+•   Es kann auch schneller zwischen Router-Gruppen gewechselt werden
+
+             Beuth Hochschule für Technik Berlin – University of Applied Sciences   46
+Laden der Router
+•   Registrieren der individuelle Routen und Request-Handler
+                                                  all-routes.js
+    var indexRoute = require('./index');
+    var usersRoute = require('./users');
+
+    module.exports = {
+       indexRoute,
+       usersRoute,
+    };
+
+
+                                                     index.js
+    var express = require('express');
+    var router = express.Router();
+
+    router.get('/', function(req, res, next) {
+      res.render('index', { title: 'Express' });
+    });
+    module.exports = router;
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   47
+                      Erster REST-Service
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   48
+Ein erster REST-Service
+•   Bei einem REST-Service wird in der Regel
+     • Anfrage an den Web-Server geschickt
+     • Eine Antwort häufig mit Json-Body zurückgeschickt
+•   Viele andere Varianten auch möglich
+•   Schritte
+     • Modul für Route anlegen
+     • Route in der app.js registrieren
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   49
+Ein erster REST-Service
+•   Express laden
+•   Von Express den Router holen
+•   Dummy-Daten definieren
+•   Beim Router die Route
+    registrieren
+•   Bei der Callback-Funktion mit
+    res.json() die Daten als Json-
+    Antwort zurückgeben
+•   Den Router exportieren, da von
+    anderem Modul geladen werden
+    kann
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   50
+Ein erster REST-Service
+•   Zum Registrieren der Route:
+     • Laden des Moduls mit der Route
+     • Registrieren der Route unter einem eigenen Pfad
+
+
+
+                                                  app.js
+    …
+    var restTestRouter = require('./routes/restServiceTest‘);
+    …
+    app.use('/', allRoutes.indexRoute);
+    app.use('/users', allRoutes.usersRoute);
+    app.use('/restTest', restTestRouter);
+    …
+
+
+
+
+             Beuth Hochschule für Technik Berlin – University of Applied Sciences   51
+Automatisiertes Testing mit Moca und Chai
+
+
+
+
+  Beuth Hochschule für Technik Berlin – University of Applied Sciences   52
+Testing von Node.js
+•   Mit Rest-Client können nur einzelne Abfragen geprüft werden
+•   Um ganze Sequenzen zu prüfen, wird Testing-Framework benötigt
+•   Beispiel für Test-Sequenz
+    • Einloggen und Token erhalten
+    • Token zum Anlegen von User verwenden
+    • User verändern
+    • User löschen
+•   Damit diese Sequenz ausgeführt werden kann, müssen jeweils die
+    Ergebnisse des vorangegangenen Schritts genutzt werden (Token, User)
+•   Im Umfeld von Node.js ist Moca eines der am meisten verbreiteten Testing-
+    Frameworks
+•   Chai ist eine Expectation-Bibliothek, um assert-Ausdrücke zu formulieren
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   53
+Moca und Chai
+•     Installation: npm install --save mocha chai
+•     Um Tests von der Konsole zu starten, wird test-Skript konfiguriert
+
+
+
+                                                      package.json
+    …
+    "scripts": {
+        "test": "mocha --reporter spec"
+    },
+    ...
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   54
+Moca: Testdefinition
+•     Moca führt JavaScript-Dateien im Testverzeichnis aus
+•     describe() definiert Testmodule, können hierarchisch strukturiert werden
+•     Mit it() werden konrkete Tests eingeleitet, in ihnen dürfen nur noch assert-
+      Statements sein
+    describe("Color Code Converter", function() {
+     describe("RGB to Hex conversion", function() {
+      it("converts the basic colors", function() {
+
+       });
+     });
+
+     describe("Hex to RGB conversion", function() {
+      it("converts the basic colors", function() {
+
+        });
+      });
+    });
+
+
+               Beuth Hochschule für Technik Berlin – University of Applied Sciences   55
+Moca: Testdefinition
+•     Prüfungen über chai-expect-Statements
+
+    var expect = require("chai").expect;
+    var converter = require("../app/converter");
+
+    describe("Color Code Converter", function() {
+     describe("RGB to Hex conversion", function() {
+      it("converts the basic colors", function() {
+        var redHex = converter.rgbToHex(255, 0, 0);
+        var greenHex = converter.rgbToHex(0, 255, 0);
+        var blueHex = converter.rgbToHex(0, 0, 255);
+
+          expect(redHex).to.equal("ff0000");
+          expect(greenHex).to.equal("00ff00");
+          expect(blueHex).to.equal("0000ff");
+        });
+      });
+    });
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   56
+Supertest
+•   Um einen REST-Server zu testen, muss für die Testausführung der REST-
+    Server gestartet werden
+•   Hierzu kann das Modul „supertest“ verwendet werden
+•   Installation: npm install supertest --save-dev
+•   Beispiel: Testen von Homepage
+
+var expect = require("chai").expect;
+const request = require('supertest');
+const app = require('../app');
+
+describe("Test the basic application", function () {
+    describe("Test the root page", function () {
+        it("Test the home page", function () {
+            request(app).get('/').expect(200);
+        })
+    });
+});
+
+
+             Beuth Hochschule für Technik Berlin – University of Applied Sciences   57
+Testing mit Moca, Chai und Supertest
+•   Beim automatisierten Testen einer REST-API müssen in der Regel die
+    folgenden Aspekte umgesetzt werden
+    • Es sollen viele, thematisch gruppierte Tests durchgeführt werden. In der
+       Regel werden für jeden End-Point Test-Module umgesetzt
+    • Die Tests sollen zuweilen in einer zentralen Datei ein- und ausgeschaltet
+       werden
+    • Es sollten alle Schichten vom Controller bis zur Datenbank getestet
+       werden
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   58
+ Testing mit Moca, Chai und Supertest: Struktur
+ •    Zum zentralen Ein- und Ausschalten sowie dem einfachen Ergänzen von
+      weiteren Tests sollte im Verzeichnis „test“ ein zentrales Test-Modul sein
+ • Das Test-Modul sollte die anderen Module aus einem Unterverzeichnis
+      laden
+const server = require('../bin/www')                     • Am Ende der Tests sollte der Server
+const db = require('../services/database/db')
+                                                           und die Datenbankanbindung beendet
+describe.skip('Execute Application Tests', function () {
+   require('./mocaTests/applicationTest')
+                                                           werden
+})
+                                                         • Das kann über den after()-Block
+describe.skip('Login Tests', function () {                 geschehen
+     require('./mocaTests/loginTest')
+})
+
+describe('User Service Tests', function () {
+   require('./mocaTests/userTest')
+})
+
+after(() => {
+   console.log("Shut down application")
+   db.close();
+   server.close();
+})
+
+
+
+                      Beuth Hochschule für Technik Berlin – University of Applied Sciences       59
+Testing mit Moca, Chai und Supertest: Test-Util
+•   Wiederkehrende Funktionen wie das Einloggen eines speziellen Users oder
+    das Parsen von Antworten kann in ein Utility-Modul umgesetzt werden
+
+          function parseJsonBody(response) {
+            return JSON.parse(JSON.stringify(response.body));
+          }
+
+          module.exports = {
+            parseJsonBody
+          }
+
+
+•   Für spezielle Anfragen kann auch der
+    erwartete Json-Content in Dateien abgelegt
+    werden, um ihn einfach an den Server zu
+    senden
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   60
+Testing mit Moca, Chai und Supertest
+•     Einige Tests können die korrekte Funktionsweise des Service-Layers testen
+
+
+
+    describe("Test Login mit Json-Body über Session-Service", function () {
+          it("Login with Json-Data via service", function () {
+              user = { ...require('../utils/loginUser1.json') }
+              sessionService.createSessionToken(user, function (err, token, user) {
+                 expect(err).to.be.a('null');
+                 expect(token).to.be.a('string');
+                 expect(user).to.be.an('object');
+                 if (user) {
+                     expect(user.userID).to.equal("tati");
+                 }
+              })
+          });
+      });
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   61
+Testing mit Moca, Chai und Supertest
+•     Andere Tests können als richtige HTTP-Requests an die Express-
+      Anwendung gesandt werden
+•     Tests sollten immer mit end() abgeschlossen werden, da sonst nicht der
+      Server beendet werden kann
+    describe("Test Login mit Json-Body über Route", function () {
+          it("Login mit Json-Daten via HTTP-Request", function () {
+              user = { ...require('../utils/loginUser1.json') }
+              request(app).post('/login')
+                .send(user)
+                .expect(function (err, res) {
+                    var jsonContent = testUtils.parseJsonBody(res);
+                    expect(jsonContent => {
+                        expect(jsonContent.userID).to.equal(user.userID);
+                    });
+                }).end(function (err, res) {
+                });
+          });
+      });
+
+                 Beuth Hochschule für Technik Berlin – University of Applied Sciences   62
+Testing mit Moca, Chai und Supertest
+•   Ein Test bildet häufig eine ganze Sequenz von Schritten ab
+    1. Einloggen als User
+    2. Abrufen von Daten
+    3. Neuen User Anlegen
+    4. User-Daten versenden
+    5. User wieder löschen
+    6. …
+•   Die Tests können über „npm run test“ ausgeführt werden
+•   In Gitlab können die Tests automatisch ausgeführt werden, wenn der Code
+    neu eingecheckt wird
+    • Hier wird eine Pipeline angelegt
+    • Gitlab kann dann den Befehl „npm run test“ ausführen
+    • Der Testbericht wird automatisch erzeugt und im Git angelegt
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   63
+                        Logging in Node.js
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   64
+Logging in Node.js
+•   Logging besser als Konsole-Ausgaben, da …
+    • Log-Level eingestellt werden kann
+    • Log-Nachrichten in Dateien geschrieben werden können
+    • Log-Nachrichten angereichert werden können
+    • Etc.
+•   Für Node.js-Anwendungen gibt es zahlreiche Logging-Frameworks/-
+    Bibliotheken
+•   Einer der populärsten ist „Winston“
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   65
+Logging mit Winston
+•   Winston wird häufig für Web-Anwendung auf Node.js verwendet
+•   Kann auch in Kombination mit „Morgan“ verwendet werden (bei Express-
+    Anwendungen standardmäßig eingebaute Logging-Middleware)
+•   Anpassungen in app.js von Express-Anwendungen
+    • „logger“ nach „morgan“ umbenennen
+    • Log-Format von „dev“ nach „combined“ ändern
+
+
+
+
+…
+var morgan = require('morgan');
+…
+app.use(morgan('combined'));
+…
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   66
+Logging mit Winston
+•   Installation: npm install winston
+•   Detaillierte Beschreibung für das Aufsetzen von Winston und die Einbindung
+    im Projekt: https://www.digitalocean.com/community/tutorials/how-to-use-
+    winston-to-log-node-js-applications
+•   Einstellungen für den Logger
+    • level – Log-Level, die protokolliert werden sollen
+    • filename – Namen der Datei, in die die Log-Nachrichten geschrieben
+       werden sollen
+    • handleExceptions – Fangen und Loggen von unbehandelten Exceptions
+    • json – Speichern die Log-Nachrichten im Json-Format
+    • maxsize – Maximale Dateigröße, bis eine neue Log-Datei angefangen
+       wird
+    • maxFiles – Maximale Anzahl von Log-Dateien
+    • colorize – Farbige Darstellung der Log-Nachrichten auf der Konsole
+
+
+                      Quelle: https://www.digitalocean.com/community/tutorials/how-to-use-winston-to-log-node-js-applications
+
+
+                                                                                                                         67
+Logging mit Winston
+•   Log-Level
+    • 0: error
+    • 1: warn
+    • 2: info
+    • 3: verbose
+    • 4: debug
+    • 5: silly
+•   Es wird immer alle Nachrichten geloggt, die höher in der Priorität sind als der
+    eingestellte Level (vom Wert her kleiner)
+
+
+
+
+                       Quelle: https://www.digitalocean.com/community/tutorials/how-to-use-winston-to-log-node-js-applications
+
+
+                                                                                                                          68
+Logging mit Winston
+•     Die Konfiguration wird über eine JavaScript-Datei vorgenommen, die im
+      config-Verzeichnis abgelegt sein sollte
+
+    var appRoot = require('app-root-path');
+    var winston = require('winston');
+
+    var options = {
+      file: {
+        level: 'info',
+        filename: `${appRoot}/logs/app.log`,
+        handleExceptions: true,
+        json: true,
+        maxsize: 5242880, // 5MB
+        maxFiles: 5,
+        colorize: false,
+      },
+      console: {
+        level: 'debug',
+    …
+                            Quelle: https://www.digitalocean.com/community/tutorials/how-to-use-winston-to-log-node-js-applications
+
+
+                                                                                                                               69
+Logging mit Winston
+•   Auch die Logger-Instanz sollte in dieser JavaScript-Datei angelegt werden
+
+
+    …
+
+    var logger = winston.createLogger({
+      transports: [
+         new winston.transports.File(options.file),
+         new winston.transports.Console(options.console)
+      ],
+      exitOnError: false, // do not exit on handled exceptions
+    });
+
+    …
+
+
+
+
+                           Quelle: https://www.digitalocean.com/community/tutorials/how-to-use-winston-to-log-node-js-applications
+
+
+                                                                                                                              70
+Logging mit Winston
+•     Auch die Log-Nachrichten von „Morgan“ können zusätzlich zur Konsole in
+      die Datei weitergeleitet werden
+•     Zum Schluss muss der Logger noch exportiert werden
+
+
+    …
+
+     logger.stream = {
+       write: function(message, encoding) {
+         logger.info(message);
+       },
+     };
+
+    ...
+    module.exports = logger;
+
+
+
+                           Quelle: https://www.digitalocean.com/community/tutorials/how-to-use-winston-to-log-node-js-applications
+
+
+                                                                                                                              71
+Logging mit Winston
+•     Winston muss beim Start der Anwendung (app.js) geladen werden
+•     Anschließend muss noch der Morgan-Logger mit Winston verbunden
+      werden
+
+
+                                                    App.js
+    …
+    var winston = require('./config/winston');
+    …
+    app.use(morgan('combined', { stream: winston.stream }));
+    ...
+
+
+
+
+                           Quelle: https://www.digitalocean.com/community/tutorials/how-to-use-winston-to-log-node-js-applications
+
+
+                                                                                                                              72
+Logging mit Winston
+•     Zum Loggen wird…
+      • Logger importiert
+      • Log-Befehl eingefügt
+      • In dem Konfigurationsmodul von Winston kann jederzeit der Log-Level
+        geändert werden
+
+
+                                                       App.js
+    …
+    var logger = require('../../config/winston');
+    …
+    logger.debug("Login-Request")
+    ...
+
+
+
+
+                              Quelle: https://www.digitalocean.com/community/tutorials/how-to-use-winston-to-log-node-js-applications
+
+
+                                                                                                                                 73
+

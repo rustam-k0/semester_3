@@ -1,0 +1,28 @@
+[
+  {
+    "subject": "Computergrafik Grundlagen",
+    "zugs": [
+      1
+    ],
+    "date": "2027-01-27",
+    "start": "08:00",
+    "end": "09:00",
+    "room": "B 323",
+    "notificationId": "194888",
+    "sourceFile": "../plan/academic-calendar/2026-10-09-computer-graphics-exam-notices.md",
+    "fragment": "User-supplied BHT webmail notification, received 2026-10-09 13:05, INBOX UID 105, attachment 194888.ics (not downloaded); Computergrafik Grundlagen (Zug 1); Datum: 2027-01-27; Start: 08:00:00; Ende: 09:00:00; Raum: B 323; Hinweise: empty; timezone not stated."
+  },
+  {
+    "subject": "Computergrafik Grundlagen",
+    "zugs": [
+      1
+    ],
+    "date": "2027-03-30",
+    "start": "10:00",
+    "end": "11:00",
+    "room": null,
+    "notificationId": "194889",
+    "sourceFile": "../plan/academic-calendar/2026-10-09-computer-graphics-exam-notices.md",
+    "fragment": "User-supplied BHT webmail notification, received 2026-10-09 13:05, INBOX UID 106, attachment 194889.ics (not downloaded); Computergrafik Grundlagen (Zug 1); Datum: 2027-03-30; Start: 10:00:00; Ende: 11:00:00; Raum: not stated; Hinweise: empty; timezone not stated."
+  }
+]

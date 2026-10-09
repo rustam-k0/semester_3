@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Exams//polli.bht-berlin.de//
+BEGIN:VEVENT
+SUMMARY:Prüfung Grundlagen der Theoretischen Informatik (Zug 2)
+DTSTART:20270129T100051
+DTEND:20270129T113051
+UID:exam196587@polli.bht-berlin.de
+SEQUENCE:1
+LOCATION:Vorlesungsraum
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

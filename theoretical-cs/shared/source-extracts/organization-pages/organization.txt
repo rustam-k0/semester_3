@@ -1,0 +1,185 @@
+S. Werth (BHT Berlin)   (Organisation)   󰥩 / 󰥩󰥨
+G󰤌󰤏󰤇󰣽󰤅󰣹󰤀󰣾󰤇 󰣽󰣾󰤌 T󰤁󰣾󰤈󰤌󰣾󰤎󰤂󰤍󰣼󰤁󰣾󰤇 I󰤇󰣿󰤈󰤌󰤆󰣹󰤎󰤂󰤄
+O󰤌󰤀󰣹󰤇󰤂󰤍󰣹󰤎󰤂󰤈󰤇
+
+
+
+Sören Werth
+󰥩. Oktober 󰥪󰥨󰥪󰧿
+BHT Berlin
+
+
+
+
+  S. Werth (BHT Berlin)                   (Organisation)   󰥩 / 󰥩󰥨
+  Z󰤂󰣾󰤅 󰣽󰣾󰤍 M󰤈󰣽󰤏󰤅󰤍 - M󰤈󰣽󰤏󰤅󰤁󰣹󰤇󰣽󰣻󰤏󰣼󰤁
+
+ Ziel ist das Erlernen der Grundlagen von Automaten und formalen Sprachen als Werkzeug zur
+   Modellierung und Transformation von Systemen und Prozessen. Diese Grundlagen sollen
+ ermöglichen den Aufbau von Programmiersprachen besser zu verstehen und die Grenzen von
+                               Programmen beurteilen zu können.
+
+Theorie der formalen Sprachen und Automatentheorie:
+Formale Beschreibung und automatisierte Verarbeitung von gedanklichen Gebilden wie Wörter,
+Sätze, Verfahrensanweisungen
+Hauptziel (Hedtstück):
+Ermöglichung der Kommunikation zwischen Mensch und Computer
+Beispiel:
+Compiler, XML, Nutzereingaben, ...
+ S. Werth (BHT Berlin)                                                         (Organisation)   󰥪 / 󰥩󰥨
+ Ü󰣻󰣾󰤌󰣻󰤅󰤂󰣼󰤄 󰣽󰣾󰤌 T󰤁󰣾󰤆󰣾󰤇
+
+
+
+
+   • Endliche Automaten   • Kellerautomaten         • Turing-Maschinen
+   • Reguläre Ausdrücke   • Grammatiken             • Unentscheidbarkeit
+   • Reguläre Sprachen    • Kontextfreie Sprachen   • (Komplexität)
+
+S. Werth (BHT Berlin)                                            (Organisation)   󰥫 / 󰥩󰥨
+ B󰤏󰣼󰤁 󰤔󰤏󰤆 F󰤂󰤅󰤆
+
+• Uwe Schöning: Theoretische Informatik - kurz gefasst
+
+
+
+
+• Ulrich Hedtstück: Einführung in die Theoretische Informatik
+
+
+
+
+• Michael Sipser: Introduction to the Theory of Computation
+
+
+
+
+S. Werth (BHT Berlin)                                           (Organisation)   󰥬 / 󰥩󰥨
+  I󰤇󰤁󰣹󰤅󰤎󰣾 󰤏󰤇󰣽 M󰣹󰤎󰣾󰤌󰤂󰣹󰤅󰣾󰤇
+
+
+                   Die Inhalte und Materialien sind von Prof. Andreas Schäfer (TH Lübeck).
+                                     Herzlichen Dank für Erstellung!
+
+  • Skript
+  • Videos
+  • Slides
+  • Aufgaben (auch von Prof. Ripphausen-Lipa und Prof. Siu - herzlichen Dank!)
+
+Der Inhalt ist den Modulen von Prof. Ripphausen-Lipa, Prof. Siu und Prof. Macos sehr ähnlich.
+
+
+ S. Werth (BHT Berlin)                                                                   (Organisation)   󰥭 / 󰥩󰥨
+ O󰤌󰤀󰣹󰤇󰤂󰤍󰣹󰤎󰤂󰤈󰤇
+
+• 󰥪 SWS Seminaristischer Unterricht
+• 󰥪 SWS Übungen
+         • beginnt um 󰨀:󰥩󰥭 Uhr statt 󰨀:󰥨󰥨 Uhr!
+         • bei mehrmals ≤ 󰥭 Teilnehmer:innen in einer Übung werden Übungen zusammengelegt
+• Es gibt einen Moodle-Kurs mit
+        󰥩. Präsentationen - nicht ausreichend!
+        󰥪. Unterlagen
+        󰥫. Aufgaben
+        󰥬. Forum für Fragen und Diskussionen
+
+
+
+
+S. Werth (BHT Berlin)                                                              (Organisation)   󰧿 / 󰥩󰥨
+ O󰤌󰤀󰣹󰤇󰤂󰤍󰣹󰤎󰤂󰤈󰤇
+
+• 󰥪 SWS Seminaristischer Unterricht
+• 󰥪 SWS Übungen
+         • beginnt um 󰨀:󰥩󰥭 Uhr statt 󰨀:󰥨󰥨 Uhr!
+         • bei mehrmals ≤ 󰥭 Teilnehmer:innen in einer Übung werden Übungen zusammengelegt
+• Es gibt einen Moodle-Kurs mit
+        󰥩. Präsentationen - nicht ausreichend!
+        󰥪. Unterlagen
+        󰥫. Aufgaben
+        󰥬. Forum für Fragen und Diskussionen
+
+     Stellen Sie Ihre inhaltlichen/organisatorischen Fragen im Forum (oder SU bzw. Ü), damit
+     alle von den Antworten lernen können!
+
+
+S. Werth (BHT Berlin)                                                              (Organisation)   󰧿 / 󰥩󰥨
+ O󰤌󰤀󰣹󰤇󰤂󰤍󰣹󰤎󰤂󰤈󰤇
+
+• 󰥪 SWS Seminaristischer Unterricht
+• 󰥪 SWS Übungen
+         • beginnt um 󰨀:󰥩󰥭 Uhr statt 󰨀:󰥨󰥨 Uhr!
+         • bei mehrmals ≤ 󰥭 Teilnehmer:innen in einer Übung werden Übungen zusammengelegt
+• Es gibt einen Moodle-Kurs mit
+        󰥩. Präsentationen - nicht ausreichend!
+        󰥪. Unterlagen
+        󰥫. Aufgaben
+        󰥬. Forum für Fragen und Diskussionen
+
+     Stellen Sie Ihre inhaltlichen/organisatorischen Fragen im Forum (oder SU bzw. Ü), damit
+     alle von den Antworten lernen können!
+     Senden Sie nur bei persönlichen Themen E-Mails an mich. Nennen Sie Ihren Namen und
+     das Modul, ansonsten erhalten Sie keine Antwort.
+S. Werth (BHT Berlin)                                                              (Organisation)   󰧿 / 󰥩󰥨
+  A󰤌󰣻󰣾󰤂󰤎󰤍󰣹󰤏󰣿󰤑󰣹󰤇󰣽
+
+Der Arbeitsaufwand für durchschnittliche Studierende beträgt:
+
+  • Seminaristischer Unterricht:
+          • 󰥫󰥬 Stunden in Präsenz
+          • 󰥩󰥮 Stunden Selbststudium
+  • Übungen:
+          • 󰥫󰥬 Stunden in Präsenz
+          • 󰧿󰥭 Stunden Selbststudium
+
+Selbststudium
+Es ist also völlig normal, wenn Sie im Seminaristischen Unterricht und in der Übung nicht alles
+verstehen und nacharbeiten müssen!
+
+ S. Werth (BHT Berlin)                                                             (Organisation)   󰥮 / 󰥩󰥨
+  Ü󰣻󰤏󰤇󰤀󰣾󰤇 - 󰤇󰣾󰤁󰤆󰣾󰤇 S󰤂󰣾 󰣹󰤄󰤎󰤂󰤐 󰣹󰤇 󰣽󰣾󰤌 Ü󰣻󰤏󰤇󰤀 󰤎󰣾󰤂󰤅!
+
+
+  • Bereiten Sie Fragen zu Inhalten aus der Vorlesung/Übung vor.
+  • Investieren Sie mindestens 󰥩󰥭 min für jede Aufgabe auf dem Aufgabenblatt vor jeder Übung.
+  • Die Aufgaben werden in der Übung besprochen.
+  • Betrachten Sie die Aufgabenblätter als Probeklausuren.
+  • Durch das Bearbeiten der Aufgaben lernen Sie die Inhalte der Vorlesung.
+
+Ohne Mitarbeit und Bearbeitung der Aufgaben werden Sie nicht viel lernen
+... und nicht in der Klausur erfolgreich sein.
+
+
+
+
+ S. Werth (BHT Berlin)                                                          (Organisation)   󰨀 / 󰥩󰥨
+  L󰣾󰤂󰤍󰤎󰤏󰤇󰤀󰤍󰤇󰣹󰣼󰤁󰤑󰣾󰤂󰤍 I:
+
+In dem Modul wird eine Note für den SU und eine Note für die Übung vergeben.
+Modulnote: 󰥯󰥨 Punkte SU-Note + 󰥩󰥨 Punkte Ü-Note.
+SU-Note
+Eine Klausur (󰥯󰥨 min) bestimmt die SU-Note. Es sind keine Hilfsmittel in der Klausur erlaubt.
+Teilnahmevoraussetzung: Ü-Note mindestens 󰥭 Punkte
+Die Klausureinsicht erfolgt in meinem Büro.
+Ü-Note
+Es gibt Pflichtaufgaben, die innerhalb einer Woche in Moodle erledigt/abgegeben werden
+müssen. Es wird für Krankheit/Nachteilsausgleich eine Woche Frist gewährt. Daher erhalten Sie
+insgesamt 󰥪 Wochen zur Bearbeitung. Die Termine sind nicht verhandelbar.
+Leistungen aus vorherigen Semester sind verfallen.
+
+ S. Werth (BHT Berlin)                                                           (Organisation)   󰥯 / 󰥩󰥨
+  L󰣾󰤂󰤍󰤎󰤏󰤇󰤀󰤍󰤇󰣹󰣼󰤁󰤑󰣾󰤂󰤍 II:
+Im zweiten Prüfungszeitraum müssen Sie eine mündliche Prüfung (󰥪󰥨-󰥪󰥭 min) ablegen:
+  • Voraussetzung: ≥ 󰥭 Punkte in der Ü-Note
+  • keine Hilfsmittel
+
+Ablauf
+  • Vor dem Prüfungszeitraum wird in Moodle eine Abfrage zur Teilnahme erscheinen.
+  • Sie erhalten keinen Fehlversuch, wenn Sie sich hier eintragen und doch nicht teilnehmen.
+  • Sie erhalten kurz vor dem Prüfungstag einen Prüfungstermin. Bitte halten Sie sich den Tag
+    möglcihst frei, da Verschiebungen am Tag vorher erfolgen.
+  • Sie müssen mindestens die Definitionen können!
+
+Falls Sie einen Nachteilsausgleich erhalten, muss dies innerhalb der Belegungszeit vorgelegt
+werden - ansonsten kann der Ausgleich nicht organisiert werden!
+ S. Werth (BHT Berlin)                                                           (Organisation)   󰥩󰥨 / 󰥩󰥨
+

@@ -1,0 +1,352 @@
+{
+  "reviewDate": "2026-10-08",
+  "reviewedInboxMessages": 94,
+  "bodyTruncatedCount": 0,
+  "scope": "Supporting course and relevant personal-planning excerpts only. No credentials or participant lists. Recognition PDFs separately extracted and visually verified. Exam and interview ICS attachments checked.",
+  "examComparison": [
+    {
+      "emailUid": 58,
+      "existingExamSlotId": "exam-dbc332b1dc",
+      "matches": true
+    },
+    {
+      "emailUid": 59,
+      "existingExamSlotId": "exam-8fac62b457",
+      "matches": true
+    },
+    {
+      "emailUid": 60,
+      "existingExamSlotId": "exam-f08b99e691",
+      "matches": true
+    },
+    {
+      "emailUid": 61,
+      "existingExamSlotId": "exam-94908b01bf",
+      "matches": true
+    },
+    {
+      "emailUid": 62,
+      "existingExamSlotId": "exam-5ad69b8bd9",
+      "matches": true
+    },
+    {
+      "emailUid": 64,
+      "existingExamSlotId": "exam-fb1264d6ba",
+      "matches": true
+    },
+    {
+      "emailUid": 83,
+      "existingExamSlotId": "exam-c64a14e0be",
+      "matches": true
+    },
+    {
+      "emailUid": 85,
+      "existingExamSlotId": "exam-126037c976",
+      "matches": true
+    }
+  ],
+  "messages": [
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 29,
+      "date": "Mon, 07 Sep 2026 08:46:43 +0000",
+      "subject": "Re: Anerkennung von Studienleistungen und Einstufung in ein höheres Fachsemester",
+      "fragment": "Liebe Frau Winzer,\r\n\r\nangehängt finden Sie die Anträge und die Schablone für Herrn Khavaiashkov.\r\n\r\nLiebe Grüße,\r\n\r\nSimone Strippgen",
+      "attachments": [
+        "Antrag_Khavaiashkov1.pdf",
+        "Antrag_Khavaiashkov2.pdf",
+        "Schablone_Khavaiashkov.pdf"
+      ]
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 34,
+      "date": "Thu, 10 Sep 2026 13:57:15 +0000",
+      "subject": "AW: AW: Anerkennung früherer Studienleistungen als Studium Generale",
+      "fragment": "Guten Tag,\r\n\r\ndie Anerkennung ist erfolgt. Aber es können nur 5 Studium Generale anerkannt werden.\r\nDies habe ich getan.\r\n\r\n\r\nBeste Grüße\r\n\r\nBERLINER HOCHSCHULE FÜR TECHNIK\r\nAnke Winzer\r\nLuxemburger Straße 10\r\n13353 Berlin\r\nTel. +49 30 4504 – 2262\r\nMail: Studienverwaltung-06@bht-berlin.de\r\nStudienverwaltung: BHT Berlin (bht-berlin.de)\r\nBitte beachten Sie die aktuellen Sprechzeiten der Studienverwaltung auf der Webseite der BHT\r\nKontakt Studienverwaltung: BHT Berlin",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 40,
+      "date": "Fri, 11 Sep 2026 10:46:57 +0000",
+      "subject": "AW: Re: Anerkennung von Studienleistungen und Einstufung in ein höheres Fachsemester",
+      "fragment": "Guten Tag,\r\n\r\nich habe die Anerkennung durchgeführt , aber warte jetzt noch auf Prof Dr Schlink, er wollte mir die Änderung schicken.\r\n\r\nBeste Grüße\r\n\r\nBERLINER HOCHSCHULE FÜR TECHNIK\r\nAnke Winzer\r\nLuxemburger Straße 10\r\n13353 Berlin\r\nTel. +49 30 4504 – 2262\r\nMail: Studienverwaltung-06@bht-berlin.de\r\nStudienverwaltung: BHT Berlin (bht-berlin.de)\r\nBitte beachten Sie die aktuellen Sprechzeiten der Studienverwaltung auf der Webseite der BHT\r\nKontakt Studienverwaltung: BHT Berlin",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 41,
+      "date": "Mon, 14 Sep 2026 11:15:57 +0000",
+      "subject": "AW: AW: Re: Anerkennung von Studienleistungen und Einstufung in ein höheres Fachsemester",
+      "fragment": "Guten Tag,\r\n\r\nich habe es angepasst.\r\n\r\n\r\n\r\nBeste Grüße\r\n\r\nBERLINER HOCHSCHULE FÜR TECHNIK\r\nAnke Winzer\r\nLuxemburger Straße 10\r\n13353 Berlin\r\nTel. +49 30 4504 – 2262\r\nMail: Studienverwaltung-06@bht-berlin.de\r\nStudienverwaltung: BHT Berlin (bht-berlin.de)\r\nBitte beachten Sie die aktuellen Sprechzeiten der Studienverwaltung auf der Webseite der BHT\r\nKontakt Studienverwaltung: BHT Berlin",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 58,
+      "date": "Fri, 02 Oct 2026 16:05:02 +0000",
+      "subject": "Prüfungstermin für Medientechnologien (Zug 1, Zug 2)",
+      "fragment": "Für Medientechnologien (Zug 1, Zug 2) wurde ein Prüfungstermin eingetragen:\r\nDatum: 2027-01-15\r\nStart: 12:00:00\r\nEnde: 14:00:00\r\nRaum: \r\nHinweise:",
+      "attachments": [
+        "196157.ics"
+      ]
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 59,
+      "date": "Fri, 02 Oct 2026 16:10:07 +0000",
+      "subject": "Prüfungstermin für Software Engineering II (Zug 1)",
+      "fragment": "Für Software Engineering II (Zug 1) wurde ein Prüfungstermin eingetragen:\r\nDatum: 2027-02-03\r\nStart: 12:15:00\r\nEnde: 13:45:00\r\nRaum: H4\r\nHinweise:",
+      "attachments": [
+        "193492.ics"
+      ]
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 60,
+      "date": "Fri, 02 Oct 2026 16:10:15 +0000",
+      "subject": "Prüfungstermin für Software Engineering II (Zug 1)",
+      "fragment": "Für Software Engineering II (Zug 1) wurde ein Prüfungstermin eingetragen:\r\nDatum: 2027-03-31\r\nStart: 13:30:00\r\nEnde: 15:00:00\r\nRaum: TBD\r\nHinweise:",
+      "attachments": [
+        "193495.ics"
+      ]
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 61,
+      "date": "Fri, 02 Oct 2026 16:15:07 +0000",
+      "subject": "Prüfungstermin für Web Engineering II (Zug 1)",
+      "fragment": "Für Web Engineering II (Zug 1) wurde ein Prüfungstermin eingetragen:\r\nDatum: 2027-02-03\r\nStart: 14:15:00\r\nEnde: 15:15:00\r\nRaum: \r\nHinweise: Hinweise werden in der Veranstaltung bekannt gegeben.",
+      "attachments": [
+        "191815.ics"
+      ]
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 62,
+      "date": "Fri, 02 Oct 2026 16:15:15 +0000",
+      "subject": "Prüfungstermin für Web Engineering II (Zug 1)",
+      "fragment": "Für Web Engineering II (Zug 1) wurde ein Prüfungstermin eingetragen:\r\nDatum: 2027-03-31\r\nStart: 16:00:00\r\nEnde: 17:00:00\r\nRaum: \r\nHinweise: Hinweise werden in der Veranstaltung gegeben",
+      "attachments": [
+        "191817.ics"
+      ]
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 63,
+      "date": "Fri, 02 Oct 2026 19:38:06 +0200",
+      "subject": "Ankündigungen_FB6: Auslandsstudium: Informationsveranstaltung am 12.10.",
+      "fragment": "Ankündigungen_FB6 -> Foren -> Nachrichten an Studiengänge ->\r\nAuslandsstudium: Informationsveranstaltung am 12.10.\r\nhttps://lms.bht-berlin.de/mod/forum/discuss.php?d=350337#p448412\r\nAuslandsstudium: Informationsveranstaltung am 12.10.\r\nvon Jörn Kreutel - Freitag, 2. Oktober 2026, 18:59\r\n---------------------------------------------------------------------\r\nLiebe Studierende,\r\n\r\nhaben Sie schon einmal darüber nachgedacht, einen Teil Ihres Studiums\r\nim Ausland zu absolvieren? Die BHT hat dafür PARTNERSCHAFTEN MIT\r\nZAHLREICHEN HOCHSCHULEN IN EUROPA UND WELTWEIT aufgebaut, und\r\ndie Auslandsaufenthalte können durch verschiedene FÖRDERMASSNAHMEN in\r\nden meisten Fällen zumindest teilfinanziert werden. \r\n\r\nDie Abteilung Internationales der BHT führt\r\nregelmäßig INFORMATIONSVERANSTALTUNGEN zu Möglichkeiten und\r\nRahmenbedingungen von Auslandsaufenthalten durch. Für STUDIENAUFENTHALTE\r\nAN PARTNERHOCHSCHULEN findet die NÄCHSTE VERANSTALTUNG AM 12.10.\r\nstatt. Nähere Angaben zu den Terminen und WEITERE TERMINE, in denen u.a.\r\nehemalige Austauschstudierende von ihren Erfahrungen berichten, FINDEN SIE\r\nHIER: https://www.bht-berlin.de/5000\r\n\r\nDie hochschulinterne BEWERBUNGSFRIST für ein Auslandsstudium im\r\nWintersemester 2027/2028 ist der 15.12.; für das Sommersemester 2028 ist\r\nes der 15.7., d.h. SIE SOLLTEN EINEN AUSLANDSAUFENTHALT MIT ETWA EINEM\r\nJAHR VORLAUF PLANEN. Erwähnt sei außerdem, dass die Austauschkontingente\r\nmit den Partnerhochschulen jeweils für ein gesamtes akademisches Jahr,\r\nd.h. Winter- und Sommersemester vereinbart werden, und bisweilen werden\r\nKontingente für einzelne Partner schon durch die Bewerbungen aus dem\r\njeweiligen Wintersemester ausgeschöpft. \r\n\r\nFür allgemeine Informationen zum Auslandsstudium wenden Sie sich bitte\r\nzunächst an die Kolleg:innen aus der Abteilung Internationales - per Mail\r\nerreichbar unter ausland@bht-berlin.de . Nach einer Erstberatung dort\r\nkönnen Sie sich in Fragen der möglichen Anerkennung der im Ausland zu\r\nbelegenden Module gerne an mich wenden. \r\n\r\nWeitere Informationen stehen Ihnen auch hier zur Verfügung:\r\nhttps://www.bht-berlin.de/4985\r\n\r\nViele Grüße und einen guten Semesterstart, Jörn Kreutel\r\n\r\n \r\n\r\n---------------------------------------------------------------------\r\nDies ist eine Kopie einer Mitteilung, die in 'Ankündigungen_FB6' gepostet\r\nwurde.\r\n\r\nZum Antworten klicken Sie auf diesen Link:\r\nhttps://lms.bht-berlin.de/mod/forum/post.php?reply=448412\r\nEinstellungen für die Forumszusammenfassung ändern:\r\nhttps://lms.bht-berlin.de/mod/forum/index.php?id=8202",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 64,
+      "date": "Sat, 03 Oct 2026 15:35:03 +0000",
+      "subject": "Prüfungstermin für Web Engineering II (Zug 2)",
+      "fragment": "Für Web Engineering II (Zug 2) wurde ein Prüfungstermin eingetragen:\r\nDatum: 2027-01-25\r\nStart: 16:00:00\r\nEnde: 17:00:00\r\nRaum: \r\nHinweise:",
+      "attachments": [
+        "194837.ics"
+      ]
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 66,
+      "date": "Sun, 04 Oct 2026 01:53:34 +0200",
+      "subject": "Sie haben Aufgaben, die in 7 Tagen fällig sind",
+      "fragment": "Hallo Rustam,\r\n\r\nDie folgenden Aufgaben sind am SONNTAG, 11. OKTOBER 2026 fällig.\r\n\r\n* VERBINDLICHE BELEGUNG DES MODULS MEDIENDESIGN im Kurs Mediendesign SU\r\nZug 2 (WS2627)\r\nFÄLLIG: 19:00\r\nZur Aktivität [1]\r\n\r\nLinks:\r\n------\r\n[1] https://lms.bht-berlin.de/mod/assign/view.php?id=1521541&action=view",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 67,
+      "date": "Sun, 04 Oct 2026 02:13:02 +0200",
+      "subject": "Öffnet am Montag, 5. Oktober 2026, 14:03: Test: Mengen",
+      "fragment": "Hallo Rustam,\r\n\r\nDer Test TEST: MENGEN im Kurs Grundlagen der Theoretischen Informatik (Zug\r\n2) (WiSe26) beginnt bald. ÖFFNET: MONTAG, 5. OKTOBER 2026, 14:03\r\n\r\nSCHLIESST: MONTAG, 19. OKTOBER 2026, 23:59\r\n\r\nZum Test [1]\r\n\r\nLinks:\r\n------\r\n[1] https://lms.bht-berlin.de/mod/quiz/view.php?id=1510499",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 70,
+      "date": "Sun, 04 Oct 2026 18:05:10 +0200",
+      "subject": "projekt: Aufgabe Pitch",
+      "fragment": "projekt -> Foren -> News und Ankündigungen -> Aufgabe Pitch\r\nhttps://lms.bht-berlin.de/mod/forum/discuss.php?d=350427#p448505\r\nAufgabe Pitch\r\nvon Markus Schubert - Sonntag, 4. Oktober 2026, 17:33\r\n---------------------------------------------------------------------\r\nLiebe Leute,\r\n\r\nwir haben Eure Gruppen in Gitlab angelegt. Jede und Jeder von Euch sollte\r\neine Email von gitlab mit dem Invite bekommen haben. Checkt zur Not bitte\r\nEuren Spam Folder! \r\n\r\nSTRUKTUR IN GITAB:\r\n\r\n* Für jedes Team wurde ein Subgroup in gitlab [1] angelegt. \r\n* In jeder Subgroup gibt es genau ein Projekt/Repository, dass genauso\r\nheisst wie Euer Team\r\n* Bitte überprüft, ob alle Mitglieder Eures Teams auch Member der\r\nSubgroup sind und ob alle die Rolle \"Owner\" haben\r\n* Ihr könnt den Namen des Projektes auch ändern, wenn ihr wollt.\r\n* Je nachdem, wie Ihr Euch strukturiert, könnt ihr auch weitere\r\nProjekte/Repositories anlegen. Falls ihr unsicher seid, wartet damit und\r\nlasst uns Vor- und Nachteile davon im ersten Teammeeting besprechen\r\n* Wenn ihr Fragen habt, nutzt bitte den general Channel in Discord! \r\n\r\nPITCH:\r\n\r\n* In Moodle findet ihr die Aufgabenstellung zum Pitch\r\n* https://lms.bht-berlin.de/mod/assign/view.php?id=1400091 [2]\r\n* Die Pitches finden kommenden Donnerstag zw. 9:30 Uhr und 11:30 Uhr im\r\nIngeborg-Meising-Saal statt\r\n* Es sollte alls klar sein, falls Ihr Fragen habt, dann nutzt bitte\r\nebenfalls den general Channel in Discord!\r\n\r\nWir sehen uns dann alle am Donnerstag im Ingeborg-Meising-Saal. Die\r\nZuordnung der Betreuer werden wir ebenfalls im Laufe der Woche\r\nverkünden. \r\n\r\nBeste Grüße, \r\nSiamak und Markus\r\n\r\nLinks:\r\n------\r\n[1] https://gitlab.bht-berlin.de/project_bachelor/ws26\r\n[2] https://lms.bht-berlin.de/mod/assign/view.php?id=1400091\r\n\r\n---------------------------------------------------------------------",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 74,
+      "date": "Mon, 05 Oct 2026 12:30:45 +0200",
+      "subject": "se2-ziemer-wise26: Bildung der SE2-Übungsgruppen",
+      "fragment": "se2-ziemer-wise26 -> Forums -> News und Ankündigungen -> Bildung der\r\nSE2-Übungsgruppen\r\nhttps://lms.bht-berlin.de/mod/forum/discuss.php?d=350546#p448628\r\nBildung der SE2-Übungsgruppen\r\nby Thomas Ziemer - Monday, 5 October 2026, 11:58 AM\r\n---------------------------------------------------------------------\r\nLiebe Teilnehmer·innen des SE2-Moduls,\r\n\r\nherzlich willkommen zu Software Engineering 2 im Wintersemester 2026/27.\r\n\r\nFür dieses Modul müssen Sie gemeinsam in einer Übungsgruppe im Laufe des\r\nSemesters verschiedene Aufgaben bearbeiten. Sollten Sie Wünsche zur\r\nBildung einer Übungsgruppe haben, so melden Sie mir diese bitte gern bis\r\nspätestens MITTWOCH, DEN 7. OKTOBER, UM 16 UHR (!) per Mail\r\nan ziemer@bht-berlin.de. Danach eintreffende Wünsche können aus\r\nlogistischen Gründen leider nicht mehr berücksichtigt werden! Sie werden\r\nin diesem Fall einer zufälligen Übungsgruppe zugeordnet.\r\n\r\nIn Ihrer Mail sind bitte der NAME DES MODULS (in Ihrem Fall also _SE2_),\r\ndie vollständigen NAMEN und MATRIKELNUMMERN der\r\nWunsch-Teilnehmer·innen Ihrer Gruppe aufgelistet, und - sofern es Ihre\r\nKreativität zulässt - auch schon ein selbstgewählter GRUPPENNAME.\r\nBeachten Sie bitte, dass eine Übungsgruppe aus HÖCHSTENS FÜNF PERSONEN\r\nbestehen darf, und dass alle Personen der Gruppe logischerweise DENSELBEN\r\nÜBUNGSBLOCK belegt haben müssen.\r\n\r\nDie Veranstaltung beginnt am FREITAG, DEN 9. OKTOBER, UM 16:00 UHR IN DER\r\n V O R L E S U N G. Darin (und im anschließenden Übungsblock) werden wir\r\nauch die tatsächlichen Übungstermine festlegen, die zeitlich optimiert\r\nsein werden, und vom Stundenplan abweichen könnten.\r\n\r\nIch wünsche Ihnen noch einen angenehmen weiteren Verlauf der Woche.\r\n\r\nViele Grüße\r\nThomas Ziemer\r\n\r\n---------------------------------------------------------------------",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 75,
+      "date": "Mon, 05 Oct 2026 10:35:32 +0000",
+      "subject": "AW: Auslandsstudium in der Abschlussphase des Bachelorstudiums",
+      "fragment": "Hallo Rustam Khavaiashkhov,\r\n\r\n\r\n\r\nVielen Dank für Ihre Nachricht und toll, dass Sie sich für ein Auslandssemester interessieren.\r\n\r\n\r\n\r\nEin Auslandssemester ist solange möglich, solange Sie für das gesamte Semester noch immatrikulierte*r Student*in an der BHT sind, also noch mindestens ein offenes Modul haben. Für sinnvoll halte ich ein Auslandssemester natürlich immer, wenn auch aus unterschiedlichen Gründen. Idealerweise können Sie ein Auslandssemester durchführen und die im Auslandssemester erbrachten Leistungen für Ihren BHT-Abschluss anerkennen, das wäre in diesem Fall ja nicht mehr möglich (außer der Abschlussarbeit). Wenn Sie ohne offene Module ins Auslandssemester gehen, können Sie die dort erbrachten Module zwar nicht mehr anerkennen, sie sind aber deswegen ja nicht verloren: Sie können dann zum Beispiel bewusst Inhalte wählen, die an der BHT ggf. gar nicht angeboten werden und ihr Studium ergänzen und Sie gewinnen in jedem Fall natürlich trotzdem neue, andere Perspektiven auf Ihr Fach. Wenn Sie an eine Partnerhochschule gehen und insbesondere wenn Sie ein Stipendium erhalten, sollte das Studium in jedem Fall im Mittelpunkt stehen und wir empfehlen, 20-30 ECTS zu belegen, auch wenn Sie diese nicht anerkennen lassen.\r\n\r\n\r\nWie Sie sagen: Eine Alternative wäre es, Ihre Abschlussarbeit im Ausland zu schreiben. Es gibt verschiedene Möglichkeiten, eine Abschlussarbeit im Ausland zu realisieren und es kommt dabei etwas auf die Destination (Zielland und aufnehmende Einrichtung) sowie auf Vorgaben Ihres Studiengangs und der aufnehmenden Einrichtung an.\r\nIn jedem Fall sollten Sie frühzeitig mit einer potentiellen Betreuungsperson an der BHT ins Gespräch gehen und mögliche fachbereichs-/studiengangspezifische Vorgaben klären.\r\n\r\nIch versuche hier die verschiedenen Optionen übersichtlich darzustellen:\r\n\r\n  1.  Destination liegt in Europa bzw. im Erasmus+ Raum\r\n\r\n     *   Aufnehmende Einrichtung ist eine Erasmus+ Partnerhochschule und Sie wollen die Abschlussarbeit im Rahmen eines Auslandssemesters schreiben: In diesem Fall bewerben Sie sich regulär in den Bewerbungsfristen auf einen Platz an einer Erasmus+ Partnerhochschule. Sie müssen bereits im Bewerbungsprozess eine*n Professor*in Ihres Fachbereichs an, die bestätigen muss, dass er/sie Ihr Vorhaben unterstützt. Wir teilen der Partnerhochschule im Rahmen der Nominierung mit, dass Sie an der Partnerhochschule eine Abschlussarbeit schreiben möchten. Ob/ wie stark Sie die Partnerhochschule bei der Suche nach einer Betreuungsperson unterstützt, ist sehr unterschiedlich. Idealerweise suchen Sie schon selbstständig frühzeitig nach passenden Betreuungspersonen an der Partnerhochschule und nehmen ggf. schon Kontakt auf. Die Abschlussarbeit und/oder zusätzliche Module, die Sie an der Partnerhochschule belegen wollen, müssen im Learning Agreement festgeschrieben und von allen Seiten bestätigt werden. Wenn Sie eine Zusage der Partnerhochschule erhalten, erhalten Sie Erasmus+ Förderung wie bei einem regulären Auslandssemester, mehr Infos zur Förderung gibt es hier: https://www.bht-berlin.de/520\r\n     *   Sie wollen die Abschlussarbeit in Verbindung mit einem Praktikum im Ausland schreiben: In diesem Fall suchen Sie sich selbstständig einen Praktikumsplatz und Betreuungspersonen an BHT und aufnehmender Einrichtung im Erasmus+ Raum (es muss sich in diesem Fall nicht um eine Partnerhochschule handeln, sondern es kann auch eine Institution/ ein Unternehmen sein, mit der keine Partnerschaft besteht). Sie bewerben sich mit den Bewerbungsunterlagen inklusive Praktikumsvertrag und Learning Agreement auf eine Finanzierung für Ihren Erasmus+ Praktikumsaufenthalt: https://www.bht-berlin.de/5006\r\n\r\n\r\n  1.  Destination liegt außerhalb von Europa bzw. außerhalb des Erasmus+ Raums\r\n\r\n     *   Aufnehmende Einrichtung ist eine Weltweite BHT Partnerhochschule und Sie wollen die Abschlussarbeit im Rahmen eines Auslandssemesters schreiben: In diesem Fall bewerben Sie sich regulär in den Bewerbungsfristen auf einen Platz an der Partnerhochschule. Sie müssen bereits im Bewerbungsprozess eine*n Professor*in Ihres Fachbereichs an, die bestätigen muss, dass er/sie Ihr Vorhaben unterstützt. Wir teilen der Partnerhochschule im Rahmen der Nominierung mit, dass Sie an der Partnerhochschule eine Abschlussarbeit schreiben möchten. Ob/ wie stark Sie die Partnerhochschule bei der Suche nach einer Betreuungsperson unterstützt, ist sehr unterschiedlich. Idealerweise suchen Sie schon selbstständig frühzeitig nach passenden Betreuungspersonen an der Partnerhochschule und nehmen ggf. schon Kontakt auf. Die Abschlussarbeit und/oder zusätzliche Module, die Sie an der Partnerhochschule belegen wollen, müssen im Learning Agreement festgeschrieben und von allen Seiten bestätigt werden. Wenn Sie eine Zusage der Partnerhochschule erhalten, können Sie sich direkt im Mobility Online Workflow auf das PROMOS Reisekostenstipendium bewerben: https://www.bht-berlin.de/1600.\r\n     *   Sie wollen die Abschlussarbeit in Verbindung mit einem Praktikum im Ausland schreiben: In diesem Fall suchen Sie sich selbstständig einen Praktikumsplatz und und Betreuungspersonen an BHT und aufnehmender Einrichtung (es muss sich in diesem Fall nicht um eine Partnerhochschule handeln, sondern es kann auch eine Institution/ ein Unternehmen sein, mit der keine Partnerschaft besteht). Sie können sich auf das PROMOS Reisekostenstipendium für Praxisaufenthalte bewerben: https://www.bht-berlin.de/1600\r\n\r\n(!) Hinweis zu PROMOS: Das PROMOS Reisekostenstipendium umfasst nur eine einmalige Reisekostenpauschale, die etwa die Kosten des Flugs deckt. Bei Bedarf sollten Sie sich rechtzeitig über andere Finanzierungsmöglichkeiten wie das HAW International Stipendium<https://www.studieren-weltweit.de/haw/?etcc_cmp=haw&etcc_med=search&etcc_par=googleads&etcc_ctv=haw&etcc_bky=daad%20haw%20international%20stipendium&gad_source=1&gad_campaignid=1716240136&gbraid=0AAAAADfTyEg4ZViakfOcL5r7_LbUKSWQL&gclid=Cj0KCQjwjb3SBhDgARIsAMKiWziWfTIO0OTBUXBVHG86j8TfrHbYA4nRPgFWQQLI0V_5ub-_vrDot_0aAhvrEALw_wcB> und/oder Auslands-BAföG<https://www.bafög.de/bafoeg/de/antrag-stellen/ausland/ausland_node.html> informieren.\r\n\r\nDas sind ziemlich viele Informationen, aber ich hoffe, das alles verständlich ist und Sie so einen guten Überblick über die verschiedenen Optionen erhalten.\r\n\r\nBei weiteren Fragen melden Sie sich gern.\r\n\r\n\r\n\r\nHerzliche Grüße\r\nMarga Bolay",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 76,
+      "date": "Mon, 05 Oct 2026 12:58:24 +0200",
+      "subject": "Assignment submission confirmation - Verbindliche Belegung des Moduls Mediendesign",
+      "fragment": "MD-SU-WS2627-ZUG2 -> Assignment -> Verbindliche Belegung des Moduls\r\nMediendesign\r\n---------------------------------------------------------------------\r\nYou have submitted an assignment submission for 'Verbindliche Belegung des\r\nModuls Mediendesign'.\r\n\r\nYou can see the status of your assignment submission:\r\n\r\nhttps://lms.bht-berlin.de/mod/assign/view.php?id=1521541\r\n\r\nYour submission contains:\r\n\r\nFile submissions\r\n* WS2627_MD_Khavaiashkhov_Rustam_115453.png (1.6 MB)\r\n\r\n---------------------------------------------------------------------",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 77,
+      "date": "Mon, 05 Oct 2026 18:55:36 +0000",
+      "subject": "!!! IHRE Belegung Mediendesign Grundlagen  im WS 26/27 Dienstags der höheren Semester wurde wg. Überfüllung von SU & Übungen auf die letzte Übung umverteilt....",
+      "fragment": "Hallo zusammen,\r\n\r\nda die Beleganzahl der Teilnehmenden im Modul Mediendesign Grundlagen ZUG 1 heute so sprunghaft angesteigen ist, hat der Studiendekan im Pollisystem schon mal eine Umverteilung auf die späte Übung DI mit Start um 19 Uhr veranlasst.\r\n\r\nDer Studiendekan meinte auch, dass dieses Modul nur nach Priorität belegt werden soll...\r\nVorrang haben daher immer nur die Erstis.\r\nIst das Modul überfüllt, muß nach einer Lösung gesucht werden. Leider haben höhere Semester da auch keine Priorität mehr.\r\n\r\nFrau Schiffers hat offenbar noch 5 Plätze in ihrem Seminar ZUG 2 für höhere Semester Montags offen.\r\n\r\nDer Studiendekan erkundigt sich, ob es vielleicht möglich ist, für die höheren Semester noch eine neue Vorlesungsgruppe SU zu eröffnen. Ganz vielleicht wird also noch ein weiterer SU eröffnet.\r\nDa stellt sich für mich die Frage, ob Sie eventuell auch Dienstag Vormittags für SU und Ü Zeit hätten.\r\nDas könnten wir u. U. im Labor mit einer kleineren Gruppe durchführen. Und dafür keine Übung um 19 Uhr... ???\r\n\r\n\r\nAngesichts dieser hohen Belegzahl werde ich morgen ohnedies nur einen groben Überblick geben können.\r\nMal schauen, wie sich dies im WISE 26 überhaupt jetzt organisieren lässt.\r\nEinzelprojekte, die in anderen Semestern möglich waren, fallen dieses Semester weg.\r\n\r\n\r\nEs tut mir sehr leid, glauben Sie mir, diese Situation gefällt mir auch rein gar nicht.\r\n\r\nWir werden also morgen um 14:15 Uhr sehen, wer tatsächlich kommt.\r\n\r\nDer Studiendekan meldet sich morgen Abend wieder zurück.\r\n\r\n\r\nBis morgen dann, einen schönen Abend noch & beste Grüße\r\nConstanze Zahn",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 78,
+      "date": "Mon, 05 Oct 2026 20:45:37 +0000",
+      "subject": "AW: !!! IHRE Belegung Mediendesign Grundlagen  im WS 26/27 Dienstags der höheren Semester wurde wg. Überfüllung von SU & Übungen auf die letzte Übung umverteilt....",
+      "fragment": "Hallo Rustam Khavaiashkhov,\r\n\r\n\r\nwie erwähnt, aktuell ist der Kurs überbucht - jetzt sogar 60 Teilnehmende...\r\n\r\n\r\nMal sehen, welche Lösung wir finden..\r\n\r\n\r\nKönnten Sie denn theoretisch bei einem neuen SU auch Dienstag Vormittag mit Anschluss zur Übung?\r\n\r\nIm Plan habe ich gesehen, dass eventuell das Laborfrei wäre...\r\n\r\nOder bei Frau Schiffers zum SU am Montag und zu mir am Dienstag die Übung?\r\n\r\nDas hatte sie ja heute vorgeschlagen.\r\n\r\n\r\n\r\n\r\nIch hoffe auch auf eine passende Lösung...\r\n\r\n\r\nBis morgen dann um 14:15 Uhr...\r\n\r\n\r\nBeste Grüße\r\n\r\nConstanze Zahn",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 79,
+      "date": "Tue, 06 Oct 2026 10:15:15 +0200",
+      "subject": "mtü-wise26: Info Freitag",
+      "fragment": "mtü-wise26 -> Forums -> News und Ankündigungen -> Info Freitag\r\nhttps://lms.bht-berlin.de/mod/forum/discuss.php?d=350695#p448782\r\nInfo Freitag\r\nby Angelika Hönemann - Tuesday, 6 October 2026, 9:42 AM\r\n---------------------------------------------------------------------\r\nHerzlich Willkommen zu meiner Übung!\r\n\r\nDie erste (eher kurze) Übungsstunde startet für beide Übungsgruppen am\r\n09.10.26 um 14:15 Uhr im Seminarraum B325. Ich werde Informationen zum\r\nAblauf der Übung vorstellen. \r\n\r\nDie Übung um 8:00 Uhr wird an dem Tag noch nicht stattfinden.\r\n\r\nBeste Grüße, Angelika Hönemann\r\n\r\n---------------------------------------------------------------------",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 81,
+      "date": "Tue, 06 Oct 2026 12:45:27 +0200",
+      "subject": "we2-wise26: Neue Übungsgruppe, bitte verteilen",
+      "fragment": "we2-wise26 -> Forums -> News und Ankündigungen -> Neue Übungsgruppe,\r\nbitte verteilen\r\nhttps://lms.bht-berlin.de/mod/forum/discuss.php?d=350731#p448819\r\nNeue Übungsgruppe, bitte verteilen\r\nby Jens von Pilgrim - Tuesday, 6 October 2026, 12:14 PM\r\n---------------------------------------------------------------------\r\nAufgrund der hohen Teilnehmerzahlen habe ich eine weitere Übungsgruppe\r\neingerichtet. Diese ist Mittwoch, 12:15-13:45 in Raum B 240.\r\n\r\nIch werde Ende dieser Woche alle Teilnehmer in den Übungen so verschieben,\r\ndass die Belegungerzahlen ausgeglichen sind. Nun ist bei mir die Teilnahme\r\nohnehin in allen Übungen möglich, egal, in welcher man eingeschrieben\r\nist. Lediglich bei Abnahmen oder der Probeklausur erwarte ich die Teilnahme\r\nin der jeweils angemeldeten Übung -- aber auch das können wir nach\r\nAbsprache flexibel handhaben.\r\n\r\nAußerdem haben Teilnehmer, die einer Übung angemeldet sind, Priorität.\r\nFalls eine Übung zu voll wird, würde ich auch Teilnehmer auf ihre jeweils\r\nangemeldete Übung verweisen -- das kommt aber selten vor.\r\n\r\nAlle Übungstermine haben ihre Vor- und Nachteile. Der neue Termin liegt\r\ndirekt vor der Vorlesung, was ganz praktisch ist. Allerdings ist Raum B 240\r\nkein Übungsraum, d.h. wir müssen ein wenig sehen, wie wir das mit der\r\nStromversorgung machen (aber ihr könne ja vorbereitet, sprich aufgeladen,\r\nkommen). An diesem Termin findet auch die SU SE 2 statt. Daher würde ich\r\nv.a. bitten, dass Teilnehmer dorthin wechseln, die SE 2 schon haben oder\r\nspäter machen. Es wäre gut, wenn ich niemanden zwangsweise dorthin\r\nverschieben müsste.\r\n\r\nDie Übung nach der Vorlesung ist natürlich total überlaufen, hier werde\r\nich verschieben müssen. Ich will aber auch Werbung für die spätere\r\nÜbung machen. Man kann dann (mit Hilfe von Kommilitonen) vor Ort schon mal\r\ndie Aufgabe mehr oder weniger fertig machen und dann mit den sich daraus\r\nergebenen oder noch offenen Fragen zur zweiten Übung kommen. Denn oft\r\ngeschieht es, dass Fragen erst während der Bearbeitung entstehen.\r\n\r\nAlles weitere morgen in der Vorlesung. Morgen findet nur eine Übung für\r\nalle um 16:00 Uhr statt.\r\n\r\n---------------------------------------------------------------------",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 83,
+      "date": "Tue, 06 Oct 2026 13:15:07 +0000",
+      "subject": "Prüfungstermin für Grundlagen der Theoretischen Informatik (Zug 2)",
+      "fragment": "Für Grundlagen der Theoretischen Informatik (Zug 2) wurde ein Prüfungstermin eingetragen:\r\nDatum: 2027-01-29\r\nStart: 10:00:51\r\nEnde: 11:30:51\r\nRaum: Vorlesungsraum\r\nHinweise:",
+      "attachments": [
+        "196587.ics"
+      ]
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 84,
+      "date": "Tue, 06 Oct 2026 16:46:04 +0200",
+      "subject": "TheoInf_WiSe26: [[welcometocourse]]",
+      "fragment": "TheoInf_WiSe26 -> Forums -> News und Ankündigungen -> [[welcometocourse]]\r\nhttps://lms.bht-berlin.de/mod/forum/discuss.php?d=349489#p448875\r\n[[welcometocourse]]\r\nby Sören Werth - Tuesday, 6 October 2026, 4:42 PM\r\n---------------------------------------------------------------------\r\nLiebe Studierende,\r\n\r\nich freue mich über Ihr Interesse an dem Modul!\r\n\r\nLeider sind wir in diesem Zug zu viele Teilnehmer:innen, so dass\r\nStudierende in den anderen Zug wechseln müssen (Dies betrifft nicht\r\nStudierende im ersten Semester).\r\n\r\nIch werde Studierende nach den üblichen Kriterien (und bei Gleichstand\r\nnach dem Zufall) heute Abend in den anderen Zug schieben.\r\n\r\nFalls Sie unbedingt diesen Zug hier besuchen müssen, kommen Sie bitte am\r\nFreitag nach der SU auf mich zu.\r\nFalls Sie dem anderen Zug zugeordnet werden, tragen Sie sich bitte dort in\r\nIhre gewünscht Übungsgruppe ein.\r\n\r\nMit freundlichen Grüßen\r\nSören Werth\r\n\r\n---------------------------------------------------------------------",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 85,
+      "date": "Tue, 06 Oct 2026 15:20:03 +0000",
+      "subject": "Prüfungstermin für Betriebssysteme (Zug 1)",
+      "fragment": "Für Betriebssysteme (Zug 1) wurde ein Prüfungstermin eingetragen:\r\nDatum: 2027-01-19\r\nStart: 16:00:00\r\nEnde: 17:30:00\r\nRaum: D138\r\nHinweise:",
+      "attachments": [
+        "196612.ics"
+      ]
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 86,
+      "date": "Tue, 06 Oct 2026 17:39:55 +0200",
+      "subject": "RE: Rustam Khavaiashkhov",
+      "fragment": "Hallo Rustam,\r\n\r\nVielen Dank für deine Bewerbung auf die ausgeschriebene Position.\r\n\r\nDeine Bewerbung sagt uns zu und wir würden dich gerne zu einem persönlichen Gespräch im AStA-Büro (Raum M E03, unter der Mensa) einladen.\r\n\r\nWir stellen eine Reihe an Terminvorschlägen zur Auswahl. Bitte suche dir bis Donnerstag einen Termin in der folgenden Liste aus und buche ihn: [1] https://terminplaner.dfn.de/public/bookings/7e6eecd2-3831-4c29-be1e-b92560946f21\r\n\r\nFalls du an keinem der freien Termine Zeit hast, mache uns bitte 2-3 Terminvorschläge für alternative Termine, damit wir dich trotzdem kennenlernen können.\r\n\r\nFalls du kein Interesse mehr an der Stelle hast, fänden wir das schade, bitten aber um Mitteilung. Wenn du noch offene Fragen hast, kannst du dich jederzeit an uns wenden.\r\n\r\nWir freuen uns darauf, dich zeitnah kennenzulernen!\r\n\r\nMit besten Grüßen\r\ndeine AStA-Bewerbungskommission\r\n\r\n--\r\nSimon Marquardt (er/ihm)\r\nAllgemeiner Studierendenausschuss der BHT\r\nBewerbungskommission 2\r\nLuxemburger Straße 10, 13353 Berlin\r\n[2] asta.studis-bht.de\r\n\r\n[1] https://terminplaner.dfn.de/public/bookings/7e6eecd2-3831-4c29-be1e-b92560946f21\r\n[2] https://asta.studis-bht.de",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 87,
+      "date": "Tue, 06 Oct 2026 18:21:09 +0200",
+      "subject": "mtwise26: Willkommen bei MT",
+      "fragment": "mtwise26 -> Forums -> News und Ankündigungen -> Willkommen bei MT\r\nhttps://lms.bht-berlin.de/mod/forum/discuss.php?d=350794#p448891\r\nWillkommen bei MT\r\nby Hansjörg Mixdorff - Tuesday, 6 October 2026, 6:15 PM\r\n---------------------------------------------------------------------\r\nHallo miteinander,\r\n\r\nHiermit begrüße ich euch zum Fach Medientechnologien im Wintersemester\r\n26/27. Wie ihr festgestellt haben werdet, betreue ich in diesem Semester\r\nbeide Züge beim seminaristischen Unterricht. Die Übungen teile ich mir\r\nmit Angelika Hönemann. Unser erster gemeinsamer Termin ist die Vorlesung\r\nam 9.10.2026. Das bedeutet, dass in der ersten Woche keine Übungen\r\nstattfinden. Diese beginnen also erst am 16. Oktober.\r\n\r\nBis Freitag,\r\n\r\nHansjörg\r\n\r\n---------------------------------------------------------------------",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 88,
+      "date": "Wed, 07 Oct 2026 08:45:50 +0000",
+      "subject": "Buchungsbestätigung / Reservation confirmation",
+      "fragment": "Buchungsbestätigung – DFN-Terminplaner\r\n    \r\n\r\n    \r\n    \r\n\r\n\r\n\r\n\r\n\n\r\n\r\n    \r\n    \n\r\n        \r\n    \r\n    \n\r\n\r\n\r\n    \r\n    \r\n    \n\r\n        \nBuchung bestätigt\r\n        \n\r\n            Hallo Rustam Khavaiashkhov,\r\n            die Buchung wurde erfolgreich registriert.\r\n        \r\n\r\n        \r\n        \n\r\n            \n✓\r\n            \n\r\n                \nSlot 8\r\n                \n13.10.2026, 13:00 – 14:00\r\n            \r\n        \r\n\r\n        \r\n        \n\r\n            \nDetails zur Buchung\r\n            \r\n                \n\r\n                    Buchungsliste\r\n                    Bewerbungsgespräch IT AStA\r\n                \r\n                \r\n                \n\r\n                    Kontakt\r\n                    \r\n                        bewerbung2@studis-bht.de\r\n                    \r\n                \r\n            \r\n        \r\n\r\n        \r\n        \n\r\n            Die Buchung kann über den folgenden Link eingesehen und bei Bedarf storniert werden.\r\n        \r\n\r\n        \n\r\n            Buchung ansehen\r\n        \r\n    \r\n\r\n    \r\n    \n\r\n\r\n    \r\n    \r\n    \n\r\n        \nBooking confirmed\r\n        \n\r\n            Hello Rustam Khavaiashkhov,\r\n            the booking has been successfully registered.\r\n        \r\n\r\n        \r\n        \n\r\n            \n✓\r\n            \n\r\n                \nSlot 8\r\n                \n13.10.2026, 13:00 – 14:00\r\n            \r\n        \r\n\r\n        \r\n        \n\r\n            \nBooking Details\r\n            \r\n                \n\r\n                    Booking list\r\n                    Bewerbungsgespräch IT AStA\r\n                \r\n                \r\n                \n\r\n                    Contact\r\n                    \r\n                        bewerbung2@studis-bht.de\r\n                    \r\n                \r\n            \r\n        \r\n\r\n        \r\n        \n\r\n            The booking can be viewed and cancelled if needed via the link below.\r\n        \r\n\r\n        \n\r\n            View booking\r\n        \r\n    \r\n\r\n    \r\n    \n\r\n        \n\r\n            DFN-Terminplaner – ein Service des Deutschen Forschungsnetzes.\n\r\n            DFN-Terminplaner Homepage\r\n             | \r\n            FAQ",
+      "attachments": [
+        "event.ics"
+      ]
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 90,
+      "date": "Wed, 07 Oct 2026 18:40:58 +0200",
+      "subject": "bs-wis26: Notwendiges zum vi",
+      "fragment": "bs-wis26 -> Forums -> News und Ankündigungen -> Notwendiges zum vi\r\nhttps://lms.bht-berlin.de/mod/forum/discuss.php?d=350963#p449071\r\nNotwendiges zum vi\r\nby Rüdiger Weis - Wednesday, 7 October 2026, 6:37 PM\r\n---------------------------------------------------------------------\r\n \r\n\r\nZum Hauptinhalt [1]\r\n \r\n\r\nAnzahl Antworten: 0\r\n\r\n \r\n\r\n ━━━━━━━━━━━━━━━━━━━━\r\n  NOTWENDIGES ZUM VI\r\n\r\n  Rüdiger Weis\r\n  ━━━━━━━━━━━━━━━━━━━━\r\n\r\n              \r\n\r\nKurze vi Kurz-Einführung\r\n════════════════════════\r\n\r\n  visual interfacs für Zeileneditor ex\r\n  • [https://de.wikipedia.org/wiki/Vi]\r\n  • [https://de.wikibooks.org/wiki/Learning_the_vi_editor]\r\n\r\nÜberall da Editor\r\n═════════════════\r\n\r\n  • Freie Software (beispielsweise vim)\r\n  • Geringe Hardwareanforderungen\r\n  • Datei kB klein\r\n  • Schnell\r\n  • Flexibel\r\n\r\nTerminaleditor\r\n══════════════\r\n\r\n  • Nutzbar mit alphanumerische Tatatur und ESC\r\n\r\n◊ vi starten\r\n\r\n  • *vi* dateiname\r\n\r\n◊ Hilfe\r\n\r\n  • *:help*\r\n\r\nvi Modi\r\n═══════\r\n\r\n◊ Wechsel Befehlsmodus in Editier Modus\r\n\r\n \r\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n   -  *a*  Einfügen  nach    Cursor    \r\n   -  *i*  Einfügen  vor     Cursor    \r\n \r\n─────────────────────────────────────\r\n   -  *A*  Einfügen  Ende    Zeile     \r\n   -  *I*  Einfügen  Anfang  Zeile     \r\n \r\n─────────────────────────────────────\r\n   -  *o*  Neue      Zeile   unterhalb\r\n   -  *O*  Neue      Zeile   oberhalb  \r\n \r\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n◊ Wechsel von Editier in Befehls Modus\r\n\r\n  ━━━━━\r\n   ESC\r\n  ━━━━━\r\n\r\nChange und Replace\r\n══════════════════\r\n\r\n◊ Replace\r\n\r\n \r\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n   *r*  Ersetze Zeichen mit Zeichen\r\n \r\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n\r\n◊ Change\r\n\r\n  ━━━━━━━━━━━━━━━━━━━\r\n   *cw*  Ändere Wort\r\n  ━━━━━━━━━━━━━━━━━━━\r\n\r\nSpeichern und Beenden\r\n═════════════════════\r\n\r\n \r\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n      *ZZ*                                       \r\n   -  *:wq*  Datei speichen    und beenden       \r\n   -  *:w*   Datei  speichern                    \r\n   -  *:q*   vi     beenden                      \r\n   -  *:q!*  vi     beenden    *ohne*  speichern\r\n \r\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\r\n\r\nUndo\r\n════\r\n\r\n  • *u* Undo\r\n  • *U* Undo alle Änderungen in Zeile\r\n  • *C-r* Redo\r\n  • *.* Wiederhole letztes Kommando\r\n\r\nCursor-Bewegungen Zeichen\r\n═════════════════════════\r\n\r\n  ━━━━━━━━━━━━━━━━━━━━━━━━\r\n   -  *h*  Cursor  links  \r\n   -  *j*  Cursor  runter\r\n  ────────────────────────\r\n   -  *k*  Cursor  rauf   \r\n   -  *l*  Curso",
+      "attachments": [],
+      "excerptOnly": true
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 91,
+      "date": "Wed, 07 Oct 2026 18:41:00 +0200",
+      "subject": "bs-wis26: Übungsblatt 1: Shellprogrammierung",
+      "fragment": "bs-wis26 -> Forums -> News und Ankündigungen -> Übungsblatt 1:\r\nShellprogrammierung\r\nhttps://lms.bht-berlin.de/mod/forum/discuss.php?d=350965#p449073\r\nÜbungsblatt 1: Shellprogrammierung\r\nby Rüdiger Weis - Wednesday, 7 October 2026, 6:09 PM\r\n---------------------------------------------------------------------\r\nÜbungsblatt 1: Shellprogrammierung\r\n══════════════════════════════════\r\n\r\n  Bitte arbeiten Sie den *vimtutor* durch und bearbeiten die Blätter 1\r\n  und 2 mit dem vi Editior.\r\n\r\nAufgabe 1 (6 Punkte)\r\n════════════════════\r\n\r\n  Ein Skript-Aufruf enthalte mehr als zwei Parameter. Schreiben Sie ein\r\n  Skript, das nur die letzten beiden Parameter ausgibt.\r\n\r\nAufgabe 2 (6 Punkte)\r\n════════════════════\r\n\r\n  Ein Shell-Skript prog braucht eine gerade Anzahl von Parametern, hat\r\n  also die Syntax\r\n  ┌────\r\n  │ prog para1 para2 [para3 para4]...\r\n  └────\r\n  Schreiben Sie den Teil, der diesen Sachverhalt überprüft und\r\n  gegebenenfalls eine Unix-gemäse Fehlermeldung auf *stderr* ausgibt und\r\n  das Programm mit Fehlerstatus abbricht.\r\n\r\nAufgabe 3 (16 Punkte)\r\n═════════════════════\r\n\r\n  Schreiben Sie ein Shell-Skript, welches alle Dateien im aktuellen\r\n  Verzeichnis auflistet, deren Namen eine Länge von mindestens 3 und\r\n  weniger als 6 Zeichen besitzen.\r\n\r\nAufgabe 4  (16 Punkte)\r\n══════════════════════\r\n\r\n  Schreiben Sie ein Shell-Skript, das alle Positionsparameter mit\r\n  Nummerierung in umgekehrter Reihenfolge ausgibt.\r\n\r\n  • Bitte verwenden Sie nur die in der Vorlesung präsentierten Befehle\r\n    der Standardshell sh.\r\n\r\n \r\n\r\n---------------------------------------------------------------------",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 92,
+      "date": "Wed, 07 Oct 2026 19:40:27 +0200",
+      "subject": "we2-wise26: Blatt 0 Update",
+      "fragment": "we2-wise26 -> Forums -> News und Ankündigungen -> Blatt 0 Update\r\nhttps://lms.bht-berlin.de/mod/forum/discuss.php?d=350973#p449082\r\nBlatt 0 Update\r\nby Jens von Pilgrim - Wednesday, 7 October 2026, 7:06 PM\r\n---------------------------------------------------------------------\r\nDas Projekt zu Blatt 0 sollte jetzt funktionieren. Wer es bereits\r\nausgescheckt hat, kann entweder Fork und Klone löschen und neu erstellen\r\n-- das ist sozusagen die Hammer-Methode. Eleganter ist es, in Gitlab den\r\nFork zu updaten (dort wird oben eine Meldung mit Button angezeigt) und dann\r\nbeim Klon mit git pull die Änderungen lokal zu laden. Falls es Konflikte\r\ngibt, sind diese zu lösen (evtl. in der package.json-Datei) und zu\r\ncommiten -- falls das nicht klappt, einfach neu klonen und ggf. erstellte\r\nDatei rüber kopieren.\r\n\r\n---------------------------------------------------------------------",
+      "attachments": []
+    },
+    {
+      "mailbox": "INBOX",
+      "uidValidity": "1784956070",
+      "uid": 93,
+      "date": "Thu, 08 Oct 2026 01:54:53 +0200",
+      "subject": "You have assignments due in 7 days",
+      "fragment": "Hi Rustam,\r\n\r\nThe following assignments are due on THURSDAY, 15 OCTOBER 2026.\r\n\r\n* BLATT 00 in course Web Engineering II (Zug 1) (WiSe26)\r\nDUE: 11:59 PM\r\nGo to activity [1]\r\n\r\nLinks:\r\n------\r\n[1] https://lms.bht-berlin.de/mod/assign/view.php?id=1508636&action=view",
+      "attachments": []
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+MD-SU-WS2627-ZUG2: Kursplan Mediendesign Grundlagen | Moodle
+Zum Hauptinhalt
+Website-Übersicht
+Dashboard
+Kurse
+SoSe 26
+WiSe 26/27
+Semesterunabhängig
+Meine Kurse
+Alle Kurse
+Kurse suchen
+Kurs beantragen (Lehrende)
+SoSe 26
+Projekt (Markus Schubert + Siamak Haschemi)
+WiSe 26/27
+Betriebssysteme (WiSe26)
+Grundlagen der Theoretischen Informatik (Zug 2) (WiSe26)
+Mediendesign Grundlagen Übg. (Zug 1) (WiSe26)
+Mediendesign SU Zug 2 (WS2627)
+Medientechnologien (Zug 1, Zug 2) (WiSe26)
+Medientechnologien Übg. (Zug 1) (WiSe26)
+Programmierung II (Zug 2) (WiSe26)
+Web Engineering II (Zug 2) (WiSe26)
+Semesterunabhängig
+Ankündigungen vom Fachbereich VI
+Hochschule
+Campus Management System (Polli)
+Webmail (Studierende)
+Webmail (Lehrende)
+BHT-Cloud
+BigBlueButton
+Gitlab
+Virtuelle Fachhochschule
+Bibliothek
+Mensa
+Moodle-Hilfe
+Aktuelles
+Kursbeantragung
+Videos mit Opencast
+Moodle-Dokumentation
+Support-Mail
+Mehr
+0
+Systemnachrichten
+Keine Systemnachrichten
+Alle anzeigen
+0
+0 ungelesene Diskussionen
+RK
+Sie sind angemeldet als:
+Rustam Khavaiashkhov
+Profil
+Bewertungen
+Mitteilungen
+Meine Dateien
+Einstellungen
+Sprache
+Abmelden
+Sprachwahl
+Deutsch ‎(de)‎
+English ‎(en)‎
+Dashboard
+Kurse
+Einklappen
+Ausklappen
+SoSe 26
+Einklappen
+Ausklappen
+Projekt (Markus Schubert + Siamak Haschemi)
+WiSe 26/27
+Einklappen
+Ausklappen
+Betriebssysteme (WiSe26)
+Grundlagen der Theoretischen Informatik (Zug 2) (WiSe26)
+Mediendesign Grundlagen Übg. (Zug 1) (WiSe26)
+Mediendesign SU Zug 2 (WS2627)
+Medientechnologien (Zug 1, Zug 2) (WiSe26)
+Medientechnologien Übg. (Zug 1) (WiSe26)
+Programmierung II (Zug 2) (WiSe26)
+Web Engineering II (Zug 2) (WiSe26)
+Semesterunabhängig
+Einklappen
+Ausklappen
+Ankündigungen vom Fachbereich VI
+Meine Kurse
+Alle Kurse
+Kurse suchen
+Kurs beantragen (Lehrende)
+Hochschule
+Einklappen
+Ausklappen
+Campus Management System (Polli)
+Webmail (Studierende)
+Webmail (Lehrende)
+BHT-Cloud
+BigBlueButton
+Gitlab
+Virtuelle Fachhochschule
+Bibliothek
+Mensa
+Moodle-Hilfe
+Einklappen
+Ausklappen
+Aktuelles
+Kursbeantragung
+Videos mit Opencast
+Moodle-Dokumentation
+Support-Mail
+Mediendesign SU Zug 2 (WS2627)
+Alles aufklappen
+Alles einklappen
+Ausklappen
+Einklappen
+Allgemeines
+Hervorgehoben
+News und Ankündigungen
+Kursplan Mediendesign Grundlagen
+Bewertung/Notenstufen
+Wahl Referatsthemen
+Referat (hier PDF hochladen VORAB, bis Sonntag, 19 Uhr, VOR Ihrem Termin)
+Ausklappen
+Einklappen
+UX-/UI-Links
+Hervorgehoben
+Development fundamentals for UX designers
+Visual hierarchy in UX
+Responsive grids and how to actually use them Part I
+Responsive grids and how to actually use them Part II
+UI Terms Reference
+Web Design Trends in 2021
+Service Standard UK Government
+Web Design Museum (Trends zwischen 1991 und 2006)
+Ausklappen
+Einklappen
+5. Oktober 2026 – Einführung und Überblick
+Hervorgehoben
+Verbindliche Belegung des Moduls Mediendesign
+Ausklappen
+Einklappen
+12. Oktober 2026 – Analyse und Ideenfindung
+Hervorgehoben
+FigJam Online-Whiteboard
+Ausklappen
+Einklappen
+19. Oktober 2026 – Informationsarchitektur
+Hervorgehoben
+UI-Prinzipien und Konventionen
+Marissa Mayer's New Rule For App Design
+What Is Interaction Cost?
+Ausklappen
+Einklappen
+26. Oktober 2026 – Digitales Layout
+Hervorgehoben
+InVision Wireframing Guide
+Ausklappen
+Einklappen
+2. November 2026 – Referate
+Hervorgehoben
+Ausklappen
+Einklappen
+9. November 2026 – Corporate Design
+Hervorgehoben
+Figma-Board mit BHT-CD und Beispielscreens
+Styleguide Dropbox
+Supertype – Arbeiten mit Vektoren
+Responsive Logos
+Bayern-München-Logo-Anpassung 2017
+Ausklappen
+Einklappen
+16. November 2026 – Typografie
+Hervorgehoben
+Apfel-i-Büchlein von Fontshop (Mobilversion)
+Supertype – Schriftformate
+BDA – Dyslexia friendly style guide
+Google Fonts Knowledge
+Telekom Font TeleNeo Schriftentwicklung
+Lufthansa Schriftentwicklung
+DB Hausschrift
+DB Type Styleguide (alte DB Schrift)
+Typeset in the future
+Typefacts – Schrift und Typografie
+Ausklappen
+Einklappen
+23. November 2026 – Referate
+Hervorgehoben
+Ausklappen
+Einklappen
+30. November 2026 – Icons und Buttons
+Hervorgehoben
+Animierte Piktogramme Tokyo 2020
+Figma-Board mit BHT-CD und Beispielscreens
+Ausklappen
+Einklappen
+7. Dezember 2026 – Farbe
+Hervorgehoben
+Colour Contrast Analyser
+leserlich.info/farben – Schritte zu einem inklusive Kommunikationsdesign
+Ausklappen
+Einklappen
+14. Dezember 2026 – Referate
+Hervorgehoben
+Ausklappen
+Einklappen
+21. Dezember 2026 – Design Patterns
+Hervorgehoben
+4 most common design systems myths
+Ausklappen
+Einklappen
+28. Dezember 2026 – keine Veranstaltung
+Hervorgehoben
+Ausklappen
+Einklappen
+4. Januar 2027 – keine Veranstaltung
+Hervorgehoben
+Ausklappen
+Einklappen
+11. Januar 2027 – Prototyping
+Hervorgehoben
+Einführung in Prototyping in Figma (Figma Help Center)
+Figma For Beginners: Build prototypes (YouTube)
+Prototyp-Scrollen mit Overflow-Verhalten (Figma Help Center)
+Create interactive components with variants (Figma Help Center)
+Figma Tutorial: Variants (YouTube)
+Figma Tutorial: Smart Animate and Drag Triggers (YouTube)
+Figma Tutorial: Hacking Figma Prototypes with Overlays, Components, and Frames (YouTube)
+Figma Tutorial: Prototyping & Transitions (YouTube)
+Ausklappen
+Einklappen
+18. Januar 2027 – Referate
+Hervorgehoben
+Ausklappen
+Einklappen
+25. Januar 2027 – Präsentationstechnik
+Hervorgehoben
+Ausklappen
+Einklappen
+1. Februar 2027 – Abschlusspräsentation (Pflichttermin)
+Hervorgehoben
+Kursindex öffnen
+MD-SU-WS2627-ZUG2
+Allgemeines
+Kursplan Mediendesign Grundlagen
+Kursplan Mediendesign Grundlagen
+Allgemeine Kursinformationen | Basic Course Information
+Lehrkraft und Sprechzeiten | Lecturer and Consulting Hours
+Dipl.-Des. Cornelia Schiffers
+Sie erreichen mich am besten per E-Mail cornelia.schiffers@bht-berlin.de. In der Regel versuche ich die E-Mails noch am gleichen Tag zu beantworten (montags bis freitags). Persönlich können Sie mich vor und während der Lehrveranstaltung sprechen.
+Lehrveranstaltungsform | Course Type
+Seminaristischer Unterricht
+Semester & Studiengang | Semester & Degree program
+1. Semester I Bachelor Medieninformatik
+Lernziele und Kompetenzen | Learning Outcomes and Competencies
+Die Studierenden erwerben grundlegende Kenntnisse zur plattformübergreifenden Gestaltung digitaler und interaktiver Anwendungen und erlernen den praxisorientierten Umgang mit digitalen Medien. Die Studierenden sollen in der Lage sein, Designkonzepte für verschiedene Medienarten und mit unterschiedlichen Anforderungen an das Interface zu entwickeln: vom Small Screen Design am Smartphone bis zur Webanwendung am Computer. Anhand einer konkreten Themenstellung, die das Semester wie ein roter Faden durchzieht, werden wichtige Aspekte der Gestaltung und Konzeption von digitalen Medien erlernt. Der Fokus liegt dabei auf dem gestalterischen Experimentieren mit digitalen Werkzeugen in Kombination mit einer strukturierten, methodischen Vorgehensweise. Die Studierenden sind in der Lage digitale, interaktive Anwendungen zu konzipieren, zu visualisieren und zu erproben.
+Kursstruktur | Course Structure
+Überblick Kursablauf | Overview Course Schedule
+Präsenzveranstaltung
+Lerneinheiten | Course Units
+68 Stunden Präsenz (2 SWS SU + 2 SWS Ü), 82 Stunden Selbststudium
+Informationen zu Präsenzveranstaltungen | Information on Classroom Events
+Raum siehe Vorlesungsverzeichnis
+Prüfungsleistung & -modalitäten | Examination & Modalities
+Leistungsbewertung | Examination
+50 % Referat und Seminar
+Halten eines Referats aus dem Feld Mediendesign, Vorab(!)-Upload als PDF (30 %)
+Regelmäßige Teilnahme an und aktive Mitarbeit in den Lehrveranstaltungen (20 %)
+50 % Übung
+Voraussetzung: Pünktliche und erfolgreiche Abgabe aller Übungsaufgaben qualifiziert zur Teilnahme an der Abschlusspräsentation – Abgaben können nicht ausgelassen oder nachgereicht werden!
+Bewertung des Semesterprojektes (Gestaltung und Funktionalität) und der Abschlusspräsentation
+Regelmäßige Teilnahme an und aktive Mitarbeit in den Lehrveranstaltungen, pünktliche Abgabe der Übungen in angemessener Ausführung
+Prüfungsmodalitäten | Examination Modalities
+Bewertungskriterien | Evaluation Criteria
+Zuletzt geändert: Freitag, 3. April 2026, 17:46
+◀︎ News und Ankündigungen
+Zur Aktivität
+Zur Aktivität
+News und Ankündigungen
+Bewertung/Notenstufen
+Wahl Referatsthemen
+Referat (hier PDF hochladen VORAB, bis Sonntag, 19 Uhr, VOR Ihrem Termin)
+Development fundamentals for UX designers
+Visual hierarchy in UX
+Responsive grids and how to actually use them Part I
+Responsive grids and how to actually use them Part II
+UI Terms Reference
+Web Design Trends in 2021
+Service Standard UK Government
+Web Design Museum (Trends zwischen 1991 und 2006)
+Verbindliche Belegung des Moduls Mediendesign
+FigJam Online-Whiteboard
+UI-Prinzipien und Konventionen
+Marissa Mayer's New Rule For App Design
+What Is Interaction Cost?
+InVision Wireframing Guide
+Figma-Board mit BHT-CD und Beispielscreens
+Styleguide Dropbox
+Supertype – Arbeiten mit Vektoren
+Responsive Logos
+Bayern-München-Logo-Anpassung 2017
+Apfel-i-Büchlein von Fontshop (Mobilversion)
+Supertype – Schriftformate
+BDA – Dyslexia friendly style guide
+Google Fonts Knowledge
+Telekom Font TeleNeo Schriftentwicklung
+Lufthansa Schriftentwicklung
+DB Hausschrift
+DB Type Styleguide (alte DB Schrift)
+Typeset in the future
+Typefacts – Schrift und Typografie
+Animierte Piktogramme Tokyo 2020
+Figma-Board mit BHT-CD und Beispielscreens
+Colour Contrast Analyser
+leserlich.info/farben – Schritte zu einem inklusive Kommunikationsdesign
+4 most common design systems myths
+Einführung in Prototyping in Figma (Figma Help Center)
+Figma For Beginners: Build prototypes (YouTube)
+Prototyp-Scrollen mit Overflow-Verhalten (Figma Help Center)
+Create interactive components with variants (Figma Help Center)
+Figma Tutorial: Variants (YouTube)
+Figma Tutorial: Smart Animate and Drag Triggers (YouTube)
+Figma Tutorial: Hacking Figma Prototypes with Overlays, Components, and Frames (YouTube)
+Figma Tutorial: Prototyping & Transitions (YouTube)
+Bewertung/Notenstufen ▶︎
+Moodle-Support
+Sie sind angemeldet als Rustam Khavaiashkhov (Abmelden)
+Laden Sie die mobile App
+Berliner Hochschule für Technik | Datenschutzinformationen und Erklärung | Impressum
+Mitteilungen
+Kontakte
+Ausgewählte Mitteilungen:
+1
+Personen und Mitteilungen suchen
+Kontakte
+0
+Es gibt 0 anstehende Kontaktanfragen.
+Personen und Mitteilungen suchen
+Einstellungen
+Kontakte
+Anfragen
+0
+Es gibt 0 anstehende Kontaktanfragen.
+Keine Kontakte
+Keine Kontaktanfragen
+Kontaktanfrage gesendet
+Persönlicher Bereich
+Speichern Sie Entwürfe von Nachrichten, Links, Notizen usw. für einen späteren Zugriff.
+Mitteilungen können nicht gesendet werden
+Sie haben kein Recht, in dieser Konversation Nachrichten zu senden
+Für mich und alle anderen löschen
+Blockieren
+Blockierung aufheben
+Entfernen
+Hinzufügen
+Löschen
+Löschen
+Kontaktanfrage senden
+Annehmen und zu Kontakten hinzufügen
+Ablehnen
+OK
+Abbrechen
+Favoriten
+()
+Insgesamt Kommunikationen
+ungelesene Diskussionen
+Keine Kommunikation als Favorit markiert
+Gruppe
+()
+Insgesamt Kommunikationen
+ungelesene Diskussionen
+Keine Gruppenkommunikation
+Persönlich
+()
+Insgesamt Kommunikationen
+ungelesene Diskussionen
+Keine persönliche Kommunikation
+Kontakte
+Weitere Personen
+Mehr laden
+Mitteilungen
+Mehr laden
+Keine Ergebnisse
+Personen und Mitteilungen suchen
+Datenschutz
+Welche Personen sollen Ihnen persönliche Mitteilungen senden können?
+Mitteilungen akzeptieren von:
+Nur meine Kontakte
+Kontakte und aus meinen Kursen
+Systemnachrichten
+Allgemein
+Eingabetaste zum Senden tippen
+Ausgewählte Mitteilungen löschen
+Kontaktanfrage senden
+Sie haben diese Person blockiert.
+Blockierung für diese Person aufheben
+Alle anzeigen

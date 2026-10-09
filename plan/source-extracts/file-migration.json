@@ -1,0 +1,560 @@
+{
+  "filesReviewed": 108,
+  "filesRenamedOrMoved": 108,
+  "identicalDuplicatesRemoved": 2,
+  "files": [
+    {
+      "old": "Plan/MI_Sem1_Zug1_WS2026.pdf",
+      "new": "plan/schedules/ws2026/semester-1-track-1.pdf",
+      "sha256": "1f30639af119ad6f89f1736e81b769ac09576028748bda6360898bc824b6989c"
+    },
+    {
+      "old": "Plan/Modulhandbuch_BHT.pdf",
+      "new": "plan/module-handbook.pdf",
+      "sha256": "c8ab3efb63afd912bcf540dd5ef7fc455a7ae13114ea97c21cd756d84fe7f387"
+    },
+    {
+      "old": "Plan/MI_Sem4_Zug2_WS2026.pdf",
+      "new": "plan/schedules/ws2026/semester-4-track-2.pdf",
+      "sha256": "db9cbc3e3b80d0fa96e9544ca5bc8153e5010afda5ee3525d70cceed15c7f0e6"
+    },
+    {
+      "old": "Plan/MI_Sem3_Zug2_WS2026.pdf",
+      "new": "plan/schedules/ws2026/semester-3-track-2.pdf",
+      "sha256": "672d75e0a424a9a2be1821d06dde941262ad9291e06160f6e528b18445251166"
+    },
+    {
+      "old": "Plan/MI_Sem2_Zug2_WS2026.pdf",
+      "new": "plan/schedules/ws2026/semester-2-track-2.pdf",
+      "sha256": "cf2373c30530bbf1abc9415177b8af12ae32f4a6639e914717f24868ecad46a9"
+    },
+    {
+      "old": "Plan/MI_Sem5_Zug2_WS2026.pdf",
+      "new": "plan/schedules/ws2026/semester-5-track-2.pdf",
+      "sha256": "a34b910444b71e3945367b4d513b3f800bc77ecec6adaba8ff763cb3b79f92a7"
+    },
+    {
+      "old": "Plan/MI_Sem5_Zug1_WS2026.pdf",
+      "new": "plan/schedules/ws2026/semester-5-track-1.pdf",
+      "sha256": "db55fe4ec01c1dc4934d69d15b6a46e78f4b78cc76e9a392e6852a53199d8afc"
+    },
+    {
+      "old": "Plan/MI_Sem2_Zug1_WS2026.pdf",
+      "new": "plan/schedules/ws2026/semester-2-track-1.pdf",
+      "sha256": "07b79fcafa6b9e425a31a8fb1a4a2c20fb25662ab2d356927629895fa5e6c15a"
+    },
+    {
+      "old": "Plan/MI_Sem3_Zug1_WS2026.pdf",
+      "new": "plan/schedules/ws2026/semester-3-track-1.pdf",
+      "sha256": "9796f40030d38da358865cde0f2eb4ad198fb5708424b11d47abdbfa7f1bc3d0"
+    },
+    {
+      "old": "Plan/MI_Sem1_Zug2_WS2026.pdf",
+      "new": "plan/schedules/ws2026/semester-1-track-2.pdf",
+      "sha256": "00cf37345e9753c301abab6a29a60948a5bfe58a66d2f6c8a97d6562003a3efb"
+    },
+    {
+      "old": "Plan/MI_Sem4_Zug1_WS2026.pdf",
+      "new": "plan/schedules/ws2026/semester-4-track-1.pdf",
+      "sha256": "137f5dbbb939859eb5bcfd782f5175f77287af4b2f404c22c6aded2fc43e156e"
+    },
+    {
+      "old": "Plan/Source Exports/modulhandbuch.txt",
+      "new": "plan/source-extracts/module-handbook.txt",
+      "sha256": "f50ebf5f9cc55f6af0fb761b131cf5dfc9f662a60911151a70752214642c78d5"
+    },
+    {
+      "old": "Plan/Source Exports/2.mhtml",
+      "new": "plan/source-exports/02-schedule.mhtml",
+      "sha256": "0fcd45110a736b4bb95abdb63f584ca82d7908ea9a15163d044128a044dafe31"
+    },
+    {
+      "old": "Plan/Source Exports/4.mhtml",
+      "new": "plan/source-exports/04-schedule.mhtml",
+      "sha256": "0e79fc219bd2ff64217e36c476130ad1f25931be69b80c18e69f9e8e1ef96ccf"
+    },
+    {
+      "old": "Plan/Source Exports/3.mhtml",
+      "new": "plan/source-exports/03-schedule.mhtml",
+      "sha256": "23407f7e71a1bf99141718df1b3e7283969f0447f4568b0c612cafcfdf75711b"
+    },
+    {
+      "old": "Plan/Source Exports/1.mhtml",
+      "new": "plan/source-exports/01-schedule.mhtml",
+      "sha256": "bc71b9738ca7a545aceaa5b74c70367846a050e32d10bd2fd4c5832553509549"
+    },
+    {
+      "old": "Plan/Source Exports/5.mhtml",
+      "new": "plan/source-exports/05-schedule.mhtml",
+      "sha256": "59f719232e8f36fec8a18fd279194d43884359f26c2c1b189bf0f109798176dc"
+    },
+    {
+      "old": "Project/Gruppen.xlsx",
+      "new": "project/groups.xlsx",
+      "sha256": "d52b4c5b703a17dbe56025b370d198218ea4c912201b6c9a5f993c29e044d6df"
+    },
+    {
+      "old": "Software Engineering 2/Track 1/01_Lectures/telegram-cloud-photo-size-2-5348145341032767223-y.jpg",
+      "new": "software-engineering-2/track-1/01-lectures/course-members.jpg",
+      "sha256": "74964665f2b1e4ab706806d237655df3ad658c517c954ae7f4cf72d478151367"
+    },
+    {
+      "old": "Software Engineering 2/Track 1/01_Lectures/SE2-01 - Einfuehrung SE2.pdf",
+      "new": "software-engineering-2/track-1/01-lectures/01-intro.pdf",
+      "sha256": "d25b3136a191f4e1866d5c395ea85c99184fc510113907f5d9dd0fa8a49ab35c"
+    },
+    {
+      "old": "Software Engineering 2/Track 1/01_Lectures/SE2-01 - Organisatorische Hinweise SE2 WiSe 2026-27.pdf",
+      "new": "software-engineering-2/track-1/01-lectures/01-organization.pdf",
+      "sha256": "ab235c129f364a75b449b71db33c38380da23cbcc1412d8e9911d0dbde9c93e4"
+    },
+    {
+      "old": "Software Engineering 2/Track 1/02_Seminars/Screenshot 2026-10-07 at 12.28.04.png",
+      "new": "software-engineering-2/track-1/02-seminars/a15-setup.png",
+      "sha256": "76e2feacbeab4f9b4ded3c1a1f5e7f3c887a9f5d419e86b8d09c31b9733ca61a"
+    },
+    {
+      "old": "Software Engineering 2/Track 2/01_Lectures/codex-clipboard-5e61ec62-ad13-4c7f-b688-6c62591f4eed.jpg",
+      "new": "software-engineering-2/track-2/01-lectures/course-members.jpg",
+      "sha256": "ec26a758eef6a850ed89b1e9370183bab3d629fd5614041ddce14daf48d6946a"
+    },
+    {
+      "old": "Web Engineering 2/Track 1/01_Lectures/course-schedule-2026-10-07.png",
+      "new": "web-engineering-2/track-1/01-lectures/course-schedule-2026-10-07.png",
+      "sha256": "177b4948aca4860176aa65a5ad2e8c6cfe9c1c68cf608505b8d99c9009f5a429"
+    },
+    {
+      "old": "Web Engineering 2/Track 1/01_Lectures/01-organization.pdf",
+      "new": "web-engineering-2/track-1/01-lectures/01-organization.pdf",
+      "sha256": "e03c5593a677a51955455f65d27c44ddd157fcb38d93bdeafc895d3a38bb67ae"
+    },
+    {
+      "old": "Web Engineering 2/Track 1/01_Lectures/02-overview.pdf",
+      "new": "web-engineering-2/track-1/01-lectures/02-overview.pdf",
+      "sha256": "32273d0056152e2879d29c5700d38a780c387607de5bcab110318df7bdcb2707"
+    },
+    {
+      "old": "Web Engineering 2/Track 1/01_Lectures/course-literature-2026-10-07.png",
+      "new": "web-engineering-2/track-1/01-lectures/course-literature-2026-10-07.png",
+      "sha256": "38cc814a770f56950f4b0ce5d119643a4b021313fa27e3ab72b97bd83b58639a"
+    },
+    {
+      "old": "Web Engineering 2/Track 1/01_Lectures/01a-dev-container.pdf",
+      "new": "web-engineering-2/track-1/01-lectures/01a-dev-container.pdf",
+      "sha256": "fcd897de0fc1f0a8f736ddbabc4ceee6450cbcc6901dcc68b0aa3fcc56c7f83c"
+    },
+    {
+      "old": "Web Engineering 2/Track 1/02_Seminars/00-typescript-and-jest.pdf",
+      "new": "web-engineering-2/track-1/02-seminars/00-typescript-and-jest.pdf",
+      "sha256": "737d53a96b24be6097ed892e761d81853acc46bd1efd8260f949dcc5c520ce8d"
+    },
+    {
+      "old": "Web Engineering 2/Track 1/02_Seminars/themenbrett-project-outline-v1.0.pdf",
+      "new": "web-engineering-2/track-1/02-seminars/themenbrett-project-outline-v1.0.pdf",
+      "sha256": "dcc342b38976b29b37ac6559e8aa9908f6d7647b1be825df2d088c6e3d6e98f2"
+    },
+    {
+      "old": "Web Engineering 2/Track 1/02_Seminars/gitlab-2fa.pdf",
+      "new": "web-engineering-2/track-1/02-seminars/gitlab-2fa.pdf",
+      "sha256": "8dda7949a68024b4027dff4d06cf144f9ee7017865c8948d68ebd2c562f31785"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WE2-01-Intro-V12.pdf",
+      "new": "web-engineering-2/track-2/01-lectures/01-intro-v12.pdf",
+      "sha256": "6397296370019d2d55e5ac0f8d7b5a481b7b9708845f932149a47d76c23a2dc4"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WEII-Uebung-1-M0-V17.pdf",
+      "new": "web-engineering-2/track-2/02-seminars/01-rest-server-m0-v17.pdf",
+      "sha256": "2039292967c3a971258a2c9d2e9aa58929d6a2734591a7b722d22cb6973dcfbd"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/Screenshot 2026-10-07 at 11.38.15.png",
+      "new": "web-engineering-2/track-2/01-lectures/course-schedule.png",
+      "sha256": "a19091bd88b26d539fe07e40ff0e19014a3f3272286b009c73e633f1a84bc2bb"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WE2-04-Nodejs-Basics-V01.0.pdf",
+      "new": "web-engineering-2/track-2/01-lectures/04-nodejs-basics-v01.0.pdf",
+      "sha256": "d5447597a2a64d96c9d9bda73229b0b86469b8f6de229b80e7ea1cfb7af24be7"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WE2-02-Web-Architekturen-V01.0.pdf",
+      "new": "web-engineering-2/track-2/01-lectures/02-web-architectures-v01.0.pdf",
+      "sha256": "9cb751a77f226a535a27db9bfea2b7d67ae62c5e228fa6e58527e38b881e5d31"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WE2-50-Hinweise-Entwicklung-V00.3.pdf",
+      "new": "web-engineering-2/track-2/01-lectures/50-development-guide-v00.3.pdf",
+      "sha256": "474079b49e008250c6a7d95f547eee422bf6915023272dbffa35fcfaa36afb89"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WE2-53-Einführung-Typescript-V02.pdf",
+      "new": "web-engineering-2/track-2/01-lectures/53-typescript-intro-v02.pdf",
+      "sha256": "c89d93e2773da708959739c48e1f3c79f04fbcaacd7368acc2b0299d4149bc3b"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WE2-00-Semesterbegrüßung-V01.pdf",
+      "new": "web-engineering-2/track-2/01-lectures/00-semester-intro-v01.pdf",
+      "sha256": "a431cc2a3d76d900af9f00b825c5e6ff3d234fe76cd8c10711545f8b62d66bf0"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WE2-06-MongoDB-V01.2.pdf",
+      "new": "web-engineering-2/track-2/01-lectures/06-mongodb-v01.2.pdf",
+      "sha256": "3a83e12325b986e280f12a466bb72a512581dba7872daf45d8b073ce4af820da"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WE2-07-Rest-Security-V01.3.pdf",
+      "new": "web-engineering-2/track-2/01-lectures/07-rest-security-v01.3.pdf",
+      "sha256": "12a99b9fb0d646c69975b88eae57c2dc8aa007e37fb93875765199e66a6997a3"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WE2-03-Backend-V01.0.pdf",
+      "new": "web-engineering-2/track-2/01-lectures/03-backend-v01.0.pdf",
+      "sha256": "ee67979448d3441cc7621340c92e1b1b3b6e773784b52814f02b9ca716e33a3e"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WE2-05-Nodejs-Express-V01.6.pdf",
+      "new": "web-engineering-2/track-2/01-lectures/05-nodejs-express-v01.6.pdf",
+      "sha256": "fed2a7d38ea9112fbfd3649cf6159bddeda7b846a01d2dca209c63e2596f0795"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/semesterplan-ws2026-27.png",
+      "new": "web-engineering-2/track-2/01-lectures/course-schedule.png",
+      "sha256": "a19091bd88b26d539fe07e40ff0e19014a3f3272286b009c73e633f1a84bc2bb"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/01_Lectures/WE2-51-JavaScript-Fortgeschritten-V01.4.pdf",
+      "new": "web-engineering-2/track-2/01-lectures/51-advanced-javascript-v01.4.pdf",
+      "sha256": "5237a4020933d185ac52a79df58aba34525108aa28e536184c33cdcc9ea4d55c"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WE2-01-Intro-V12.txt",
+      "new": "web-engineering-2/track-2/source-extracts/01-intro-v12.txt",
+      "sha256": "b40ddf11ce04b289bb0861eb71bcf2629fa072a89b4b71e712833cfa442b0f61"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WE2-04-Nodejs-Basics-V01.0.txt",
+      "new": "web-engineering-2/track-2/source-extracts/04-nodejs-basics-v01.0.txt",
+      "sha256": "511c08b0af091466a7522b3dfa5c202600219e37fedf6614b1377d7e31853f37"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WEII-Uebung-1-M0-V17.txt",
+      "new": "web-engineering-2/track-2/source-extracts/01-rest-server-m0-v17.txt",
+      "sha256": "1c9280a5338d5d04f7d193067def0852a73a3d8a1e51a4e6e6a38c07b870d6c7"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WE2-05-Nodejs-Express-V01.6.txt",
+      "new": "web-engineering-2/track-2/source-extracts/05-nodejs-express-v01.6.txt",
+      "sha256": "90c4d073106ead2956093fdbca5cb4491311e414091a2df2216b81c466809d10"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WE2-51-JavaScript-Fortgeschritten-V01.4.txt",
+      "new": "web-engineering-2/track-2/source-extracts/51-advanced-javascript-v01.4.txt",
+      "sha256": "62a11a66e7d528be1885e31512c6bdab3460be37f8148677f3e55c5a10ccb357"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/intro-22.png",
+      "new": "web-engineering-2/track-2/source-extracts/intro-22.png",
+      "sha256": "cd894427ae48fb639e4277108d109563f48b378bb36c3a225c61d8aaacc15429"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WE2-02-Web-Architekturen-V01.0.txt",
+      "new": "web-engineering-2/track-2/source-extracts/02-web-architectures-v01.0.txt",
+      "sha256": "aa5dfd56563f84a988e8290c60b103ef0ff4c88dd92beb6528ede28be02e50b3"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WE2-06-MongoDB-V01.2.txt",
+      "new": "web-engineering-2/track-2/source-extracts/06-mongodb-v01.2.txt",
+      "sha256": "c87623ec30897381e936dbcd0c8dcf3067dd340ded1df8a2c4f2ad39fc3f8daf"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/intro-26.png",
+      "new": "web-engineering-2/track-2/source-extracts/intro-26.png",
+      "sha256": "b2df603b0f046d520eaa28c3a93910d9400ee24e6fb1c08cb3a9f6ca3b66a2c7"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WE2-03-Backend-V01.0.txt",
+      "new": "web-engineering-2/track-2/source-extracts/03-backend-v01.0.txt",
+      "sha256": "d4d3066fb2fffbefb35216d57c571ae8bcc55a0efd68ab938c0c35521e4ec312"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WE2-07-Rest-Security-V01.3.txt",
+      "new": "web-engineering-2/track-2/source-extracts/07-rest-security-v01.3.txt",
+      "sha256": "57e5706f42569315b910f336bf1fcda4e15229c852bdbf4a6a83ed500b934647"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WE2-53-Einführung-Typescript-V02.txt",
+      "new": "web-engineering-2/track-2/source-extracts/53-typescript-intro-v02.txt",
+      "sha256": "422d52d85674a5d722b6b3743754ef35678c6a64dd3af8a5eed2ecb043bea0f4"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WE2-50-Hinweise-Entwicklung-V00.3.txt",
+      "new": "web-engineering-2/track-2/source-extracts/50-development-guide-v00.3.txt",
+      "sha256": "7ae8ce6813b8ad7acb50e753f04c899612feff797ca98845d113fe886f62381f"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/web2-zug2/WE2-00-Semesterbegrüßung-V01.txt",
+      "new": "web-engineering-2/track-2/source-extracts/00-semester-intro-v01.txt",
+      "sha256": "d8308f9c9d50dc5d38da96126c30a01d4b49067c0b6b66d3408c08490560cc58"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-v17.txt",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/assessment-rules-v17.txt",
+      "sha256": "8c54e68cbf89af0131475030647e5a7cf3d3cc8fe238c8e8a37ce09a9dab8fc7"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-v17-contact.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/assessment-rules-v17-contact.png",
+      "sha256": "0804a52272651767d507a19a6a46b92117dd597e90c59cf68b4ce4f920d4fd73"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/we2-contact.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/assessment-rules-contact.png",
+      "sha256": "498c83c40c9fae1c4490d68d869c07faa7cae36f504225fc6928e9cea584b903"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/we2.txt",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/assessment-rules.txt",
+      "sha256": "340681814e23cba7127f5d4a01e4c3d13b21b06280f67f38e6bd0bf2487f18dc"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-15.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-15.png",
+      "sha256": "7d7ee21ff81474c954fede05e416e8708505cf3f8f92728ae4ce6f5ae99b8169"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-01.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-01.png",
+      "sha256": "5137a85bdbc8f4aafaf00dee3d76188d106dca3fe11bb5b86bfdf1db6a61e21a"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-14.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-14.png",
+      "sha256": "7ac597b79883946d37d9162688f4f0561206f4a7e3e0f0295b83f5f8b3bab7fd"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-02.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-02.png",
+      "sha256": "d16a81837156b698252af97b19c9d83c880a3f8b787881614eee8c36f6ae69c8"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-03.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-03.png",
+      "sha256": "1fb2abaa458d93b6b133e5a863ef813610440aa0a6e0348125c08204e2d68a9a"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-07.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-07.png",
+      "sha256": "c5b8c2470d56f2fc3b3f44c1888b1fc70a63e62e8883b8534fa9a8ad597ec9f9"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-13.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-13.png",
+      "sha256": "dc50bee382c9ef92922978a54005c37b8e8e8ea57875889e5d1b12319c7a57a3"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-12.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-12.png",
+      "sha256": "8bd294c6ada5624c0cdb13aee5ff3f0cf52e5f2b8e0a4f917621283b6649f552"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-06.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-06.png",
+      "sha256": "dade08ebc8de754fb15ff9a60f9dff089d59002d567fe8cfd9ad0b64edbeaf78"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-10.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-10.png",
+      "sha256": "cfc8e6faafcc8d241010f1ef3a784fcfa26a7d73d3bbcfd64dc05b0d27e63929"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-04.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-04.png",
+      "sha256": "6b55f4cb041fe67e3f5bd16394db63d274d556b389437cba6b567c28514984e0"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-05.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-05.png",
+      "sha256": "5a63ef41bee030796961cc7e4d59f0ad15e4d8defc612e5409e0564757facf47"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-11.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-11.png",
+      "sha256": "84984125109533a03314413ca7f3c7b903441c6d4301f268b7418877d7c8fc60"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-08.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-08.png",
+      "sha256": "1739dd1b5c90738991fd723bb6cf727be9fb025dda24ff1109f4716fc23a6683"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db/pdf-pages/we2-09.png",
+      "new": "web-engineering-2/track-1/source-extracts/assessment-rules/pdf-pages/page-09.png",
+      "sha256": "035b62e62a2b82482c833aa0e9623f67cbb29ffa4fa438a5b36bf4e239877ddc"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-01.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-01.png",
+      "sha256": "9fb4b47115f2bd74ad742874abfadea1884a3503572cb237908b2bc37638a054"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-02.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-02.png",
+      "sha256": "61e8943fbf6cd4ed34449e4ad2b46d6c48e2483b2cb57cf82aa21f4d4406f5bc"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-03.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-03.png",
+      "sha256": "4ec62ae7cc6cc3e250a6cb07763101fc45660a4704d32f0fc93f616b23b69ce1"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-07.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-07.png",
+      "sha256": "552b1fb3e6faa98bce889e1d544fb09349d11d95397d87f77314052bef942c76"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-12.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-12.png",
+      "sha256": "6f9cbc84be304ac8d0d0fee4e9d7372fb35dd0ec415124104e45cf8dcc6fe60a"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-06.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-06.png",
+      "sha256": "7b5a952cdece15a6842fa876e85c204f1188a2d69eb0c3f0f474ce52f06b16ef"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-10.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-10.png",
+      "sha256": "619f43de7502bf4a057ac248d563baf7e3c89652407d1baee6c81aacd9e97fc0"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-04.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-04.png",
+      "sha256": "c0a5d250b2d6853a904881bf5ce2f1dadb7d299bfc294b42e7305287a88243be"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-05.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-05.png",
+      "sha256": "377b8d910db609dcc2cc386dec5ba44bb5d9ac3a2896ff3e5d63163e32f51528"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-11.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-11.png",
+      "sha256": "c6caff44864ab00786561a21e2040e0760566d92f4e54237ed40ebaf5a9f0562"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-08.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-08.png",
+      "sha256": "3cd9cc8a9ffaaf8ad234f4bdddb4e4aa62fbc6e3ab8a4d6961bea37349f83b55"
+    },
+    {
+      "old": "Web Engineering 2/Track 2/Source Extracts/course-db2/we2-pages/page-09.png",
+      "new": "web-engineering-2/track-2/source-extracts/assessment-rules-v17/pages/page-09.png",
+      "sha256": "44cd879c4e1dee5afafba69d4df53c54982f9fe967bcef6d0dab0f18a5f05e03"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/organisation-contact.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/organization-contact.png",
+      "sha256": "6b87c7deaea73dc6295c861929067676ebb240a3e0980564779904114a2e44fa"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/organisation.txt",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/organization.txt",
+      "sha256": "d2aac5787e33522dfe1a9ff1e1ebae8d8be39f94766e07a74bcb9b72e882c4cb"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-01.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-01.png",
+      "sha256": "fa9653a54141c62b462abc6d5e43cab7646638ed13b67e2691ca9c1fcfaad1e0"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-02.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-02.png",
+      "sha256": "ad6acf1aaf12c2e2a62b64c142eaf7a58f5590b39f293711f198797b885b1cb3"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-03.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-03.png",
+      "sha256": "ce4684e9ce93c5b73207400eeaedd3c061712dbac8e62345d30cfb768af217bc"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-07.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-07.png",
+      "sha256": "fb56eb07a455ec8f5652f36fc9efc913698a70673c4dd4bc869cc89638aab2bc"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-13.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-13.png",
+      "sha256": "017c47d7c53a99d183ac69d7009a1e3fea6010e0af1e08dfb5f73a5ac9a0188e"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-12.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-12.png",
+      "sha256": "2b983daa1870126cff5bbf88c0aed65fc37e475e2b8d1afd52fb309e75cd31ee"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-06.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-06.png",
+      "sha256": "dd622f1fd08bca6fdfe8e814b886b732e8ad3706cd1f9cbc86afe0412a54a8b3"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-10.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-10.png",
+      "sha256": "ad3cfaa5dbb49ecee5cb7fbb02d77311975f2269ec120f9c2c90eb5cafe34c3c"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-04.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-04.png",
+      "sha256": "fd543e785431f3e6743f01911ad4b91a89078b1658ab150f8df4ce8524c492b1"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-05.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-05.png",
+      "sha256": "e8ee6288e1d7ab37ed5f35dc6c47166ee43f3b73fe059013705d786803635e87"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-11.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-11.png",
+      "sha256": "1b6f8ecbc83031b69324737543674bbcd54eb7221d486aca97154a4abd0de4fc"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-08.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-08.png",
+      "sha256": "cc7edecdd6cfb0267be47598dd31047b2954ea4fea103a408d8527b1e7c8298e"
+    },
+    {
+      "old": "Principles of Theoretical Computer Science/Track 2/Source Extracts/course-db2/org-pages/page-09.png",
+      "new": "theoretical-cs/shared/source-extracts/organization-pages/pages/page-09.png",
+      "sha256": "35ac3410e7b3d5de4335348eb33bfff100dd77895680e1206f3906ae0acbee64"
+    },
+    {
+      "old": "Principles of Media Design/Track 2/01_Lectures/WS2627_MD_01_Einfuehrung.pdf",
+      "new": "media-design/track-2/01-lectures/01-intro.pdf",
+      "sha256": "91a8ad57e965ced768f31600e3da7854f8cd5e2a925dd963d019eb39184f2051"
+    },
+    {
+      "old": "Principles of Media Design/Track 2/Source Extracts/course-db2/md-new.txt",
+      "new": "media-design/track-2/source-extracts/course-plan.txt",
+      "sha256": "3eb83a8c5a9ce658a6d63250b8f8463cf46b79eff73681dc7d6a914b82bd7d81"
+    },
+    {
+      "old": "Principles of Media Design/Track 2/Source Extracts/course-db/md.txt",
+      "new": "media-design/track-2/source-extracts/course-plan.txt",
+      "sha256": "3eb83a8c5a9ce658a6d63250b8f8463cf46b79eff73681dc7d6a914b82bd7d81"
+    }
+  ],
+  "provenanceUsingRetainedExtracts": {
+    "Organisation.pdf": "../theoretical-cs/shared/source-extracts/organization-pages/organization.txt",
+    "MD-SU-WS2627-ZUG2_ Kursplan Mediendesign Grundlagen _ Moodle.mhtml": "../media-design/track-2/source-extracts/course-plan.txt",
+    "WE2 Modalitäten.pdf": "../web-engineering-2/track-1/source-extracts/assessment-rules/assessment-rules.txt",
+    "WEII-Uebung-0-Allgemeine-Regelungen-V17.pdf": "../web-engineering-2/track-2/source-extracts/assessment-rules-v17/assessment-rules-v17.txt"
+  },
+  "applicationFilesRenamed": [
+    {
+      "old": "bht-schedule/src/App.tsx",
+      "new": "bht-schedule/src/app.tsx",
+      "sha256": "ccac550422ff1493891dfcb1dc51a55ab1ee0477c07bf1a3c50cf4ec60912207"
+    }
+  ]
+}

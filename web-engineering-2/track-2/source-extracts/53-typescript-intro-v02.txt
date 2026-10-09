@@ -1,0 +1,410 @@
+                                  JavaScript - Fortgeschritten
+
+
+
+Web-Engineering II
+Prof. Dr. Sebastian von Klinski
+TypeScript
+•   Programmiersprache 2012 von Microsoft entwickelt
+•   Basiert auf ECMAScript-6-Standard
+•   Erweiterung (Obermenge) von JavaScript
+     • JavaScript-Code ist auch gültiger TypeScript-Code
+     • Alle JavaScript-Programme können auch unter TypeScript verwendet
+        werden
+•   Wird nach JavaScript kompiliert
+•   TypeScript-Kompiler ist ein Transkompiler (Souce-Code nach Source-Code)
+•   Kapseln von Klassen, Interfaces, Funktionen und Variablen in eigenen
+    Namensräume
+•   Unterscheidung zwischen internen und externen Modulen
+     • Interne Module: Modul-Spezifikation aus ECMAScript 6
+     • Externe Module: JavaScript-Bibliothek z.B. mit CommonJS
+
+
+
+
+                                                                              2
+TypeScript
+•   TypeScript kann alle JavaScript-Aspekte nutzen
+•   Ein Programm kann auch schrittweise von JavaScript nach TypeScript
+    überführt werden
+•   Im Unternehmensumfeld wird in der Regel TypeScript anstelle von
+    JavaScript verwendet
+      • Bessere Typsicherheit  weniger Probleme
+      • Compiler findet bereits fehler
+      • Syntax-Highlightnig mit Fehlerhinweisen
+•   Jedes .js-Datei könnte in .ts umbenannt werden  kein Problem
+•   TypeScript ist Case-Sensitiv
+•   Semikolon ist wie bei JavaScript nicht notwendig
+•   Kommentare sind wie bei Java
+
+
+
+
+                                                                         3
+Setup
+
+
+
+
+        4
+TypeScript: Setup
+•   TypeScript installieren
+
+            // Lokal
+            npm install typescript --save-dev
+            // Global
+            npm install -g typescript
+
+•   TypeScript-Compiler ist dann im node_modules-Verzeichnis
+•   Je nach Installationsart (global oder lokal) ist Starten von Compiler anders
+
+            // Wenn lokal installiert
+            npx tsc
+            // Wenn global installiert
+            tsc
+
+•   Anlegen einer Basiskonfiguration für TypeScript-Compiler
+            npx tsc --init
+
+                                                                                   5
+TypeScript-Konfiguration
+•   Basiseinstellungen für
+    den Compiler
+
+
+
+
+                             6
+TypeScript: Übersetzen und ausführen, ts-node.js
+•   Für Ausführen von TypeScript-Modulen unter node sind 2 Schritte notwendig
+     • TypeScript nach JavaScript transkompilieren
+     • JavaScript ausführen
+•   Alternativ kann ts-node.js verwendet werde
+     • https://www.npmjs.com/package/ts-node
+     • ts-node macht beides mit einem Schritt (und mehr…)
+
+
+
+
+                                                                            7
+TypeScript: Beispiel
+•   Einfaches TypeScript-Beispiel                 Typdeklaration
+
+
+
+
+•   Compiler erzeugt JavaScript-Datai
+•   Erzeugte JavaScript-Code
+
+
+
+
+•   TypeScript erzeugt keinen besseren JavaScript-Code
+•   Der Vorteil besteht aus der Typsicherheit, beim Erzeugen des JavaScript-
+    Codes
+
+
+                                                                               8
+TypeScript: Beispiel
+Beispiel:
+• Klasse mit zwei Attributen/ Methode, die Objekt verarbeitet
+• Instanz wird angelegt und Methode angewandt
+
+
+
+
+                                                                9
+TypeScript: Beispiel
+Kompilation:
+
+            tsc test.ts
+
+Ergebnis:
+
+
+
+
+ •   Normaler JavaScript-Code
+ •   Auch hier:
+      • Keine bessere Typsicherheit
+      • Nur in TypeScript-Modulen ist der Unterschied!
+
+                                                         10
+Grundlagen
+
+
+
+
+             11
+TypeScript: Datentypen
+
+•   number: 64-Bit-Double-Wert, für Integer-Werte und Dezimalzahlen
+•   string: Unicode-Zeichen
+•   boolean: true oder false
+•   void: Für Funktionen, die keinen Rückgabewert haben
+•   null: Wenn kein Wert gesetzt ist
+•   undefined: nicht initialisierte Variable
+
+•   Null und undefined:
+     • Es gibt einen Unterschied
+     • Undefined ist eine Variable, die mit undefined initialisiert wurde
+     • Null ist eine Variable, die auf ein Objekt zeigt, das „undefined“ ist
+
+
+
+
+                                                                               12
+TypeScript: Scope
+
+•   Scope von Variablen wie in Java
+     • Globale Variablen
+     • Instanz-Variablen
+     • Statische Variablen
+     • Methoden-Variablen
+
+
+
+
+                                      13
+TypeScript: Neue Konstrukte
+•   Methodensignatur
+•   Typinferenz
+•   Type Erasure
+•   Interfaces
+•   Aufzählungstyp
+•   Generische Programmierung
+•   Namensräume
+•   Tupel
+•   Async/Await
+
+
+
+
+                                14
+TypeScript: Methodensignatur
+•   Abweichend von Java
+•   Type und Variablennamen umgekehrt
+•   Return-Wert hinten
+•   Datentypen wie in JavaScript
+
+
+
+
+•   Optionale Parameter                 Optional
+
+
+
+
+                                                   15
+TypeScript: Klassen
+•   Sehr ähnlich wie in Java
+
+
+
+
+                               16
+TypeScript: Interfaces
+•       Definition ähnlich wie in Java
+•       Jedoch strukturelle Typing wird angewandt
+
+
+
+
+    •   Es können Instanz-Variablen deklariert werden
+    •   Es wird beim Typing geprüft, ob die Struktur stimmt
+
+
+
+                                                              17
+TypeScript: Generics
+•   Sehr ähnlich wie in Java
+
+
+
+
+                               18
+TypeScript: Schleifen
+•   Sehr ähnlich wie in Java
+
+
+
+
+                               19
+TypeScript: Wenn Wert undefined sein kann
+•   Wenn ein Wert „undefined“ sein kann, muss das beim Typ entsprechend
+    angegeben werden
+•   Bei der Übergabe an Funktionen kann es notwendig sein, den Optional-
+    Parameter („?“) zu verwenden
+
+
+
+
+                                                                           20
+TypeScript: Enum und Funktionsdeklaration
+•   Es können auch Enums und Funktionsdeklarationen verwendet werden
+•   Funktionsdeklarationen: wenn Funktionen weitergereicht werden sollen
+
+
+
+
+                                                                           21
+REST-Server mit Node, Express und TypeScript
+
+
+
+
+                                               22
+REST-Server mit TypeScript
+•   TypeScript hilfreich bei Umsetzung von Anwendungen wie REST-Server
+    oder React-Anwendungen
+•   Typsicherheit und bessere Nutzung von Vererbung
+•   Notwendige Anpassungen
+     • TypeScript-Module zu Modul hinzufügen
+     • TypeScript-Konfiguration ergänzen
+     • Anpassen von Start-Skript
+
+
+
+
+                                                                         23
+TypeScript-Module hinzufügen
+•   TypeScript-Module als Dev-Dependencies installieren
+
+npm i --save-dev @types/cors @types/express @types/debug source-map-support
+tslint typescript
+
+
+
+
+                                                                              24
+TypeScript-Konfiguration hinzufügen
+•   Anlegen von tsconfig.json im Root-Verzeichnis
+•   Angaben für Kompiler
+     • Welcher Code soll erzeugt werden?
+     • Welche Art von Modul ist es?
+     • Wo soll der erzeugte Code abgelegt werden?
+
+
+
+
+                                                    25
+Start-Skript anpassen
+•   Start-Script muss
+     • Transkompilation durchführen
+     • Im erzeugten Code das zentrale Modul starten (app.js)
+
+
+
+
+                                                               26
+Umsetzung der Routen
+•   Nutzen von Vererbung kann genutzt werden, um Programmieraufwand zu
+    reduzieren
+•   Beispiel:
+      • Basis-Klasse für Routen, Services, etc. umsetzen
+      • Ausprägung für jede Route über Instanzen abbilden
+
+
+
+
+                                                                         27
+Umsetzung der User-Route
+•   Routen können
+    Struktur und
+    Methoden erben
+•   Basis-
+    Implementierungen
+    (z.B Standard-
+    CRUD-Methoden)
+    können auch in
+    Basis-Klasse
+    umgesetzt werden
+
+
+
+
+                           28
+                    Vergleiche Tutorial: https://www.toptal.com/express-js/nodejs-typescript-rest-api-pt-1
+
+Umsetzung der app.js
+•   Zentrales Modul ist
+    kaum geändert
+
+
+
+
+•   Es kann jedoch sehr
+    viel generischer
+    programmiert
+    werden…
+
+
+                                                                                                 29
+Umsetzung der einzelnen Routen mit minimalen Code
+•   In der User-Route muss nur noch die Methode der abstrakte Klasse zum
+    Anlegen aller Routen aufgerufen werden
+
+
+
+
+•   Die einzige Anpassung besteht in dem Ändern der Resource-ID
+    („publicUsers“)
+
+
+
+
+                                                                           30
+React-Anwendung mit TypeScript
+
+
+
+
+                                 31
+React-Anwendung mit TypeScript
+
+•   Erzeugen der React-Anwendung über
+
+    npx create-react-app my-app --template typescript
+
+
+•   Anschließend sollte Anwendung über „npm start“ gestartet werden
+•   Anwendung identisch zu normaler Java-Script-React-Anwendung
+•   Erzeugter Code sehr ähnlich, jedoch mit ein paar Unterschieden
+     • tsconfig.json (Konfiguration für Transkompilation)
+     • React-Komponenten müssen die Endung „.tsx“ haben
+         • Ansonsten wird HTML-Code als Fehler dargestellt
+     • Dateien, die kein JSX zurückgeben, sollten die Endung „.ts“ haben
+
+
+
+
+                                                                           32
+React-Anwendung mit TypeScript
+
+•   Unterschied bei Funktionsdeklaration
+
+    function App() {
+    …
+
+•   wird zu …
+
+    function App(): React.ReactNode {
+    …
+
+
+
+
+                                           33
+React-Anwendung mit TypeScript
+
+•   Wenn Komponenten JSX enthalten, bzw. zurückgeben, muss vorher
+    transkompiliert werden
+•   Dazu muss Modul Endung „.tsx“ haben
+•   Hinweis für Transkompiler
+•   Ansonsten Fehlermeldungen beim JSX-Code
+
+
+
+
+                                                                    34
+

@@ -1,0 +1,64 @@
+                                                Web-Engineering II
+
+
+Herzlich Willkommen
+
+
+
+
+                  Foto vom Firmenlauf der BHT
+Hallo zum Semesterstart
+•   Vorlesungen und Übungen in Präsenz
+    • In der Regel keine Online-Abnahmen oder –Rücksprachen
+    • Bitte kommen Sie in die Vorlesungen und Übungen
+•   Falls es Änderungen gibt, kommen Informationen über Moodle
+Hallo zum Semesterstart
+•   Web-Engineering II
+    • Setzt auf Web-Engineering I auf
+    • Vollständige Web-Anwendung mit REST-Service als Backend und React-
+      Frontend
+    • Große Herausforderung
+      • Viele neue Aspekte
+      • Intensive Nutzung von TypeScript mit Callbacks, Promises, etc.
+    • Verständnis des großen Ganzen entwickeln
+•   Sehr wichtige Vorbereitung für das Arbeitsleben, weil Sie mit großer
+    Wahrscheinlichkeit genau diese Technologien verwenden werden
+Im Moodle
+•   Alle wichtigen Unterlagen im Moodle
+    • Vorlesungsfolien
+    • Übungsaufgaben
+    • Videos zu den Vorlesungen
+•   Vorlesungen oder Übungen
+    • In den Vorlesungen viele praktische Beispiele
+    • Zu ausgewählten Themen im Moodle aufgezeichnete „First Steps“-Videos
+    • Im Ausnahmefall Online-Sessions per Zoom
+•   Fragen?
+    • Schreiben Sie mir Ihre Fragen per Email!
+    • Gemeinsames Besprechen in Vorlesungen
+Hinweis für Studierende, die wiederholen
+•   Anrechnung von Übungen der letzten Semestern möglich , wenn nicht älter
+    als 2 Semester
+•   Keine Anrechnung von Klausuren
+•   Wenn Sie sich etwas anrechnen lassen wollen: E-Mail in den ersten 3
+    Wochen des Semesters, was Sie sich von wann anrechnen lassen wollen
+
+
+
+
+                                                                              5
+Die nächsten Schritte
+•   Im Moodle die ersten Vorlesungen
+•   Erläuterung der Rahmenbedingungen
+    • Übungsaufgaben
+    • Klausur
+    • Notengebung
+    • Fristen, Abgabetermine, etc.
+
+
+Viel Erfolg beim Einstieg in das Semester und alles Gute! Bleiben Sie gesund!
+
+
+
+
+                                                                                6
+

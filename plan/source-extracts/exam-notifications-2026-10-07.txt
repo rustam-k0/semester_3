@@ -1,0 +1,11 @@
+Source: manual transcription of eight BHT webmail screenshots attached by the user on 2026-10-07. Sender: noreply@bht-berlin.de. Attachment IDs identify notifications, not downloaded ICS content. Timezone not stated.
+{"subject": "Medientechnologien", "zugs": [1, 2], "date": "2027-01-15", "start": "12:00", "end": "14:00", "room": null, "notificationId": "196157", "screenshotTime": "22.57.42"}
+{"subject": "Betriebssysteme", "zugs": [1], "date": "2027-01-19", "start": "16:00", "end": "17:30", "room": "D138", "notificationId": "196612", "screenshotTime": "22.57.04"}
+{"subject": "Web Engineering II", "zugs": [2], "date": "2027-01-25", "start": "16:00", "end": "17:00", "room": null, "notificationId": "194837", "screenshotTime": "22.57.11"}
+{"subject": "Grundlagen der Theoretischen Informatik", "zugs": [2], "date": "2027-01-29", "start": "10:00:51", "end": "11:30:51", "room": "Vorlesungsraum", "notificationId": "196587", "screenshotTime": "22.57.08"}
+{"subject": "Software Engineering II", "zugs": [1], "date": "2027-02-03", "start": "12:15", "end": "13:45", "room": "H4", "notificationId": "193492", "screenshotTime": "22.57.35"}
+{"subject": "Web Engineering II", "zugs": [1], "date": "2027-02-03", "start": "14:15", "end": "15:15", "room": null, "notificationId": "191815", "screenshotTime": "22.57.28"}
+{"subject": "Software Engineering II", "zugs": [1], "date": "2027-03-31", "start": "13:30", "end": "15:00", "room": "TBD", "notificationId": "193495", "screenshotTime": "22.57.32"}
+{"subject": "Web Engineering II", "zugs": [1], "date": "2027-03-31", "start": "16:00", "end": "17:00", "room": null, "notificationId": "191817", "screenshotTime": "22.57.18"}
+Web Engineering II Zug 1 notes: Hinweise werden in der Veranstaltung gegeben / bekannt gegeben. Other notes fields are empty.
+No duplicate events among these eight notifications. Repeated subjects have distinct dates. Preserve the seconds in the theoretical CS notification.

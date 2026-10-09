@@ -1,0 +1,571 @@
+Prof. Dr. Sebastian von Klinski, klinski@beuth-hochschule.de                                                      Raum B230aa
+
+
+                                 A L L G E ME I N E R E G E L U N G E N F Ü R D I E Ü B U N G S A U F G A B E N
+
+LV            WE B - E N G I N E E R I N G I I
+T H E MA      ÜBUNGSAUFGABEN 1-2
+
+
+
+
+                                           ALLGEMEINE BESCHREIBUNG
+Im Rahmen der Übungsaufgaben setzt jeder/e Studierende eine eigene Web-Anwendung um, die sowohl das Ba-
+ckend als auch das Frontend umfasst. Die konkrete Anwendung kann sich je nach Aufgabenstellung von Semester
+zu Semester leicht unterscheiden.
+Nachfolgend wird beispielhaft eine Anwendung beschrieben, die in vergangenen Semestern umgesetzt wurde. Die
+Anwendung in diesem Semester wird inhaltlich davon abweichen. Der grundlegende Aufbau wird jedoch sehr ähn-
+lich sein. Die nachfolgend beschriebene Anwendung soll illustrieren, wie ungefähr eine von Ihnen umgesetzte An-
+wendung aussehen sollte und was dabei zu beachten ist.
+
+BEISPIEL FÜR EINE WEB-ANWENDUNG: WEB-FORUM
+In vergangenen Semestern haben die Studierenden ein Web-Forum umgesetzt. Das nachfolgende Beispiel zeigt das
+Web-Forum, dass ich zur Illustration umgesetzt hatte. In diesem Beispiel habe ich eine Web-Seite für Lehrkräfte
+umgesetzt. In dieser Web-Anwendung sollen sich Lehrkräfte über beliebigen Themen in Form von Blogs austau-
+schen können.
+Als Landing-Page wird zunächst die folgende Web-Seite angezeigt:
+
+
+
+
+                                                              Abbildung 1: Startseite
+
+
+Auf der Landing-Page werden die grundlegenden Funktionen der Webseite erläutert. Es gibt es zwei Möglichkeiten
+zum Einloggen:
+     •     Der Login-Button links unter der Hauptüberschrift
+     •     Rechts oben im Menu
+
+
+
+                                                                     Seite 1
+Prof. Dr. Sebastian von Klinski                                                                     Haus Gauss
+klinski@tfh-berlin.de                                                                                Raum 115
+
+Nach dem Drücken eines der beiden Buttons, wird der Login-Dialog angezeigt. Der Login-Dialog ist ein modaler
+Dialog.
+
+
+
+
+                                                Abbildung 2: Login-Dialog
+
+
+Der Button zum Starten des Login-Prozesses im Dialog wird nur freigeschaltet, wenn sowohl eine User-ID als auch
+ein Passwort eingegeben wurden. Es gibt außerdem einen Button für den Fall, dass der Nutzer sein Passwort ver-
+gessen hat.
+Nach dem Login wird die Startseite angezeigt. Sie umfasst neben dem Hauptmenu oben die folgenden Komponen-
+ten angezeigt:
+    •    Der Activity-Bar: Balken mit den persönlichen Hautmenüs links am Rand
+    •    Die persönliche Nachrichtenliste: eine Liste von persönlichen Nachrichten, die direkt an den eingeloggten
+         Nutzer geschrieben wurden.
+
+
+
+
+                                        Abbildung 3: Private Seite nach dem Login
+
+
+
+
+                                                       Seite 2
+Prof. Dr. Sebastian von Klinski                                                                      Haus Gauss
+klinski@tfh-berlin.de                                                                                 Raum 115
+
+Wenn der Nutzer einen Menüeintrag im Activity-Bar anklickt, wird das jeweilige persönliche Untermenu angezeigt.
+
+
+
+
+                                  Abbildung 4: Private Seite mit persönlichen Untermenü
+
+
+Im persönlichen Untermenü gibt es zwei Link-Gruppen:
+    •    Meine Übersicht: Dieser Bereich ist nur zu Illustration. Dort sind keine Funktionen umgesetzt.
+    •    Meine Blogs: Dort sind die eigenen Blocks aufgeführt. Wenn ein Link angeklickt wird, wird der Blog-
+         Beitrag sowie die Nachrichten zu diesem Block dargestellt.
+Die umgesetzte Web-Anwendung sollte vollständig responsiv sein. Das bedeutet unter anderem, dass auch eine
+Nutzung auf mobilen Endgeräten ohne Einschränkungen möglich sein muss. Wenn die Lehrkraftseite auf einem
+mobilen Endgerät geöffnet wird, passt sich die Web-Oberfläche automatisch an.
+Beispielsweise sieht die Web-Seite nach dem Login auf einem mobilen Endgerät wie folgt aus.
+
+
+
+
+                                  Abbildung 5: Private Seite auf einem mobilen Endgerät
+
+Wenn ein persönliches Untermenü auf dem Activity-Bar angeklickt wird, wird dieses über dem Nachrichtenbereich
+dargestellt (siehe nachfolgende Abbildung).
+
+
+
+
+                                                        Seite 3
+Prof. Dr. Sebastian von Klinski                                                                       Haus Gauss
+klinski@tfh-berlin.de                                                                                  Raum 115
+
+
+
+
+                       Abbildung 6: Private Seite auf mobilen Endgerät mit persönlichen Untermenü
+
+
+INHALTLICHE GESTALTUNG IHRER ANWENDUNG
+Die Aufgabenstellungen gibt die Fachdomäne der Anwendung mit den Entitäten vor. Die grafische Ausgestaltung
+kann jedoch weitgehend individuell gestaltet werden. So konnte beispielsweise für das Web-Forum ein Forum für
+Software-Entwickler, für Tierfreunde, für den Austausch von Counter-Strike-Spielern oder auch Freunde des
+Kochens umgesetzt werden. Auch die grafische Gestaltung und viele weitere Aspekte, die nicht in der Aufgaben-
+stellung vorgegeben sind, können Sie in der Regel frei gestalten. In Zweifelsfall sollten Sie mich dazu in der Übung
+ansprechen.
+
+ANWENDUNGSARCHITEKTUR
+Für die Umsetzung der Web-Oberfläche soll eine Single-Page-Applikation mit React umgesetzt werden. Das Ba-
+ckend soll als REST-Server mit node.js umgesetzt werden. Als Datenbank soll MongoDB verwendet werden. Dieser
+Web-Stack wird MERN genannt (MongoDB, Express, React, Node). Die Anwendungsarchitektur sieht dementspre-
+chend wie folgt aus:
+
+
+
+
+                                  Abbildung 7: Anwendungsarchitektur der Web-Anwendung
+
+
+
+
+                                                        Seite 4
+Prof. Dr. Sebastian von Klinski                                                                       Haus Gauss
+klinski@tfh-berlin.de                                                                                  Raum 115
+
+Für den Zugriff auf die MongoDB-Datenbank soll Mongoose verwendet werden.
+Da in den Vorlesungen nur React als Web-Bibliothek vorgestellt wird, können keine anderen Web-Plattformen wie
+Angular oder Vue verwendet werden! Die Rahmenbedingungen müssen für alle Studierenden gleich sein. Für das
+State-Management im Web-Client wird Redux verwendet.
+
+PROGRAMMIERSPRACHE
+Als Programmiersprache ist TypeScript vorgegeben! Eine Umsetzung von größeren Web-Anwendung mit Ja-
+vaScript ist jedoch heute kaum noch vertretbar. Daher ist die Verwendung von TypeScript obligatorisch. Das be-
+deutet insbesondere, dass auch eine Typisierung von Variablen umgesetzt werden muss. Es ist nicht zulässig, die
+Typ-Deklaration wegzulassen oder immer any zu verwenden. Bei mindestens 50% aller Variablen und Funktionen
+sind Typdeklarationen zu verwenden. Ist das nicht der Fall, werden jeweils im dritten Meilenstein Abzugspunkte
+berechnet.
+Viele Vorlesungsfolien enthalten noch Beispiele in JavaScript. Diese behalten ihre Gültigkeit, sollten aber nach Ty-
+peScript überführt werden.
+
+STATISCHE CODE-PRÜFUNG
+Die Verbesserung der Code-Qualität ist die Verwendung von Tools für die statische Code-Kontrolle sehr hilfreich.
+Für TypeScript ist ESLint der am meisten verbreitet Linter (Tool zur statischen Code-Kontrolle).
+Im Moodle-Kurs sind sowohl für den REST-Server als auch die Web-Anwendung ESLint-Konfigurationen hinterlegt.
+Die Nutzung von ESLint mit diesen Konfigurationen ist obligatorisch. Bei der Abgabe des dritten Meilensteins dür-
+fen keine Fehler mehr gemeldet werden und maximal 15 Warnings. Sollte diese Vorgabe nicht eingehalten wer-
+den, werden entsprechende Abzugspunkte bei den nicht-funktionalen Anforderungen berechnet.
+
+FACHDOMÄNE
+Die Fachdomäne kann sich von Semester zu Semester ändern. Jedoch wird sie stets sehr einfach gehalten sein. In
+der Regel besteht sie aus 3 Entitäten, die in Beziehung zueinanderstehen. Bei dem Beispiel von oben gibt es die
+Entitäten User, Blog und Message. Das folgende Klassendiagramm beschreibt die Beziehungen zwischen den Enti-
+täten:
+
+
+
+                       User
+                                                                  Blog
+                        userID
+                        userName                                   blogName
+                        isAdministrator                            blogText
+                        passord
+
+
+
+
+                                                                  Message
+
+                                                                   messageName
+                                                                   messageText
+
+                               Abbildung 8: Beispielhaftes Klassendiagramm für die Fachdomäne
+
+
+Auch wenn es je nach Semester unterschiedliche Themensetzungen geben wird, so wird die Fachdomäne immer
+sehr ähnlich aussehen.
+
+
+
+
+                                                        Seite 5
+Prof. Dr. Sebastian von Klinski                                                                    Haus Gauss
+klinski@tfh-berlin.de                                                                               Raum 115
+
+                                    ABLAUF UND BEWERTUNG
+Es müssen zwei Übungsaufgaben bearbeitet werden, die jeweils in drei Meilensteine unterteilt sind. Zusätzlich zu
+den Meilensteinen, die per Moodle abgegeben werden müssen, müssen ein bis zwei Lernerfolgskontrollen bestan-
+den werden. Für die bestandene Übungsaufgabe mit allen drei Meilensteinen können bis zu 60 Punkte erreicht
+werden. Für eine bestandenen Lernerfolgskontrolle werden 20 Punkte berechnet. Studierende, die für eine Übung
+100 von 100 Punkte erreichen wollen, müssen 2 Lernerfolgskontrollen erfolgreich bestanden werden. Es reicht
+jedoch zum Bestehen einer Übung aus, wenn eine Lernerfolgskontrolle bestanden wurde.
+Übungen und Lernerfolgskontrollen werden in den folgenden Abschnitten weiter erläutert.
+
+ÜBUNGSAUFGABEN
+Mit der ersten Übungsaufgabe wird der REST-Server umgesetzt, mit der zweiten Übungsaufgabe das React-
+Frontend.
+Die Umsetzung der beiden Übungsaufgaben ist aufwändig. Daher ist es wichtig, kontinuierlich an den Projekten zu
+arbeiten. Die Erfahrungen der vergangenen Semester haben gezeigt, dass es wichtig ist, vor der finalen Abgabe
+Feedback-Schleifen vorzusehen. Daher gibt es zu beiden Übungsaufgaben drei Meilensteine, zu denen vorge-
+schriebene Entwicklungsschritte erreicht werden müssen.
+Die Meilensteine sollen sicherstellen, dass Sie einen kontinuierlichen Fortschritt bei Ihrem Projekt erreichen. Zu
+jedem Meilenstein gibt es eine Vorgabenbeschreibung, in der konkret beschrieben wird, was zum Meilenstein um-
+gesetzt sein muss.
+Sollten Sie den Meilenstein nicht erfolgreich abschließen, gilt die Übung als „nicht bestanden“. Damit ein Meilen-
+stein bestanden ist, muss die Anwendung korrekt laufen. Bei allen Abgaben laden Sie den jeweiligen Stand Ihrer
+Übungslösung zum Fälligkeitstermin in Moodle hoch.
+
+Laden Sie nur den Programm-Code der jeweiligen Übungsaufgabe in einer Zip-Datei hoch. Andere Dateiformate
+(z.B. Rar) sind nicht zulässig. Bei den Abgaben der React-Anwendung soll der REST-Server nicht mehr hochgeladen
+werden. Alle Tests werden mit dem von mir entwickelten REST-Server ausgeführt.
+
+Abgaben können bis zu 7 Tage verspätet abgegeben werden. Es wird jedoch je Verspätungstag ein Abzugspunkt
+berechnet.
+
+Für beide Übungen gibt es jeweils 3 Abgaben, zu denen die umgesetzte Meilenstein-Lösung im Moodle hochgela-
+den werden muss:
+    •    Abgabe von Meilenstein 1
+    •    Abgabe von Meilenstein 2
+    •    Abgabe von Meilenstein 3 (finale Abgabe).
+Hinweis: Bei jedem Meilenstein muss die abgegebene Lösung ausführbar sein, nachdem ein „npm install“ ausge-
+führt wurde.
+Für die Meilensteine 1 und 2 gibt es keine Punkte. Dazu muss aber der geforderte Entwicklungsstand erreicht sein.
+Wenn der geforderte Entwicklungsstand nicht erreicht wurde, gibt es Abzugspunkte, die mit der Punktezahl für die
+Übung insgesamt verrechnet werden. Für Abweichungen von den funktionalen Anforderungen können bis zu 15
+Punkte abgezogen werden. Zusätzlich können weitere Abzugspunkte berechnet werden, wenn allgemeine Anfor-
+derungen nicht erfüllt wurden, die Anwendung nicht lauffähig ist oder die Lösung verspätet abgegeben wurde.
+Für Meilenstein 3 können bis zu 100 Punkte vergeben werden. 80 Punkte können für die Erfüllung der funktionalen
+Anforderungen gegeben werden. 20 Punkte werden für die Einhaltung der nicht-funktionalen Anforderungen ver-
+geben.
+
+
+
+
+                                                       Seite 6
+Prof. Dr. Sebastian von Klinski                                                                      Haus Gauss
+klinski@tfh-berlin.de                                                                                 Raum 115
+
+Erfüllt die abgegebene Lösung nicht annäherungsweise die geforderten Anforderungen oder kann die Anwendung
+auch nach geringfügigen Korrekturen nicht zum Laufen gebracht werden, wird die abgegebene Lösung mit „nicht
+bestanden“ gewertet.
+
+AUFGABENSTELLUNGEN
+Im Moodle gibt es für jede Übung:
+     •   Eine Gesamtaufgabenbeschreibung
+     •   Für jeden Meilenstein eine Meilensteinaufgabenstellung (insgesamt 3 Meilensteinaufgabenstellungen)
+In der Gesamtaufgabenbeschreibung wird festlegt, was zur finalen Abgabe umgesetzt sein muss. In den Meilen-
+steinaufgabenstellungen werden ergänzende Vorgaben zusammengefasst, die für den konkreten Meilenstein er-
+füllt werden müssen.
+Zum Meilenstein 3 müssen alle Anforderungen der Gesamtaufgabenbeschreibung für die Übung erfüllt sein. Auch
+für den Meilenstein 3 (finale Abgabe) gibt es eine ergänzende Vorgabenbeschreibung, um einige Aspekte noch
+etwas ausführlicher zu erläutern.
+Zum Bestehen der Übung müssen alle Meilensteine bestanden sein. Zum Bestehen muss die Abgabe in dem vorge-
+gebenen Zeitraum erfolgen, die geforderten Anforderungen umsetzen sowie die allgemeinen Anforderungen er-
+füllt werden. Die geforderten Funktionen und allgemeinen Anforderungen werden in den Aufgabenstellungen und
+Vorgabenbeschreibungen erläutert.
+Wenn nicht alle geforderten Funktionen umgesetzt oder alle allgemeinen Anforderungen erfüllt sind, werden ent-
+sprechende Abzugspunkte angerechnet. Wenn die abgegebene Lösung keine funktionalen Anforderungen korrekt
+umsetzt oder die Anwendung aufgrund von Fehlern im Code nicht lauffähig ist, gilt der Meilenstein oder die Übung
+als „nicht bestanden“.
+Wenn ein Meilenstein nicht bestanden ist, ist auch die Übung nicht bestanden. Zum Bestehen des Moduls müssen
+alle Meilensteine und Übungen bestanden sein.
+
+ABNAHMEN
+Alle Abgaben für Übungen werden abgenommen, damit sie als „bestanden“ gelten. In der Regel besteht die Ab-
+nahme aus einer automatischen Prüfung der von Ihnen abgegebenen Lösung. Dabei werden einerseits die Vorga-
+ben der Aufgabenstellungen überprüft.
+Je nach Aufgabenstellung und falls es Probleme bei den automatischen Prüfungen gibt, wird eine persönliche Prü-
+fung der abgegebenen Lösung durchgeführt. In diesem Fall werde ich Sie per E-Mail anschreiben und zu einer per-
+sönlichen Abnahme zur Übung bitten. Am Ende der Prüfung werden die erreichten Punkte und Abzugspunkte in
+einem Notenschema erfasst und Ihnen das Ergebnis der Prüfung per E-Mail zugeschickt.
+Sollte es Probleme bei den automatischen Tests geben, die nicht ohne weiteres behoben werden können, werden
+Sie zu einem persönlichen Abnahmegespräch eingeladen. Bei diesem Gespräch sollte der/die Studierende die ab-
+gegebene Anwendung vorführen. Anschließend werden Fragen zum Code durchgesprochen. Studierende müssen
+alle Aspekte des Codes erklären können.
+Sollten Sie Teile des Codes nicht erklären können, weil Ihnen eine andere Person geholfen hat oder der Code
+von einer KI geschrieben wurde, wird das als Plagiat gewertet! Das Modul ist damit „nicht bestanden“.
+Sollte eine persönliche Abnahme notwendig sein, werde ich Sie per E-Mail anschreiben. Das Abnahmegespräch
+muss dann innerhalb der kommenden zwei Wochen persönlich in eine der Übungen stattfinden. Sollte das persön-
+liche Abnahmegespräch nicht innerhalb der folgenden 2 Wochen stattfinden, sind damit die Übung und damit das
+Modul „nicht bestanden“.
+Eine Übung kann in der Regel nur einmal abgenommen werden. Nachträgliche Verbesserungen oder Korrekturen
+sind nicht zulässig. Wenn eine persönliche Abnahme nicht abgeschlossen werden kann, weil das Programm nicht
+lauffähig ist und auch der Fehler nicht kurzfristig geklärt und behoben werden kann, gilt die Übung als „nicht be-
+standen“.
+
+
+
+
+                                                        Seite 7
+Prof. Dr. Sebastian von Klinski                                                                        Haus Gauss
+klinski@tfh-berlin.de                                                                                   Raum 115
+
+Sollten Sie im Rahmen der persönlichen Abnahme mehrere Fragen zu dem Source-Code nicht beantworten kön-
+nen, gilt die Abnahme als „nicht bestanden“.
+
+VERWENDUNG VON INTERNET-QUELLEN UND LARGE LANGUAGE MODELLS WIE CHATGPT
+Sie können Internetquellen nutzen. Wenn Sie aus den Quellen Code-Teile direkt übernehmen, müssen Sie dies di-
+rekt im Code entsprechend markieren und die genutzten URLs angeben.
+Sollten Sie Code ohne entsprechende Anmerkungen übernehmen, gilt das als Plagiat.
+Das gleiche gilt für Code-Segmente, die Ihnen Large Language Modelle wie ChatGPt vorschlägt. Auch bei diesem
+Code müssen Sie das entsprechend eindeutig im Code durch Kommentare markieren.
+Unabhängig davon, aus welchen Quellen Sie Code-Teile übernehmen: Wenn Sie die Funktionsweise des Codes
+nicht vollständig erklären können, gilt das als Plagiat.
+
+LERNERFOLGSKONTROLLE
+Für die Lernerfolgskontrollen gelten die folgenden Regelungen:
+    •    Zum Bestehen einer Übung muss mindestens eine Lernerfolgskontrolle erfolgreich abgeschlossen werden.
+    •    Wenn eine Lernerfolgskontrolle nicht erfolgreich abgeschlossen wurde, werden 5 Abzugspunkte berech-
+         net.
+    •    Es können maximal 2 Lernerfolgskontrollen durchgeführt werden, also maximal 40 Punkte mit den Lerner-
+         folgskontrollen erzielt werden.
+Beispiele:
+    •    Sie bestehen eine Lernerfolgskontrolle erfolgreich, wollen aber keine Zweite machen. In diesem Fall kön-
+         nen Sie im Optimalfall 80 von 100 Punkte bei der Übung erreichen.
+    •    Sie bestehen die erste Lernerfolgskontrolle nicht, aber die Zweite. In diesem Fall erhalten Sie -5 + 20, also
+         15 Punkte für die Lernerfolgskontrollen. Sie können im Optimalfall 75 von 100 Punkten bei der Übung er-
+         reichen.
+    •    Sie bestehen zwei Lernerfolgskontrollen und erhalten dafür 40 Punkte. Sie können im Optimalfall 100 von
+         100 Punkten bei der Übung erreichen.
+Die Lernerfolgskontrollen finden in den Übungszeiten des Moduls im Übungsraum statt. Da der Platz und die Mög-
+lichkeiten zur Beaufsichtigung der Lernerfolgskontrollen begrenzt sind, werden immer nur ca. 8 Studierende zu
+einem Übungstermin eingeladen.
+Ich schreibe Sie in der Regel einige Tage vor den Übungen per E-Mail wegen der Durchführung der Lernerfolgskon-
+trolle an. Bei dieser Übung bekommen Sie dann eine Programmieraufgabe, mit der Sie die Lösung des aktuellen
+Meilensteins anpassen sollen. Programmieraufgaben können beispielsweise sein:
+    •    Beim REST-Server: Setzen Sie einen weiteren Endpunkt mit bestimmten Eigenschaften um.
+    •    Bei der React-Anwendung: Setzen Sie eine neue React-Komponente, die bestimmte Daten anzeigen soll.
+Das sind nur zwei abstrakte Beispiele für solche Überprüfungen. Die konkrete Aufgabenstellung teile ich Ihnen
+während der Übung mit. Die Programmieraufgaben werden aber in jedem Fall sehr ähnlich zu den Programmierar-
+beiten sein, die für den betreffenden Meilenstein notwendig waren.
+
+Sie benötigen für die Programmieraufgabe ausschließlich Kenntnisse, die auch für den betreffenden Meilenstein
+erforderlich waren. Die Verwendung von KI-Tools wie ChatGPT oder Code-Pilot ist bei diesen Überprüfungen nicht
+zulässig. Deren Nutzung würde als Täuschung gelten. Die Überprüfung wäre damit automatisch „nicht bestanden“.
+
+
+
+
+                                                         Seite 8
+Prof. Dr. Sebastian von Klinski                                                                      Haus Gauss
+klinski@tfh-berlin.de                                                                                 Raum 115
+
+Es dürfen auch keine Suchmaschinen verwendet werden, weil auch diese bereits KI-Funktionen und Antworten für
+konkrete Fragen auflisten. Grundsätzlich dürfen Sie ausschließlich Inhalte, die im Moodle-Kurs sind, nutzen. Bei
+allen anderen Quellen sprechen Sie zunächst mich an, bevor sie diese nutzen!
+
+Die Programmieraufgabe können Sie entweder auf Ihrem Laptop oder einem Rechner im Übungsraum durchfüh-
+ren. Die Programmieraufgabe muss während der Übung erfolgreich umgesetzt werden. Sie haben im Rahmen der
+Übung ca. 60 Minuten Zeit zur Umsetzung der Lösung.
+
+Vorbereitung:
+
+    •     Im Rahmen der Lernerfolgskontrolle erweitern Sie Ihre eigene Lösung von den Übungsaufgaben. Sollten
+          Sie ihr eigenes Laptop für die Programmierung nutzen, sollte ihr Anwendung auf dem Laptop lauffähig
+          sein. Sollten Sie einen Rechner des Übungsraums nutzen wollen, stellen Sie bitte vor der Lernerfolgskon-
+          trolle sicher, dass alle notwendigen Programme (z.B. Visual Studio Code, Node.js, etc.) auf dem Rechner
+          installiert sind.
+
+    •     Deaktivieren Sie auf ihrem Rechner, bzw. in der Entwicklungsumgebung ggfls. integrierte KI-Tools (z.B.
+          Copilot in Visual Studio Code). Gehen Sie hierzu zu den Extensions, suchen Sie nach den Extensions und
+          klicken Sie dann auf „Deactivate“. Sollten Sie während der Lernerfolgskontrolle die Extensions nicht deak-
+          tiviert haben, gilt die Lernerfolgskontrolle automatisch als nicht bestanden.
+
+Ablauf:
+
+    •     Jeder Studierender bekommt eine eigene Aufgabe (nach einem Zufallsprinzip).
+
+    •     Diese Aufgabe bearbeiten Sie dann während der Übungszeit.
+
+    •     Wenn Sie fertig sind, sagen Sie mir dann Bescheid. Sie zeigen mir dann die Funktionsweise der umgesetz-
+          ten Lösung und erläutern mir den Programm-Code.
+
+    •     Wenn alles ok ist, packen Sie bitte die umgesetzte Lösung in eine Zip-Datei und laden diese im Moodle bei
+          dem Punkt „Abgabe Lernerfolgskontrolle“ ab. Da es voraussichtlich sowohl für Übung 1 als auch Übung 2
+          eine Lernerfolgskontrolle geben wird, gibt es Moodle auch zwei Möglichkeiten zum Abgeben Ihrer Lösung.
+
+Für das erfolgreiche Absolvieren einer Lernerfolgskontrolle werden 20 Punkte zu der betreffenden Übungsaufgabe
+addiert.
+
+Sollten Sie die Programmieraufgabe nicht lösen können, werden 5 Abzugspunkte berechnet. Dann wird für die
+kommende Woche ein weiterer Überprüfungstermin für eine erneute Programmieraufgabe angesetzt. Die zweite
+Programmieraufgabe wird sich von der ersten unterscheiden. Auch die zweite Programmieraufgabe wird Ihnen
+während der Übung mitgeteilt. Sollten Sie auch diese Programmieraufgabe nicht umsetzen können, gilt damit die
+Übung und das Modul als „nicht bestanden“.
+
+Sollten Sie nicht zu der Überprüfung der Programmierkenntnisse erscheinen, bzw. nicht auf die Einladung reagie-
+ren, gilt die Übung als „nicht bestanden“.
+
+PLAGIATE
+Alle Übungsaufgaben sind Individualaufgaben. Das bedeutet, dass Sie nicht in Gruppen Lösungen erarbeiten und
+abgeben können. Sie dürfen sich untereinander im Lernprozess unterstützen. Es ist jedoch nicht zulässig, Pro-
+grammteile oder ganze Abgaben zu kopieren.
+Sollte es signifikante Ähnlichkeiten zwischen den abgegebenen Lösungen geben, die auf ein Kopieren oder selekti-
+ves Übernehmen des Codes zurückzuführen sind, werde alle betreffenden Lösungen als Plagiate gewertet.
+
+
+
+
+                                                        Seite 9
+Prof. Dr. Sebastian von Klinski                                                                     Haus Gauss
+klinski@tfh-berlin.de                                                                                Raum 115
+
+Sollten Sie Fragen zu Ihrem Code nicht beantworten können, gilt das als Plagiat, egal ob der Code von einer KI-
+Engine oder einer Person kommt.
+Die abgegebenen Lösungen werden mit einer Plagiat-Software auf Ähnlichkeiten überprüft. Sollte bei signifikanten
+Code-Segmenten unterschiedlicher Studierender eine Gleichartigkeit festzustellen sein, die nur durch Kopieren des
+Codes möglich sein kann, findet eine persönliche Prüfung des Codes durch mich statt. Sollte sich bei der persönli-
+chen Prüfung des Codes ein Kopieren des Codes bestätigten, wird die abgegebene Übung als Plagiat (Täuschungs-
+versuch) und das Modul als „nicht bestanden“ gewertet. Diese Bewertung wird auf alle Studierenden angewandt,
+die die betreffenden Lösungen abgegeben haben.
+Sollten Sie im Rahmen einer persönlichen Abnahme oder einer Programmieraufgabe Teile des von Ihnen abgege-
+benen Codes nicht erklären können, weil Ihnen eine andere Person geholfen hat, gilt dieser Meilenstein, bzw. die
+Programmieraufgabe als „nicht bestanden“.
+Sollten Sie anderen Studierenden bei der Umsetzung helfen, empfehle ich Ihnen, nicht Ihren Code weiterzugeben.
+Es gab schon mehrfach Situationen, dass der weitergegebene Code ohne Absprache abgegeben wurde. Als Orien-
+tierung sollten Sie Kommilitonen stets nur so viel helfen, wie auch eine Lehrkraft es machen würde. Sollten Sie
+trotz dieses Hinweises Ihren Code weitergeben, müssen Sie damit rechnen, dass auch Ihre Abgabe als „nicht be-
+standen“ gewertet wird.
+
+ABZUGSPUNKTE BEI FUNKTIONSPRÜFUNG
+Die funktionalen Anforderungen der abgegebenen Lösungen werden in der Regel über automatisierte Tests ge-
+prüft. Die automatisierten Tests sind beim REST-Server vergleichbar zu den Test-Skripts, die Sie im Moodle finden,
+gehen jedoch deutlich darüber hinaus. Es werden auch Fehlerfälle abgeprüft und ganze Funktionsabläufe.
+In der Regel werden die Abzugspunkte berechnet, indem anteilig die Anzahl der erfolgreichen Tests zu den ge-
+scheiterten Tests in Verhältnis gesetzt werden. Dieses Verhältnis wird dann auf die maximale Anzahl der Abzugs-
+punkte für übertragen.
+Wenn in der von Ihnen abgegebenen Lösung in sehr grundlegenden Funktionen Fehler auftreten, kann es sein,
+dass die schlüssige Durchführung von nachfolgenden Tests nicht mehr gegeben ist. Wenn beispielsweise die Au-
+thentifizierung aufgrund eines Fehlers scheitert, sind auch alle nachfolgenden Tests, die einen Token benötigen,
+nicht durchführbar. In diesem Fall gelten alle diese Tests als fehlgeschlagen und werden entsprechend bei den Ab-
+zugspunkten verrechnet.
+Sollten die nachfolgenden Funktionen aber eigentlich korrekt sein, können Sie in einer der Übungen zu mir kom-
+men und mit mir eine persönliche Abnahme durchführen. Bei dieser persönlichen Abnahme sollten Sie zunächst
+bei der von Ihnen abgegebenen Lösung die Fehler beheben, die zu den Folgefehlern führten. Anschließend würde
+die gleiche Sequenz von Funktionsprüfungen wie bei der automatischen Funktionsprüfung durchgeführt werden.
+Sollten durch die Korrekturen die automatischen Tests besser durchlaufen, können die neuen Abzugspunkte des
+automatisierten Tests angerechnet werden. Es werden jedoch zusätzlich je korrigierte Programmstelle 2 Abzugs-
+punkte berechnet. Sollten die Tests nachher nicht besser durchlaufen, kann es auch sein, dass Sie anschließend
+mehr Abzugspunkte haben!
+Sollte die von Ihnen abgegebene Lösung korrekt funktioniert haben und der Fehler in den automatisierten Tests
+gelegen haben, werden natürlich keine Abzugspunkte berechnet.
+Sowohl der REST-Server als auch die React-Anwendung sollten fehlertolerant umgesetzt werden. In keinem Fall
+sollte der REST-Server oder die Web-Anwendung bei unerwarteten Eingaben oder Aktionen abstürzen (z.B. wenn
+ein User angelegt werden soll, den es schon gibt). Sollte die Anwendung im Rahmen der Tests abstürzen, werden
+pro Absturz 5 Abzugspunkte berechnet. Sollte es Systemabstürze bei mehreren Endpoints, bzw. Oberflächenkom-
+ponenten geben, werden die Abzugspunkte für jeden Endpoint/ jede Komponente berechnet.
+
+PERSÖNLICHE ABNAHME
+Wenn es bei einer Offline-Abnahme grundlegende Probleme mit der abgegebenen Lösung gibt, kann unter Um-
+ständen die Lehrkraft eine persönliche Abnahme anfordern. In diesen Fällen wird sich die Lehrkraft bei Ihnen mel-
+
+
+
+
+                                                       Seite 10
+Prof. Dr. Sebastian von Klinski                                                                        Haus Gauss
+klinski@tfh-berlin.de                                                                                   Raum 115
+
+den und um eine Terminvereinbarung bitten. Sie sind dann verpflichtet, zeitnah (soweit es der Kalender erlaubt
+innerhalb von 1-2 Wochen) in eine der Übungen für die persönliche Abnahme kommen. Sofern das nicht erfolgt
+oder Sie an der Abnahme nicht teilnehmen, gilt die Abnahme und damit die Übung als „nicht bestanden“.
+
+BENOTUNG DER ÜBUNGSAUFGABEN
+Jede Übungsaufgabe umfasst 100 Punkte. Das Notenschema sieht wie folgt aus:
+
+  Punkte        >= 95     >= 90     >= 85     >= 80    >= 75     >= 70     >= 65    >= 60     >= 55    >= 50     < 50
+
+   Note           1.0      1.3       1.7       2.0      2.3         2.7     3.0       3.3      3.7      4.0      n.b.
+
+
+
+Wenn Sie alle Anforderungen der Übungsaufgabe erfüllen, haben Sie 100 Punkte und damit eine 1,0. Wenn Sie bei
+den abgegebenen Meilensteinen Abzugspunkte erhalten haben, werden die Abzugspunkte mit den erreichten
+Punkten der finalen Abgabe verrechnet.
+
+Bei jeder Übungsaufgabe können Sie durch Zusatzleistungen bis zu 20 Zusatzpunkte erzielen. Mögliche Zusatzleis-
+tungen werden in den Aufgabenstellungen beschrieben. Die Gesamtpunktezahl einer Übung errechnet sich aus der
+Summe der erreichten Punkte, den Abzugspunkten sowie den Zusatzleistungspunkten. Eine Übungsaufgabe kann
+jedoch mit maximal 100 Punkten abgeschlossen werden.
+
+Zusatzleistungen können ausschließlich für die finale Abgabe der Übungen angerechnet werden, nicht für die Mei-
+lensteine davor!
+
+                                                      ABGABE
+Bei den Meilensteinen sollte in jedem Fall nur die umgesetzte Lösung als Zip-Datei hochgeladen werden.
+
+Bitte beachten Sie bei den Abgaben auch die folgenden Punkte:
+
+    •      Der Source-Code der Anwendung sollte immer als Zip-Datei hochgeladen werden. Andere Datenformate
+           (z.B. Rar-Dateien) sind nicht zulässig. Wenn Sie ein anderes Dateiformat verwenden, werden 2 Abzugs-
+           punkte berechnet!
+
+    •      Wenn Sie den Source-Code abgeben, sollte nicht das node_modules-Verzeichnis enthalten sein. In diesem
+           Verzeichnis sind die Module von Drittanbietern enthalten, die Sie für Ihr Projekt verwenden (z.B. Mon-
+           goose, Express, etc.). Entfernen Sie das Verzeichnis node_modules, bevor Sie die Zip-Datei erstellen. Die
+           aus diesem Verzeichnis gelöschten Module können problemlos durch „npm install“ wieder installiert wer-
+           den! Wenn Sie dieses Verzeichnis nicht löschen, wird die Zip-Datei in der Regel so groß, dass sie nicht
+           mehr in Moodle hochgeladen werden kann (>50 Mbyte).
+           Zuweilen kann es auch Laufzeitprobleme geben, wenn Sie das Verzeichnis nicht löschen und auf einem
+           anderen Betriebssystem arbeiten als der Rechner, auf dem die Tests ausgeführt werden. In diesem Fall
+           werden 2 Abzugspunkte berechnet.
+
+    •      Achten Sie darauf, dass alle Abhängigkeiten in der package.json korrekt eingetragen sind. Falls Sie Node-
+           Module global installiert haben, kann es sein, dass diese Abhängigkeiten nicht eingetragen sind! Falls die
+           von Ihnen abgegebene Lösung dadurch nach einem „npm install“ nicht lauffähig ist, werden 2 Abzugs-
+           punkte für jedes nachzutragende Modul berechnet.
+
+    •      Im Start-Skript müssen Sie node, nicht nodemon verwenden! Wenn Sie nodemon verwenden, können die
+           Tests nicht automatisch ausgeführt werden. In diesem Fall muss ich das Startskript korrigieren. In diesem
+           Fall werden 2 Abzugspunkte berechnet.
+
+
+
+
+                                                         Seite 11
+Prof. Dr. Sebastian von Klinski                                                                       Haus Gauss
+klinski@tfh-berlin.de                                                                                  Raum 115
+
+    •    Bei verspäteter Abgabe wird pro Tag ein Abzugspunkt berechnet. Abzugspunkte für Verspätung werden
+         bei allen Meilensteinen berechnet. Es sind maximal 7 Tage Verspätung möglich. Danach gilt die Übung/
+         der Meilenstein als nicht bestanden.
+
+    •    Wenn Sie Zusatzleistungen umgesetzt haben, beschreiben Sie bei der finalen Abgabe (Meilenstein 3) diese
+         bitte in einem PDF-Dokument und laden dieses PDF-Dokument zusammen mit der Lösung hoch.
+
+VOR JEDER ABGABE
+Stellen Sie vor jeder Abgabe sicher, dass das von Ihnen hochgeladene Projekt durch die folgende Sequenz von No-
+de-Befehlen korrekt gestartet werden kann:
+
+    •    „npm install“: Es werden alle Abhängigkeiten zu Drittanbietermodulen aufgelöst. Achten Sie darauf, dass
+         alle erforderlichen Abhängigkeiten in der package.json eingetragen sind. Testen Sie daher das Neuaufset-
+         zen des Projekts in einer separaten IDE, bzw. Verzeichnis.
+
+    •    „npm start“: Durch diesen Befehl kann die Anwendung gestartet werden. Dazu muss aber das Start-Skript
+         in der package.json definiert werden. Wenn Sie das nicht oder falsch gemacht haben, werden dafür 2 Ab-
+         zugspunkte berechnet.
+
+                                                    FRAGEN
+Sollten Sie Fragen zu den Übungsaufgaben haben, können Sie mir jederzeit Ihre Fragen per E-Mail (klinski@bht-
+berlin.de) schicken. Wenn die Beantwortung für alle Studierenden interessant ist, werde ich für alle Studierenden
+entsprechend Hinweise über Moodle verschicken. Sollte die Beantwortung nur für die betreffende Person relevant
+sein, werde ich die Fragen entweder per E-Mail beantworten oder wir schauen uns den Code gemeinsam in einer
+Übung an.
+
+Schreiben Sie mir bitte keine Nachrichten über Moodle! Das Moodle-Nachrichtensystem verwende ich nicht!
+
+                                     SALVATORISCHE KLAUSEL
+Sollte Ihnen etwas in der Aufgabenstellung nicht klar sein oder die Formulierung missverständlich sein, sind Sie
+verpflichtet, bei der Lehrkraft nachzufragen, wie die Aufgabenstellung gemeint ist. Es ist nicht möglich, alle Details
+der Übungen explizit zu definieren. Daher gilt: Aspekte, die nicht definiert sind, sind so umzusetzen, wie sie nahe-
+liegender Weise entsprechend den anderen Vorgaben der Aufgabenstellungen oder den Beschreibungen in den
+Vorlesungsfolien umgesetzt werden sollten.
+
+
+
+
+                                                        Seite 12
+

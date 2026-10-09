@@ -1,0 +1,753 @@
+                                  Web-Architekturen
+
+
+Web-Engineering II
+Prof. Dr. Sebastian von Klinski
+                                   Einleitung
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   2
+Architektur
+•    Wozu ist Architektur für eine Web-Anwendung wichtig?
+
+•    Architektur ist…
+
+             „… Übersicht über die Komponenten eines Gesamtsystems“
+
+                „… dient dem Verständnis des Systems als Ganzes“
+
+    „Was für ein Haus würde man bekommen, wenn man einfach loslegt und die
+    Wände zieht, ohne sich vorher Gedanken über Statik, Grundriss, Strom- und
+                      Wasserleitung Gedanken zu machen?“
+
+
+
+
+             Beuth Hochschule für Technik Berlin – University of Applied Sciences   3
+Architektur
+•   Jede Architektur bring spezifische Vor- und Nachteile mit sich
+•   Wurde falsche Architektur gewählt, …
+    • Schwierige Umsetzung/ Erweiterung des Systems
+    • Steigt häufig der Arbeitsaufwand
+    • Können einige Probleme (Performance, Benutzerfreundlichkeit,
+      Erweiterbarkeit, etc.) in der Regel nicht mehr behoben werden
+    • Nicht selten scheitert das IT-Projekt
+
+
+•   Gute Architektur  langfristige Nutzung des IT-Systems möglich
+
+ Vor der Umsetzung richtige Architektur festgelegen
+  • Software-Architektur
+  • Anwendungsarchitektur
+  • Systemarchitektur
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   4
+Software-Architektur
+•   Softwarearchitektur beschreibt die wesentlichen Komponenten einer
+    Software-Anwendung und deren Zusammenspiel mit anderen Komponenten
+•   Relevante Aspekte sind Design von Klassen und Schichten, Einsatz von
+    Patterns, etc.
+•   Patterns: Bewährte Lösungsansätze für eine gute Software-Architektur
+    • Design-Patterns: z.B. Singleton, Factory, Observer, Composite, Iterator,
+      Decorator, Facade, Proxy,
+    • J2EE-Patterns: Front Controller, Data Access Object, Session Facade,
+      Transfer Object
+    • Layer-Design: Service-Layer, DAO-Layer, Persistence-Layer, etc.
+•   Design abhängig von Sprache (Java, JavaScript, C#, etc.) und
+    Laufzeitumgebung (Node.js, Spring, J2EE, etc.)
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   5
+  Anwendungsarchitektur
+  •   Anwendungsarchitektur beschreibt die wesentlichen Komponenten einer
+      Software-Anwendung
+
+
+                                                                                                         Lagerhaltung
+
+
+
+                                                                                        EAI-Server            DHL
+                                                                                                              Logistiksystem
+
+
+
+                                                   Selling-App-Server                                Datenbanken
+                         WWW
+
+                                     Firewall                                                              SAP
+                        Web-Server
+             Firewall
+                                                                    Warenverwaltung
+Web Client
+                               DMZ
+                                                     CM-Client
+
+
+
+
+                 Beuth Hochschule für Technik Berlin – University of Applied Sciences                                   6
+Anwendungsarchitektur
+•   Wesentliche Fragestellungen
+    • Was ist das führende System für welche Daten?
+    • Welche Schnittstellen gibt es?
+    • Wie sind die Datenflüsse?
+    • Welche Anwendungsprozesse gibt es?
+    • Etc.
+•   Maßgeblicher Einfluss auf
+    • Performance
+    • Ausfallsicherheit
+    • Bottlenecks
+    • Gestaltungsspielraum in der Zukunft (funktional, Nutzerzahlen, etc.)
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   7
+(Web-)Architekturen
+•   Systemarchitektur:
+    Zusammenspiel aller
+    Komponenten einer
+    Systemlandschaft, die
+    zahlreiche IT-Systeme
+    umfasst. Beschreibung der
+    Hardware und / oder
+    Software-Aspekte (z.B.
+    inklusive Schnittstellen)
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences   8
+                       Architekturmodelle
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   9
+Architekturen
+
+
+
+
+Stand-Alone Applikation
+•   Anwendung, die ohne weitere IT-Komponenten auskommt
+•   Beispiele
+    • Office-Applikationen (Word, etc.)
+    • Graphik-Programme (Photoshop), etc.
+•   Abhängigkeiten
+    • Betriebssystem
+•   Weitere Aspekte
+    • Häufig Update-Mechanismen  Applikation ggfls. dann „Rich Client“
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   10
+Architekturen
+
+
+Einfache Web-Architektur: Thin-Client, statische Web-
+Seiten
+•   Client: Browser wie Firefox, Chrome, etc.
+•   HTML-Seiten von Web-Server geliefert
+
+
+
+       Web-Client                                                     Web-Server
+                                             Request
+        HTML-Renderer                                                           Delivery
+                                         HTTP/ HTTPS
+
+                                           Response
+                                           HTML
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences       11
+Architekturen
+
+
+
+
+Grundlagen
+Browser
+• Computerprogramme zur Darstellung von Webseiten im World Wide Web
+HTML-Renderer
+• Visualisierung von Hypertext Markup Language und Scalable Vector
+  Graphics im Browser
+Web-Server
+• Server, der Dokumente an Clients wie z. B. Webbrowser überträgt
+• Statischer Content (HTML-Seiten, Bilder, CSS, JavaScript)
+• Protokolle HTTP (Port 80), HTTPS (Port 443)
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   12
+Architekturen
+
+
+
+
+Grundlagen
+•   Was sind Front-end und Back-end?
+    • Front-End: beim Nutzer
+    • Back-End: beim „System“
+•   Bei Web-Anwendung…
+    • Front-End: ausgeführt im Browser beim Nutzer
+    • Back-End: ausgeführt auf dem Server
+•   Client
+    • Nutzt Dienste eines Servers
+•   Server
+    • Bietet Dienste für andere Anwendungen ab
+•   Ein Server kann gleichzeitig auch Client sein
+    • Beispiel: Web-Anwendung greift auf Rest-Service zu
+    • Rest-Service nutzt weitere Rest-Services von Drittanbietern
+    • Rest-Service ist gleichzeitig Server (für Web-Anwendung) und Client von
+       Drittanbieter-Services
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   13
+Architekturen
+
+
+
+
+Web-Architektur: Thin-Client, dynamische Web-Seiten
+•   Unterschiedlichste Ansätze, um dynamische Web-Seiten umzusetzen
+•   Unterscheidung zwischen serverseitig und clientseitig
+•   Dynamische Seiten serverseitig: Erstellung von Web-Seite bei Aufruf
+•   Verwendung von Skriptsprachen: ASP, PHP, JSP, etc.
+•   Page-Rendering durch Interpreter
+                                                                                             Beispiel: PHP
+
+
+Web-Client                                                  Web-Server
+                                    Request
+HTML-Renderer                                                         Delivery
+                                 HTTP/ HTTPS
+                                                                                       SQL
+
+                                  Response                    Interpreter
+                                  HTML
+                                                                                             Datenbank
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences                     14
+Architekturen
+
+
+
+
+Grundlagen
+Interpreter
+• Interpretiert Tags der Skriptsprache
+• Ersetzt Tags durch HTML-Code
+Skriptsprachen
+• Unterscheidung in Ort, wo der Interpreter läuft (Webserver/ Browser)
+• Serverseitig: PHP, ASP, JSP, Python, Perl
+• Clientseitig: JavaScript, CoffeeScript, TypeScript
+Anmerkungen
+• CoffeeScript und TypeScript werden nach JavaScript transkompiliert
+• Bei Nodejs (Server) wird JavaScript serverseitig verwendet
+
+                 Browser                                   Web-Server
+                HTML-Renderer                                          Delivery
+
+         Interpreter clientseitig                            Interpreter serverseitig
+
+
+
+
+                    Beuth Hochschule für Technik Berlin – University of Applied Sciences   15
+Architekturen
+
+
+
+
+Grundlagen: Skriptsprachen
+•   Programmiersprachen, die über einen Interpreter ausgeführt werden
+•   Zeilenweises Parsen, Kompilieren und Ausführen zur Laufzeit
+•   Häufig schwache/ dynamische Typisierung
+•   Fehler häufig erst zur Laufzeit offenkundig
+•   Meist schnellere und dynamischere Entwicklung als bei klassischen,
+    kompilierten Sprachen
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   16
+Arten von Web-Anwendungen: SPA und MPA
+
+
+
+
+   Beuth Hochschule für Technik Berlin – University of Applied Sciences   17
+Architekturen
+
+
+
+
+Ausprägungen von Web-Anwendungen
+•   Zahlreiche Varianten je nach Anwendungsgebiet und Anforderungen
+•   Single-Page Application (SPA)/ Rich-Web-Client/ Rich Internet Application
+    • Web-Anwendung bestehend aus einer Seite, deren Inhalte dynamisch
+       aktualisiert werden
+    • Look-and-Feel wie Desktop-Applikation
+    • Einsatz bei hohen Nutzerzahlen aber einfacher Anwendungsdomäne
+•   eBusiness-Web-Architekturen
+    • Einsatz bei komplexer Geschäftslogik mit Bedarf für Ausfallsicherheit und
+       Recovery
+    • Anwendungslogik in Programmiersprachen wie Java oder C#
+    • Beispiel: J2EE-Web-Stack, .Net-Plattform
+•   Micro-Service Architektur
+    • Parallelisierung von Entwicklungsarbeit über viele Entwickler
+•   Weitere
+    • Message-oriented Architektur, etc.
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   18
+Architekturen
+
+
+
+
+Ausprägungen von Web-Anwendungen
+•   Fokus in dieser Vorlesung auf Single-Page-Application (SPA)
+•   Derzeit sehr verbreitet
+•   Populäre Web-Bibliotheken für diesen Anwendungsbereich (React,
+    TypeScript, Vue, Angular etc.)
+•   In Zukunft großer Marktanteil bei Web-Anwendungen
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   19
+Architekturen
+
+
+
+
+Single-Page-Anwendung
+
+                …ist eine Web-Anwendung, welche aus einer einzigen
+                               HTML-Seite besteht.
+
+
+     Multi-Page Anwendung                                               Single-Page Anwendung
+
+
+
+
+                                                                                                  Snippet
+
+                                                                    Snippet
+
+
+
+                                                                                        Snippet
+
+
+
+
+                 Beuth Hochschule für Technik Berlin – University of Applied Sciences                       20
+Architekturen
+
+
+
+
+Single-Page-Anwendung                                                                  DOM-Tree
+
+•   Selektive Aktualisierung von Seite…
+•   Dynamische Kommunikation mit Web-Server, um
+    selektiven HTML-Content abzurufen (häufig per Rest-
+    Service)
+•   DOM-Tree wird auf Basis der abgerufenen Daten
+    modifiziert
+•   Umsetzung häufig über
+    • AJAX
+    • JavaScript-Frameworks (AngularJS, React, Vue.js)
+
+
+
+
+                                                                                           Quelle: Wikipedia
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences                   21
+Architekturen
+
+
+
+
+SPA nutzt AJAX
+                     Grundlage für die selektive Aktualisierung der
+                                 Web-Seite ist AJAX
+
+•   Asynchronous JavaScript And XML
+•   Schritte
+    1. Aktion von User oder Event startet asynchronen Aufruf (blockiert nicht die
+       weitere Ausführung)
+    2. Anfrage geht beim Server ein und wird bearbeitet
+    3. Server ruft JavaScript Call-Back auf
+    4. Daten vom Back-end werden abgerufen
+•   Antwort vom Back-end häufig als JSON-Dokument
+•   JavaScript bestimmt Knoten in DOM-Tree, die geändert werden sollen
+•   Anpassung von Seite im Browser auf Basis der erhaltenen Daten
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   22
+Architekturen
+
+
+
+
+Kommunikationsverlauf bei SPA
+
+
+
+
+                                                                                       Quelle: Wikipedia
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences                       23
+Architekturen
+
+
+
+
+SPA und AJAX
+
+
+
+
+                                                                   Quelle: adaptivepath.com / abgewandelt durch Ersetzen von
+                                                                   XML durch JSON
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences                                   24
+Architekturen
+
+
+
+
+MPA und SPA: Anwendungssteuerung
+                       Bei Multi-Page-Anwendung ist die
+                 Anwendungssteuerung auf dem Server, beim SPA
+                                  beim Client
+
+
+ Multi-Page Anwendung                                       Single-Page Anwendung
+  •  Umsetzung mit                                           •  Schritte
+                                                                                                     Snippet
+     JSP/ ASP/                                               1. Erste Seite laden    Snippet
+
+     Servlets, etc.                                          2. Interaktion                  Snippet
+
+  • Schritte
+                                                             3. Änderung von „Modell“ (Rest-Call)
+  1. Interaktion
+                                                             4. Callback an „Presenter“ (Rest-
+  2. Statusänderung auf Server                                  Reponse)
+  3. Nächste Seite wird bestimmt                             5. Aktualisierung des betreffenden Teils
+  4. Rendering von Seite und                                    der Seite
+      Lieferung an Browser
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences                     25
+Architekturen
+
+
+
+
+MPA und SPA: Einsatzgebiete
+
+                           MPA und SPA sind für unterschiedliche
+                             Anwendungsbereiche ausgelegt
+
+
+ Multi-Page Anwendung                                              Single-Page Anwendung
+  •    Komplexe Fachlogik                                          •    Angenehmes
+                                                                                                              Snippet
+  •    Konsistenter Status                                              Look-and-Feel       Snippet
+
+       auf Server von großer                                       •    Reduzierter                 Snippet
+
+       Bedeutung                                                        Traffic
+  •    Nutzung von kompilierten                                    •    Bessere Interaktivität
+       Programmiersprachen                                         •    Lose Kopplung von Front-end
+  •    Enge Kopplung von Front-end                                      und Back-end
+       und Back-end                                                •    Anfällig für Cross-Site-
+                                                                        Scripting
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences                           26
+Architekturen
+
+
+
+
+SPA: weitere Aspekte
+•   Ermöglicht länger laufende Client-Interaktionen (z.B. Chat, Video-Stream, etc.
+    per Web-Sockets - bidirektionale Verbindung zwischen einer Webanwendung
+    und einem WebSocket-Server), da kein Page-Relaod
+•   Der Sitzungszustand wird in der Client-Applikation gespeichert, nicht im Server.
+    • „Refresh“ führt zu Neustart der Anwendung
+    • Durch die clientseitige Sitzungsverwaltung können serverseitigen
+       Funktionalitäten zustandslos implementiert werden:
+      • Erleichtert Parallelisierung!
+      • Stelle aber besondere Anforderungen an Back-end
+    • Serverseitig werden keine Ressourcen pro aktive Clientsitzung verbraucht
+•   Serverseite und Client-Seite können unabhängig voneinander implementiert und
+    getestet werden.
+•   Wiederverwendung von serverseitigen Services (da lose Kopplung)
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   27
+Architekturen
+
+
+
+
+SPA: Anwendungsgebiete
+•   Beispiele
+    • Facebook, Google Gmail, Google Maps und Twitter,
+    • In der Regel B2C
+•   Kleine Projekte
+    • Überschaubares Fachkonzept
+    • Umfang der clientseitig umgesetzten Geschäftslogik gering
+    • Hauptaugenmerk auf der Präsentationsschicht
+•   Hohe Interaktivität
+    • Für Anwendungen wie Computerspiele
+    • Hohe Interaktivität und kurze Latenzzeiten
+    • Durch HTML5, Canvas, WebSockets und WebGL stellen RIA/JS-SPAs
+       Alternative zu Flash/ MS Silverlight, etc.
+•   Hybride Web-Apps
+    • Einbettung in native mobile Anwendungen (z.B. Apache Cordova oder
+       modifiziert React Native)
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   28
+Architekturen
+
+
+
+
+Web-Architekturen: SPA Beispiele
+
+                                                                Trello
+
+
+
+
+                                Car Configurator
+
+
+
+
+                                                 Gmail
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   29
+Arten von Web-Anwendungen: eBusiness
+
+
+
+
+ Beuth Hochschule für Technik Berlin – University of Applied Sciences   30
+Architekturen
+
+
+
+
+Web-Architekturen: eBusiness-Architektur
+
+                 Die IT-Architektur für eBusiness-Systeme zeichnet
+                sich in der Regel durch eine komplex Geschäftslogik
+                   und hohe Anforderungen aus Ausfallsicherheit,
+                                 Sicherheit, etc. aus.
+
+
+
+
+                                                                                       Quelle: unbekannt
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences                       31
+Architekturen
+
+
+
+
+eBusiness-Architekturen
+                  Java EE, ist Spezifikation einer Softwarearchitektur für die
+                transaktionsbasierte Ausführung von in Java programmierten
+                    Anwendungen und insbesondere Webanwendungen                                                         Quelle: Wikipedia
+
+
+
+
+                                                                                                                  Beispiel: J2EE
+
+
+
+
+                                                                                        Quelle: http://www.techiesguide.com/j2ee.html
+
+
+                 Beuth Hochschule für Technik Berlin – University of Applied Sciences                                               32
+Architekturen
+
+
+
+
+Web-Architekturen: J2EE
+Komponenten
+• Back-end: unterteilt in Presentation/Service-Layer und Business-Logic-Layer
+• Presentation-Layer
+  • Servlet-Container
+  • JSP (Java Server Pages)
+  • Web-Services
+• Business-Logic-Layer
+  • Application Server (Ausfallsicherheit, Transaktionsmanagement,
+    Authentifizierung, Autorisierung, Verzeichnisdienste,
+    Datenbankanbindung, etc.)
+  • Umsetzung der Business Logik (Kunde, Shopping-Cart, etc.)
+  • Session and Entity Beans (EJBs – Enterprise Java Beans)
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   33
+Architekturen
+
+
+
+
+Web-Architekturen: .Net
+Komponenten
+• Sehr ähnlich zu J2EE
+• JSP  ASP.net
+• Java-Runtime  CLR (Common Language Runtime)
+• Wesentlicher Unterschied:
+  • Java/ J2EE: plattformunabhängig (Betriebssystem)
+  • .Net: sprachunabhängig (Programmierung in VI.net, C#, C++, Java, etc.)
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   34
+Architekturen
+
+
+
+
+Web-Architekturen: Microservice-Architekturen
+
+           Umsetzung von Software aus zahlreichen, unabhängigen Prozessen.
+                 Ansatz zur Parallelisierung von Entwicklungsarbeiten
+
+
+
+
+                                                                        Quelle: https://algorithmia.com/blog/introduction-to-microservices
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences                                               35
+Architekturen
+
+
+
+
+Web-Architekturen: Micoservices
+•   Beispiele: Amazon, Twitter, eBay, Zalando, etc.
+                                                               Team 1
+                                                               Team 2                    Einzelne Bestandteile
+                                                                                         der Web-Seite
+                                                               Team 3                    werden von
+                                                                                         unterschiedlichen
+                                                                                         Teams umgesetzt
+
+
+                                                                Team 4
+
+
+                                                                Team 5
+
+
+                                                                Team 6
+                                                                        Quelle: https://www.zalando.de
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences                             36
+                                 Web-Stacks
+
+
+
+
+Beuth Hochschule für Technik Berlin – University of Applied Sciences   37
+Architekturen
+
+
+
+
+Web-Stack
+•   Konkrete Umsetzung einer Architektur durch Web-Stack
+•   Web-Application-Solution Stack/ Softwarestack/ Lösungsstack (kurz: Web-
+    Stack)
+•   Alle Software-Komponenten, die zum Betreiber der Web-Anwendung
+    notwendig sind, sie bilden eine Plattform (Laufzeitumgebung für
+    Softwarekomponenten)
+•   Bestandteile
+    • Betriebssystem
+    • Web-Server
+    • Laufzeitumgebung
+    • Datenpersistenz
+    • Programmiersprache
+    • DIE
+    • Sonstiges
+
+
+
+
+                Beuth Hochschule für Technik Berlin – University of Applied Sciences   38
+Web-Stack: Beispiele
+
+  Web Stack                                                                        .Net             MEAN
+                                             LAMP
+ Komponenten
+
+   Sonstiges                                                              ASP.Net, WPF…       Angular, Express.js
+
+      IDE                                                                    Visual Studio
+
+  Skriptsprache                       Perl/PHP/Python                       C#,F#,VB.Net     JavaScript, TypeScript
+
+
+Datenpersistenz                       MySQL/MariaDB                         SQL Server/…           MongoDB
+
+
+Laufzeitumgebung                      Perl/PHP/Python                               .NET           Browser
+
+
+   Webserver                                Apache                                   IIS            Node.js
+
+
+ Betriebssystem                               Linux                                Windows
+
+
+
+
+            Beuth Hochschule für Technik Berlin – University of Applied Sciences                              39
+
