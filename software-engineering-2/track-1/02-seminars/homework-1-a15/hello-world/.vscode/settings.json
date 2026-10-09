@@ -1,0 +1,13 @@
+{
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-25",
+      "path": "/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home",
+      "default": true
+    }
+  ],
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "java": "cd \"$dir\" && \"$JAVA_HOME/bin/javac\" \"$fileName\" && \"$JAVA_HOME/bin/java\" -cp \"$dir\" \"$fileNameWithoutExt\""
+  }
+}

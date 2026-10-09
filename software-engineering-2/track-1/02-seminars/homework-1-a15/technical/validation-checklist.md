@@ -52,7 +52,7 @@ cat hello.txt | sed 's/./&\n/g' | wc
 - [x] Начальный HelloWorld compiled/run → `Hello, World!`; версия A4 → `Hello, World (with Javadoc)!`. Журналы: проверка от 2026-10-07 (временный журнал удалён), проверка от 2026-10-07 (временный журнал удалён).
 
 ```bash
-cd "$HOME/workspaces/hello-world"
+cd "/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world"
 echo "$JAVA_HOME"
 command -v java javac javadoc jar
 java --version
@@ -69,14 +69,14 @@ java HelloWorld
 ## A4 — Git
 
 - [x] Существующие identity и `core.excludesfile` сохранены. Добавлены ровно настройки A4: ignorecase=true, autocrlf=false, filemode=false, eol=lf, defaultBranch=main.
-- [x] Создан отдельный repository `/Users/damirahavaashova/workspaces/hello-world`; существующие repositories не редактировались.
+- [x] Создан отдельный repository `/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world`; существующие repositories не редактировались.
 - [x] Empty root commit + tag `root`, отдельные commits `.gitignore`, Java source, Javadoc, VS Code configuration. Выполнены staging, status, diff и проверки истории; журнал — проверка от 2026-10-07 (временный журнал удалён).
 - [x] Javadoc `doc/index.html` создан; `.class`, `doc/`, `bin/` игнорируются. Generated files не committed.
 - [x] Финальный `git status`: `nothing to commit, working tree clean`. Remote не настроен, push не выполнялся.
 - [x] `exam-questions.md`: все 10 вопросов Validation и команды показа.
 
 ```bash
-cd "$HOME/workspaces/hello-world"
+cd "/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world"
 cat ~/.gitconfig
 git status
 git log --oneline --decorate
@@ -98,7 +98,7 @@ open doc/index.html
 - [x] Доверие предоставлено только созданной учебной папке. Java Run в редакторе выполнил JDK 25 и показал в integrated terminal `Hello, World (with Javadoc)!`.
 - [x] Run Code / Code Runner также успешно compiled/run и показал тот же результат в integrated terminal. Выбор JDK подтверждён полным executable path в Java Run. CLI inventory — проверка от 2026-10-07 (временный журнал удалён).
 
-Для показа: открыть новый Terminal → `cd ~/workspaces/hello-world` → `code .` → открыть HelloWorld.java → нажать **Run** над main. Альтернатива: **Run Code** вверху редактора / Ctrl+Option+N. Если нужно показать JDK отдельно: Command Palette → **Java: Configure Java Runtime**. UTF-8/LF исходника сохранены; исходная настройка скрытой status bar пользователя сохранена.
+Для показа: открыть новый Terminal → `cd ~/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world` → `code .` → открыть HelloWorld.java → нажать **Run** над main. Альтернатива: **Run Code** вверху редактора / Ctrl+Option+N. Если нужно показать JDK отдельно: Command Palette → **Java: Configure Java Runtime**. UTF-8/LF исходника сохранены; исходная настройка скрытой status bar пользователя сохранена.
 
 ## Исправления и ограничения
 

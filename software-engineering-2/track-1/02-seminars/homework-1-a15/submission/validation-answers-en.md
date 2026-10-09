@@ -47,7 +47,7 @@ Show `cat ~/.gitconfig`, `git status` and `git log --oneline` inside the exercis
 
 ## A5 — VS Code setup
 
-Demonstration: run `code .` from `~/workspaces/hello-world`, open `HelloWorld.java`, click **Run** above `main`, and show the output in the integrated terminal. Show the installed **Extension Pack for Java**; **Code Runner** is recommended. Moodle settings: Auto Save `afterDelay`, line endings `LF`.
+Demonstration: run `code .` from `~/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world`, open `HelloWorld.java`, click **Run** above `main`, and show the output in the integrated terminal. Show the installed **Extension Pack for Java**; **Code Runner** is recommended. Moodle settings: Auto Save `afterDelay`, line endings `LF`.
 
 ## Sources and scope
 

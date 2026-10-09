@@ -11,7 +11,7 @@ SWE II · Zug 1 · WiSe 2026/27
 ## Подготовь окна
 
 1. **Terminal.app** — для A1, A3, A4 и примеров A2. Открыть через Spotlight: Cmd+Space → Terminal. Запусти `/opt/homebrew/bin/bash -l`, затем `echo "$BASH_VERSION"`: должна появиться версия Bash.
-2. **VS Code** — для A5 и файла английских ответов. Учебный проект: `/Users/damirahavaashova/workspaces/hello-world`.
+2. **VS Code** — для A5 и файла английских ответов. Учебный проект: `/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world`.
 3. **Finder и браузер** — дополнительные примеры HOME и Javadoc, если преподаватель попросит.
 
 Пути и настройки взяты из проверки 7 октября; перед занятием повтори команды. Это подготовка к зачёту, а не подтверждение полученных баллов.
@@ -83,7 +83,7 @@ PS1='\[\e[32m\]\u@\h \w\[\e[0m\] \$ '
 ## A3 — Terminal: Java и работающая программа
 
 ```bash
-cd "$HOME/workspaces/hello-world"
+cd "/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world"
 java --version
 javac --version
 javadoc --version
@@ -102,7 +102,7 @@ java HelloWorld
 Все команды Git выполняй в учебном проекте:
 
 ```bash
-cd "$HOME/workspaces/hello-world"
+cd "/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world"
 cat ~/.gitconfig
 git status
 git log --oneline --decorate
@@ -128,7 +128,7 @@ open doc/index.html
 В Terminal:
 
 ```bash
-cd "$HOME/workspaces/hello-world"
+cd "/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world"
 code .
 ```
 
