@@ -37,9 +37,12 @@ Use this guide for every future file import, rename, move, and database update.
     track-2/
       ...
   project/
+    README.md
     groups.xlsx
-    track-1/
-    track-2/
+    shared/
+      01-lectures/
+      02-seminars/
+      03-exam-prep/
   bht-schedule/
     public/data/
     src/
@@ -70,7 +73,7 @@ The workspace now uses the canonical names above. The importer reads `plan/sourc
 - Exercise sheets, task screenshots, setup tasks, and assignment materials: `02-seminars`.
 - Practice exams and revision materials: `03-exam-prep`.
 - Semester-wide schedules, module handbooks, and schedule exports: `plan`.
-- Project group lists shared across tracks: `project`.
+- The Project module has one unified Zug, as confirmed by the user. Keep materials in `project/shared/01-lectures`, `02-seminars`, and `03-exam-prep`; do not divide them into `track-1` and `track-2`. Keep `groups.xlsx` and the course `README.md` in `project`.
 - A single source confirmed to apply to both tracks: the subject's `shared` folder. Reference it from both tracks rather than copying it.
 - Theoretical computer science materials are shared: use `theoretical-cs/shared/01-lectures`, `02-seminars`, `03-exam-prep`, and `source-extracts`; do not divide these materials by Zug. Timetable groups remain separate.
 - Maintain a course `README.md` alongside the material folders with chronological links, week ranges, general materials, and the schedule source's term and track scope. Update it when files or the confirmed sequence change.

@@ -1,6 +1,6 @@
 # Semester notes: Siamak Haschemi and Markus Schubert
 
-Source: user-provided summary, added on 2026-10-09. Track and group are not specified; the information has not been independently verified.
+Source: user-provided summary, added on 2026-10-09. The user confirmed that the Project module has one unified Zug. The summary has not been independently verified.
 
 ## Team and project idea
 
