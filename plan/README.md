@@ -33,6 +33,7 @@ Winter semester WS2026, semesters 1–5, tracks 1 and 2. Scope is retained from 
 
 - [Official notice](regulations/official-notice.pdf).
 - [Study structure image](study-organization/study-structure.jpeg).
+- [Course assessment comparison](study-organization/course-assessment-comparison.jpg): supplied overview of teachers, materials and assessment formats; includes uncertain personal notes.
 - [Project, internship and bachelor’s thesis requirements](study-organization/project-internship-thesis-requirements.md): supplied notes and source screenshots.
 
 ## Consultation with Simone
