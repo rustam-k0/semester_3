@@ -1,5 +1,7 @@
 # Course materials
 
+For Wintersemester 2026/27, the preferred lecture teacher is Sören Werth (Zug 2); Andrea Tomatis (Zug 1) is the alternative. The mapping follows the current schedule; the preference follows the user-supplied comparison in `../../plan/study-organization/course-assessment-comparison.jpg`. Exercise teachers are recorded separately in the schedule. Shared materials remain shared.
+
 Materials are shared across both tracks. Dates below follow the user-provided Moodle weekly outline for **Zug 2, WiSe26**; they are week start dates, not confirmed lesson dates or a verified timetable for Zug 1.
 
 Files use `NN-YYYY-MM-DD-topic.pdf`. The same topic number links lecture slides and exercise sheets. General materials have no weekly date.

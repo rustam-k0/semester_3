@@ -17,7 +17,7 @@ The `submission` folder contains the prepared notes for showing in class. Accept
 - [Moodle assignment screenshot](technical/a15-setup.png)
 - [Source and acceptance rules](technical/source-notes.md)
 
-The `technical` folder contains the source instructions, supporting images and setup notes. The working Java/Git demo project is in `hello-world/`, at `~/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world`.
+The `technical` folder contains the source instructions, supporting images and setup notes. The working Java/Git demo project is in `hello-world/`, at `~/Desktop/semester_3/software-engineering-2/track-1-graupner/02-seminars/homework-1-a15/hello-world`.
 
 ## Working demo project
 

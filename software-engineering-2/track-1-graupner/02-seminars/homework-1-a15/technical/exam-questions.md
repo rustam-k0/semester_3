@@ -57,7 +57,7 @@ Filesystem связывает имена, метаданные и данные �
 
 # A4 — ответы Validation
 
-Учебный проект: `/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world`. Имя и email Git сохранены: Rustam Khavaiashkhov, rustam.khavaiashkhov@informatik.hs-fulda.de.
+Учебный проект: `/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1-graupner/02-seminars/homework-1-a15/hello-world`. Имя и email Git сохранены: Rustam Khavaiashkhov, rustam.khavaiashkhov@informatik.hs-fulda.de.
 
 1. Локальный repository находится в скрытом каталоге `.git` внутри проекта. Он содержит objects, refs, HEAD, index и настройки; рабочие исходники находятся рядом.
 2. Commit — неизменяемый объект с snapshot дерева файлов, ссылкой на родителя/родителей, author/committer, временем и сообщением. Commit ID вычисляется по всему объекту, не только по файлам. Для SHA-1 это 20 байт, отображаемых как 40 hex-символов, а не 40 байт.
@@ -73,7 +73,7 @@ Filesystem связывает имена, метаданные и данные �
 ## Показ преподавателю
 
 ```bash
-cd "/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world"
+cd "/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1-graupner/02-seminars/homework-1-a15/hello-world"
 cat ~/.gitconfig
 git status
 git log --oneline --decorate

@@ -11,7 +11,7 @@ SWE II · Zug 1 · WiSe 2026/27
 ## Подготовь окна
 
 1. **Terminal.app** — для A1, A3, A4 и примеров A2. Открыть через Spotlight: Cmd+Space → Terminal. Запусти `/opt/homebrew/bin/bash -l`, затем `echo "$BASH_VERSION"`: должна появиться версия Bash.
-2. **VS Code** — для A5 и файла английских ответов. Учебный проект: `/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world`.
+2. **VS Code** — для A5 и файла английских ответов. Учебный проект: `/Users/damirahavaashova/Desktop/semester_3/software-engineering-2/track-1-graupner/02-seminars/homework-1-a15/hello-world`.
 3. **Finder и браузер** — дополнительные примеры HOME и Javadoc, если преподаватель попросит.
 
 Один раз выполни подготовку ниже. Первой строкой запускается Bash; следующие строки вводи уже внутри него. Это подключает Java 25, GNU sed и команду именно Microsoft VS Code. Все дальнейшие блоки выполняй в этой shell.
@@ -93,7 +93,7 @@ PS1='\[\e[32m\]\u@\h \w\[\e[0m\] \$ '
 ## A3 — Terminal: Java и работающая программа
 
 ```bash
-cd "$HOME/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world" || exit
+cd "$HOME/Desktop/semester_3/software-engineering-2/track-1-graupner/02-seminars/homework-1-a15/hello-world" || exit
 java --version
 javac --version
 javadoc --version
@@ -111,7 +111,7 @@ javac HelloWorld.java && java -cp . HelloWorld
 Все команды Git выполняй в учебном проекте:
 
 ```bash
-cd "$HOME/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world" || exit
+cd "$HOME/Desktop/semester_3/software-engineering-2/track-1-graupner/02-seminars/homework-1-a15/hello-world" || exit
 cat ~/.gitconfig
 git status
 git log --oneline --decorate
@@ -122,7 +122,7 @@ git log --oneline --decorate
 Дополнительно можно показать:
 
 ```bash
-cd "$HOME/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world" || exit
+cd "$HOME/Desktop/semester_3/software-engineering-2/track-1-graupner/02-seminars/homework-1-a15/hello-world" || exit
 ls -ld .git
 cat .gitignore
 git check-ignore HelloWorld.class doc/index.html
@@ -138,7 +138,7 @@ open doc/index.html
 В Terminal:
 
 ```bash
-cd "$HOME/Desktop/semester_3/software-engineering-2/track-1/02-seminars/homework-1-a15/hello-world" || exit
+cd "$HOME/Desktop/semester_3/software-engineering-2/track-1-graupner/02-seminars/homework-1-a15/hello-world" || exit
 code .
 code ../submission/validation-answers-en.md
 ```

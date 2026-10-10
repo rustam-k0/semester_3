@@ -2,6 +2,8 @@
 
 The module has one unified Zug, as confirmed by the user on 2026-10-09. All course materials belong in `shared`; no separate track folders are needed. Teachers covered by the supplied semester notes: Siamak Haschemi and Markus Schubert.
 
+Preferred teacher for Wintersemester 2026/27: Siamak Haschemi. Markus Schubert is retained as an alternative, following the user-supplied [comparison](../plan/study-organization/course-assessment-comparison.jpg). This preference does not divide the unified Zug or the shared materials.
+
 ## General materials
 
 - [Module introduction](shared/01-lectures/module-introduction.pdf) — announcement dated 2026-09-26.

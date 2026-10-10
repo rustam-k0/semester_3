@@ -5,7 +5,7 @@ Use this guide for every future file import, rename, move, and database update.
 ## Naming
 
 - Prefer short, clear English names for files, folders, headings, and new descriptive database text.
-- Use lowercase ASCII and kebab-case: `track-1`, `01-intro.pdf`, `course-members.jpg`.
+- Use lowercase ASCII and kebab-case: `track-1-graupner`, `01-intro.pdf`, `course-members.jpg`.
 - Avoid spaces, accents, Cyrillic, clipboard IDs, download prefixes, and vague names such as `new`, `final`, or `copy`.
 - Preserve the real file extension. Use the existing format; renaming does not convert a file.
 - Use two-digit topic ordering for lectures and related exercise sheets: `01-intro.pdf`, `02-architecture.pdf`.
@@ -36,12 +36,12 @@ Use this guide for every future file import, rename, move, and database update.
     source-extracts/
   <subject>/
     shared/
-    track-1/
+    track-1-<lecture-teacher-surname>/
       01-lectures/
       02-seminars/
       03-exam-prep/
       source-extracts/
-    track-2/
+    track-2-<lecture-teacher-surname>/
       ...
   project/
     README.md
@@ -73,6 +73,15 @@ Subject names:
 Within `plan`, keep timetable PDFs in `schedules/ws2026`, calendars and exam-date summaries in `academic-calendar`, official notices in `regulations`, study-structure references in `study-organization`, consultation materials in `consultations/<person>`, and module descriptions in `module-descriptions`. Keep `module-handbook.pdf`, `source-exports`, and `source-extracts` at their established paths. Maintain `plan/README.md` when this navigation changes.
 
 The workspace now uses the canonical names above. The importer reads `plan/source-exports/01-schedule.mhtml`–`05-schedule.mhtml` and `plan/source-extracts/module-handbook.txt`. Update generators, source references, and documentation together for future migrations.
+
+## Teacher names and track preferences
+
+- For ordinary track-specific course folders, use `track-N-surname`, including surname particles and hyphens in lowercase ASCII (for example `track-1-von-pilgrim`, `track-2-ipek-ugay`). The Zug number is source-confirmed; the surname identifies its lecture teacher for the documented term. Do not infer Zug from preference or surname.
+- Document the mapping term, schedule source, preferred teacher and retained alternative in each course README. List the preferred option first. Record exercise teachers and groups separately from lecture teachers. If both tracks have the same teacher, do not invent a preferred Zug.
+- Preserve alternative folders and their materials. Preferences do not change source scope or assessment rules. Filenames inside teacher-labelled folders need not repeat the surname.
+- Current mappings for Wintersemester 2026/27: media-design — Zug 1 Zahn (preferred), Zug 2 Schiffers; programming-2 — Zug 1 Haschemi (preferred), Zug 2 Ipek-Ugay; software-engineering-2 — Zug 1 Graupner (preferred), Zug 2 Ziemer; web-engineering-2 — Zug 1 von Pilgrim (preferred), Zug 2 von Klinski; operating-systems — Weis for both Zug, with no preferred Zug specified.
+- Keep `theoretical-cs/shared` and `project/shared`: preferred teachers are Werth (theoretical-cs, Zug 2; alternative Tomatis, Zug 1) and Haschemi (Project; alternative Schubert, unified Zug). Do not rename or divide shared folders by teacher.
+- On a future teacher-folder rename, update active links, provenance paths, generators and documentation together. Preserve file contents, stable database IDs, assessment rules and `generatedAt` when only paths change. Historical archive naming remains exempt.
 
 ## Where Files Belong
 
