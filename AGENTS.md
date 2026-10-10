@@ -22,7 +22,7 @@ Use this guide for every future file import, rename, move, and database update.
 
 ### Historical archive exception
 
-`archive/` at the workspace root holds the user-supplied historical study collection. Preserve its original internal folder structure, filenames and overlapping collections. Naming normalization, course-material redistribution and deduplication rules do not apply inside this archive. Keep its scope and limitations documented in `archive/README.md`. Archived semester and teacher labels do not confirm current tracks or assessment rules. Keep the archive outside `bht-schedule`; do not import its contents into application databases without a separate request.
+`archive/` at the workspace root holds the user-supplied historical study collection. Preserve its original internal folder structure, filenames and overlapping collections. Naming normalization, course-material redistribution and deduplication rules do not apply inside this archive. Keep its scope and limitations documented in `archive/README.md`. Archived semester and teacher labels do not confirm current tracks or assessment rules. Keep the archive outside `bht-schedule`; do not import its contents into application databases without a separate request. Store both original archive collection folders with Git LFS according to `.gitattributes`. Preserve bundled historical project files in this archive even when their original project ignore rules exclude them; do not apply this exception to current projects. Verify LFS objects are uploaded before reporting the archive saved on GitHub.
 
 ```text
 <workspace>/
